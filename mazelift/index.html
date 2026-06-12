@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MazeLift — 多層迷路の空間認識パズル</title>
+  <meta name="description" content="階段と落とし穴でつながる多層迷路を攻略する空間認識パズルゲーム。デイリーチャレンジとオンラインランキングで全国のプレイヤーと競おう。iPhone / iPad 対応、無料。">
+  <style>
+    :root {
+      --bg: #0A0E1A;
+      --panel: #131A2E;
+      --text: #E8ECF4;
+      --sub: #9AA6C0;
+      --accent: #6FE3C4;
+      --accent2: #7FB4FF;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.8;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+    header { text-align: center; padding: 2rem 0 1rem; }
+    .icon {
+      width: 120px; height: 120px; border-radius: 27px;
+      box-shadow: 0 8px 32px rgba(111, 227, 196, .25);
+    }
+    h1 { font-size: 2.2rem; letter-spacing: .12em; margin: 1.2rem 0 .2rem; font-weight: 600; }
+    .tagline { color: var(--accent); font-size: 1.05rem; margin: 0 0 1.6rem; }
+    .store-btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #06281F;
+      font-weight: 700;
+      padding: .85rem 2.2rem;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: 1.05rem;
+      transition: transform .15s ease, box-shadow .15s ease;
+    }
+    .store-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(111,227,196,.35); }
+    .note { color: var(--sub); font-size: .85rem; margin-top: .8rem; }
+    section { margin-top: 3rem; }
+    h2 {
+      font-size: 1.15rem; color: var(--accent2);
+      border-left: 4px solid var(--accent2);
+      padding-left: .7rem; letter-spacing: .05em;
+    }
+    .features { display: grid; gap: .9rem; padding: 0; margin: 1.2rem 0 0; list-style: none; }
+    .features li {
+      background: var(--panel);
+      border-radius: 12px;
+      padding: 1rem 1.2rem;
+    }
+    .features b { color: var(--text); }
+    .features span { color: var(--sub); font-size: .95rem; display: block; margin-top: .15rem; }
+    footer {
+      margin-top: 4rem; padding-top: 1.5rem;
+      border-top: 1px solid #232C47;
+      color: var(--sub); font-size: .9rem; text-align: center;
+    }
+    footer a { color: var(--accent2); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img class="icon" src="icon.png" alt="MazeLift アイコン">
+      <h1>MAZELIFT</h1>
+      <p class="tagline">多層迷路の空間認識パズル</p>
+      <a class="store-btn" href="https://apps.apple.com/jp/app/mazelift/id6778004918">App Store でダウンロード</a>
+      <p class="note">無料・iPhone / iPad 対応</p>
+    </header>
+
+    <section>
+      <h2>どんなゲーム？</h2>
+      <p>階段と落とし穴でつながる、2階建てから最大5階建ての立体迷路を攻略するパズルゲームです。いま見えているフロアの先を想像しながら、ゴールへの最短ルートを見つけましょう。遊ぶほどに空間認識力が鍛えられます。</p>
+    </section>
+
+    <section>
+      <h2>特徴</h2>
+      <ul class="features">
+        <li><b>🏆 オンラインランキング</b><span>週間・月間ランキングで全国のプレイヤーとベストスコアを競争。上位入賞で金・銀・銅のバッジを獲得。</span></li>
+        <li><b>📅 デイリーチャレンジ</b><span>毎日変わる共通の迷路に1日1回だけ挑戦。結果はその日のデイリーランキングに記録されます。</span></li>
+        <li><b>📈 やりこめるスコアシステム</b><span>ノーヒント・ノーリセット・パーフェクトのボーナスを重ねて、最高評価「SSランク」を目指そう。</span></li>
+        <li><b>🎚 9段階の難易度</b><span>「とてもやさしい」から「とてもむずかしい」まで、自分に合ったサイズで遊べます。</span></li>
+        <li><b>🤝 フレンド招待</b><span>招待コードを共有すると、ふたりともヒントチケットとリセットチケットをプレゼント。</span></li>
+        <li><b>✏️ かゆいところに届く機能</b><span>ヒント、マーキング（メモ）、左利きモード、チュートリアル、iPad最適化、オフラインプレイ対応。</span></li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>
+        <a href="/mazelift-privacy/">プライバシーポリシー</a> ・
+        <a href="/">Loofen24 Apps</a>
+      </p>
+      <p>© 2026 Loofen24</p>
+    </footer>
+  </div>
+</body>
+</html>

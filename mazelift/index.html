@@ -159,8 +159,16 @@
     .cta-band h2 { margin-bottom: 1.4rem; }
 
     /* contact */
-    .form-card { background: var(--panel); border: 1px solid var(--stroke); border-radius: 20px; padding: 1.2rem; backdrop-filter: blur(8px); }
-    .form-card iframe { width: 100%; height: 1100px; border: 0; border-radius: 14px; background: #fff; display: block; }
+    .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.1rem; max-width: 720px; margin: 0 auto; }
+    .contact-card { display: flex; flex-direction: column; align-items: flex-start; gap: .15rem; text-decoration: none; color: inherit;
+      background: var(--panel); border: 1px solid var(--stroke); border-radius: 18px; padding: 1.6rem 1.5rem; backdrop-filter: blur(8px);
+      position: relative; overflow: hidden; transition: transform .25s ease, border-color .25s ease; }
+    .contact-card::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 2px; background: linear-gradient(90deg, var(--accent), var(--accent2), transparent); opacity: .5; }
+    .contact-card:hover { transform: translateY(-5px); border-color: rgba(127,180,255,.35); }
+    .contact-card h3 { font-size: 1.08rem; font-weight: 700; margin: .9rem 0 .25rem; }
+    .contact-card span { color: var(--sub); font-size: .92rem; line-height: 1.7; }
+    .contact-card .card-link { margin-top: .9rem; color: var(--accent); font-weight: 700; font-size: .9rem; }
+    .contact-card:hover .card-link { color: var(--accent2); }
 
     footer { border-top: 1px solid var(--stroke); padding: 2.4rem 0 3rem; text-align: center; color: var(--sub); font-size: .9rem; margin-top: 2rem; }
     footer a { color: var(--accent2); text-decoration: none; }
@@ -253,16 +261,22 @@
     <section id="contact">
       <div class="sec-head reveal">
         <span class="eyebrow"><span class="dot"></span>Contact</span>
-        <h2>お問い合わせ</h2>
-        <p>不具合のご報告や機能のご要望は、こちらのフォームからお寄せください（匿名で送信できます）。</p>
+        <h2>お問い合わせ・ご意見</h2>
+        <p>不具合のご報告や機能のご要望をお待ちしています。</p>
       </div>
-      <div class="form-card reveal">
-        <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLSccsRbVvDanocr8VwE7wxdfNyDCA3YMpBDSXYg425A4jNXBuA/viewform?embedded=true"
-          loading="lazy" title="MazeLift お問い合わせフォーム">読み込んでいます…</iframe>
-        <p class="note" style="text-align:center;">フォームが表示されない場合は
-          <a style="color: var(--accent2);" href="https://docs.google.com/forms/d/e/1FAIpQLSccsRbVvDanocr8VwE7wxdfNyDCA3YMpBDSXYg425A4jNXBuA/viewform">こちら</a>
-          から開いてください。</p>
+      <div class="contact-grid">
+        <a class="contact-card reveal" href="https://docs.google.com/forms/d/e/1FAIpQLSccsRbVvDanocr8VwE7wxdfNyDCA3YMpBDSXYg425A4jNXBuA/viewform" target="_blank" rel="noopener">
+          <div class="ficon">✉️</div>
+          <h3>お問い合わせフォーム</h3>
+          <span>不具合の報告・機能のご要望はこちら。匿名で送信できます。</span>
+          <span class="card-link">フォームを開く →</span>
+        </a>
+        <a class="contact-card reveal" href="https://apps.apple.com/jp/app/mazelift/id6778004918?action=write-review" target="_blank" rel="noopener">
+          <div class="ficon">⭐</div>
+          <h3>App Store でレビュー</h3>
+          <span>気に入ったら星とひと言を。開発の大きな励みになります。</span>
+          <span class="card-link">レビューを書く →</span>
+        </a>
       </div>
     </section>
   </main>

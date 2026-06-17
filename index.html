@@ -3,24 +3,140 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Loofen24 Apps</title>
+  <title>Plexel — Creative Tech Lab</title>
+  <meta name="description" content="Plexel が手がけるアプリとゲームのご紹介。空間認識パズル「MazeLift」ほか。">
+  <meta property="og:title" content="Plexel — Creative Tech Lab">
+  <meta property="og:description" content="Plexel が手がけるアプリとゲームのご紹介。">
+  <meta property="og:image" content="https://loofen24.github.io/mazelift/icon.png">
+  <link rel="icon" href="/mazelift/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: -apple-system, "Hiragino Sans", sans-serif; background: #0A0E1A; color: #E8ECF4; display: flex; min-height: 100vh; align-items: center; justify-content: center; margin: 0; }
-    main { text-align: center; padding: 2rem; }
-    h1 { font-weight: 300; letter-spacing: .1em; }
-    a { color: #7FB4FF; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    ul { list-style: none; padding: 0; line-height: 2.2; }
+    :root {
+      --bg: #070A14; --panel: rgba(22, 30, 52, .55); --stroke: rgba(127, 180, 255, .14);
+      --text: #EAF0FB; --sub: #97A3C0; --accent: #6FE3C4; --accent2: #7FB4FF; --accent3: #B79BFF;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: "Noto Sans JP", -apple-system, "Hiragino Sans", sans-serif;
+      background: var(--bg); color: var(--text); line-height: 1.8; min-height: 100vh; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+    .ff { font-family: "Outfit", "Noto Sans JP", sans-serif; }
+
+    .bg-fx { position: fixed; inset: 0; z-index: -2; overflow: hidden; background:
+      radial-gradient(1200px 800px at 80% -10%, rgba(127,180,255,.10), transparent 60%),
+      radial-gradient(1000px 700px at 0% 10%, rgba(111,227,196,.08), transparent 55%), var(--bg); }
+    .blob { position: absolute; border-radius: 50%; filter: blur(70px); opacity: .5; will-change: transform; }
+    .b1 { width: 46vw; height: 46vw; left: -8vw; top: -6vw; background: radial-gradient(circle, #1E6E73, transparent 70%); animation: d1 22s ease-in-out infinite; }
+    .b2 { width: 42vw; height: 42vw; right: -10vw; top: 20vh; background: radial-gradient(circle, #2A4D8F, transparent 70%); animation: d2 26s ease-in-out infinite; }
+    .b3 { width: 38vw; height: 38vw; left: 28vw; bottom: -16vw; background: radial-gradient(circle, #4A3A8C, transparent 70%); animation: d3 30s ease-in-out infinite; }
+    @keyframes d1 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(6vw,5vh)} }
+    @keyframes d2 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(-5vw,4vh)} }
+    @keyframes d3 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(4vw,-5vh)} }
+    .grid-fx { position: fixed; inset: 0; z-index: -1; pointer-events: none;
+      background-image: linear-gradient(rgba(127,180,255,.045) 1px, transparent 1px), linear-gradient(90deg, rgba(127,180,255,.045) 1px, transparent 1px);
+      background-size: 44px 44px;
+      mask-image: radial-gradient(ellipse 80% 65% at 50% 0%, #000 30%, transparent 75%);
+      -webkit-mask-image: radial-gradient(ellipse 80% 65% at 50% 0%, #000 30%, transparent 75%); }
+
+    .wrap { max-width: 860px; margin: 0 auto; padding: 0 1.5rem; }
+    header { text-align: center; padding: 5rem 0 2.5rem; }
+    .eyebrow { display: inline-flex; align-items: center; gap: .5rem; font-size: .78rem; letter-spacing: .2em; text-transform: uppercase;
+      color: var(--accent2); border: 1px solid var(--stroke); background: rgba(127,180,255,.06); padding: .35rem .9rem; border-radius: 999px; margin-bottom: 1.4rem; }
+    .eyebrow .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 10px var(--accent); }
+    h1 { font-size: clamp(3rem, 11vw, 5.4rem); font-weight: 900; letter-spacing: .03em; margin: .2rem 0 .4rem; line-height: 1.02;
+      background: linear-gradient(110deg, #EAF0FB 8%, var(--accent) 42%, var(--accent2) 72%, var(--accent3));
+      -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+    header p { color: var(--sub); max-width: 460px; margin: 0 auto; }
+
+    .apps { display: grid; gap: 1.2rem; padding-bottom: 4rem; }
+    .card { display: flex; align-items: center; gap: 1.2rem; background: var(--panel); border: 1px solid var(--stroke); border-radius: 20px;
+      padding: 1.4rem 1.5rem; backdrop-filter: blur(8px); text-decoration: none; color: inherit; position: relative; overflow: hidden;
+      transition: transform .25s ease, border-color .25s ease; }
+    .card::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 2px; background: linear-gradient(90deg, var(--accent), var(--accent2), transparent); opacity: .5; }
+    .card:hover { transform: translateY(-4px); border-color: rgba(127,180,255,.35); }
+    .app-icon { width: 72px; height: 72px; border-radius: 18px; flex: none; box-shadow: 0 8px 24px rgba(0,0,0,.4); }
+    .app-icon.ph { display: grid; place-items: center; font-family: "Outfit"; font-weight: 900; font-size: 1.8rem; color: #06281F;
+      background: linear-gradient(140deg, var(--accent), var(--accent2)); }
+    .card-body { flex: 1; min-width: 0; }
+    .card-body h2 { font-size: 1.3rem; font-weight: 800; margin: 0 0 .1rem; letter-spacing: .02em; }
+    .card-body .desc { color: var(--sub); font-size: .92rem; margin: 0 0 .5rem; }
+    .links { display: flex; gap: .5rem; flex-wrap: wrap; }
+    .chip { font-size: .78rem; font-weight: 700; padding: .3rem .8rem; border-radius: 999px; text-decoration: none; transition: transform .15s ease, background .15s ease; }
+    .chip.primary { color: #06281F; background: linear-gradient(135deg, var(--accent), var(--accent2)); }
+    .chip.ghost { color: var(--text); border: 1px solid var(--stroke); background: rgba(255,255,255,.03); }
+    .chip:hover { transform: translateY(-1px); }
+    .badge-soon { font-size: .7rem; font-weight: 700; color: var(--sub); border: 1px solid var(--stroke); background: rgba(151,163,192,.1);
+      padding: .2rem .6rem; border-radius: 999px; align-self: flex-start; }
+
+    footer { border-top: 1px solid var(--stroke); padding: 2.2rem 0 3rem; text-align: center; color: var(--sub); font-size: .9rem; }
+    footer a { color: var(--accent2); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    .reveal { opacity: 0; transform: translateY(22px); transition: opacity .7s ease, transform .7s cubic-bezier(.2,.7,.2,1); }
+    .reveal.in { opacity: 1; transform: none; }
+    @media (max-width: 520px) { .card { flex-direction: column; text-align: center; align-items: center; } .links { justify-content: center; } }
+    @media (prefers-reduced-motion: reduce) { *,::before,::after { animation: none !important; transition: none !important; } .reveal { opacity: 1; transform: none; } html { scroll-behavior: auto; } }
   </style>
 </head>
 <body>
-  <main>
-    <h1>Loofen24 Apps</h1>
-    <ul>
-      <li><a href="/mazelift/">MazeLift</a> — <a href="/mazelift-privacy/">プライバシーポリシー / Privacy Policy</a></li>
-      <li><a href="/catchlog/">CatchLog</a> — <a href="/catchlog-privacy/">プライバシーポリシー / Privacy Policy</a></li>
-      <li><a href="/nakayoshi-kakeibo/">仲良し家計簿</a> — <a href="/nakayoshi-kakeibo-privacy/">プライバシーポリシー / Privacy Policy</a></li>
-    </ul>
-  </main>
+  <div class="bg-fx" aria-hidden="true"><span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span></div>
+  <div class="grid-fx" aria-hidden="true"></div>
+
+  <div class="wrap">
+    <header>
+      <span class="eyebrow"><span class="dot"></span>Creative Tech Lab</span>
+      <h1 class="ff">Plexel</h1>
+      <p>つながる、ひとマス。小さなアプリとゲームを作っています。</p>
+    </header>
+
+    <div class="apps">
+      <div class="card reveal">
+        <img class="app-icon" src="/mazelift/icon.png" alt="MazeLift アイコン">
+        <div class="card-body">
+          <h2 class="ff">MazeLift</h2>
+          <p class="desc">階段と落とし穴でつながる、多層迷路の空間認識パズル。</p>
+          <div class="links">
+            <a class="chip primary" href="/mazelift/">紹介ページ →</a>
+            <a class="chip ghost" href="/mazelift-privacy/">プライバシーポリシー</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card reveal">
+        <div class="app-icon ph">C</div>
+        <div class="card-body">
+          <h2 class="ff">CatchLog</h2>
+          <p class="desc">釣りの記録アプリ。</p>
+          <div class="links">
+            <a class="chip primary" href="/catchlog/">紹介ページ →</a>
+            <a class="chip ghost" href="/catchlog-privacy/">プライバシーポリシー</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card reveal">
+        <div class="app-icon ph">¥</div>
+        <div class="card-body">
+          <h2 class="ff">仲良し家計簿</h2>
+          <p class="desc">シンプルに続けられる家計簿アプリ。</p>
+          <div class="links">
+            <a class="chip primary" href="/nakayoshi-kakeibo/">紹介ページ →</a>
+            <a class="chip ghost" href="/nakayoshi-kakeibo-privacy/">プライバシーポリシー</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>お問い合わせは各アプリの紹介ページから。</p>
+      <p>© 2026 Plexel</p>
+    </footer>
+  </div>
+
+  <script>
+    const io = new IntersectionObserver((es) => { for (const e of es) if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }, { threshold: .12 });
+    document.querySelectorAll('.reveal').forEach((el, i) => { el.style.transitionDelay = (i * 90) + 'ms'; io.observe(el); });
+  </script>
 </body>
 </html>

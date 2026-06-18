@@ -69,16 +69,25 @@
 
     .wrap { max-width: var(--max); margin: 0 auto; padding: 0 1.5rem; }
 
-    /* ---------- nav ---------- */
-    nav { position: sticky; top: 0; z-index: 50; backdrop-filter: blur(14px);
+    /* ---------- common site header ---------- */
+    .site-nav { position: sticky; top: 0; z-index: 50; backdrop-filter: blur(14px);
       background: linear-gradient(to bottom, rgba(7,10,20,.85), rgba(7,10,20,.4)); border-bottom: 1px solid var(--stroke); }
-    .nav-in { max-width: var(--max); margin: 0 auto; padding: .7rem 1.5rem; display: flex; align-items: center; justify-content: space-between; }
-    .nav-brand { display: flex; align-items: center; gap: .6rem; font-weight: 800; letter-spacing: .14em; font-family: "Outfit"; }
-    .nav-brand img { width: 30px; height: 30px; border-radius: 8px; }
-    .nav-cta { font-size: .82rem; font-weight: 700; padding: .5rem 1.1rem; border-radius: 999px;
-      color: #06281F; background: linear-gradient(135deg, var(--accent), var(--accent2)); text-decoration: none;
-      box-shadow: 0 4px 16px rgba(111,227,196,.25); transition: transform .15s ease; }
-    .nav-cta:hover { transform: translateY(-1px); }
+    .site-nav .nav-in { max-width: 1080px; margin: 0 auto; padding: .55rem 1rem;
+      display: flex; align-items: center; justify-content: space-between; gap: .5rem; flex-wrap: nowrap; }
+    .site-nav .nav-brand { display: inline-flex; align-items: center; gap: .4rem; min-width: 0;
+      font-family: "Outfit","Noto Sans JP",sans-serif; font-weight: 800; letter-spacing: .06em;
+      text-decoration: none; color: var(--text); white-space: nowrap; font-size: .85rem; }
+    .site-nav .nav-brand img { width: 24px; height: 24px; border-radius: 7px; flex: none; }
+    .site-nav .nav-links { display: flex; align-items: center; gap: clamp(.5rem, 3vw, 1.2rem); white-space: nowrap; flex: none; }
+    .site-nav .nav-links a { color: var(--sub); text-decoration: none; font-weight: 600; font-size: .8rem; }
+    .site-nav .nav-links a:hover, .site-nav .nav-links a[aria-current] { color: var(--accent2); }
+    @media (min-width: 700px) {
+      .site-nav .nav-in { padding: .65rem 1.4rem; }
+      .site-nav .nav-brand { font-size: .95rem; letter-spacing: .1em; gap: .5rem; }
+      .site-nav .nav-brand img { width: 28px; height: 28px; }
+      .site-nav .nav-links a { font-size: .85rem; }
+    }
+    @media (max-width: 470px) { .site-nav .nav-brand .bt { display: none; } }
 
     /* ---------- hero ---------- */
     .hero { text-align: center; padding: 4.5rem 0 2rem; }
@@ -192,12 +201,14 @@
   </div>
   <div class="grid-fx" aria-hidden="true"></div>
 
-  <nav>
-    <div class="nav-in">
-      <span class="nav-brand"><img src="icon.png" alt="">MAZELIFT</span>
-      <a class="nav-cta" href="https://apps.apple.com/jp/app/mazelift/id6778004918">ダウンロード</a>
+  <nav class="site-nav"><div class="nav-in">
+    <a class="nav-brand" href="/mazelift/"><img src="/mazelift/icon.png" alt=""><span class="bt">MAZELIFT</span></a>
+    <div class="nav-links">
+      <a href="/mazelift/" aria-current="page">アプリ</a>
+      <a href="/mazelift/support.html">サポート</a>
+      <a href="/mazelift-privacy/">プライバシー</a>
     </div>
-  </nav>
+  </div></nav>
 
   <header class="hero wrap">
     <span class="eyebrow"><span class="dot"></span>多層迷路の空間認識パズル</span>

@@ -32,14 +32,24 @@
     mask-image: radial-gradient(ellipse 80% 55% at 50% 0%, #000 30%, transparent 75%);
     -webkit-mask-image: radial-gradient(ellipse 80% 55% at 50% 0%, #000 30%, transparent 75%); }
 
-  nav { position: sticky; top: 0; z-index: 10; backdrop-filter: blur(14px);
+  .site-nav { position: sticky; top: 0; z-index: 50; backdrop-filter: blur(14px);
     background: linear-gradient(to bottom, rgba(7,10,20,.85), rgba(7,10,20,.4)); border-bottom: 1px solid var(--stroke); }
-  .nav-in { max-width: 760px; margin: 0 auto; padding: .7rem 1.5rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
-  .nav-brand { display: flex; align-items: center; gap: .55rem; font-weight: 800; letter-spacing: .1em; text-decoration: none; color: var(--text); }
-  .nav-brand img { width: 28px; height: 28px; border-radius: 8px; }
-  .nav-links { display: flex; gap: 1rem; font-size: .85rem; }
-  .nav-links a { color: var(--sub); text-decoration: none; font-weight: 600; }
-  .nav-links a:hover, .nav-links a[aria-current] { color: var(--accent2); }
+  .site-nav .nav-in { max-width: 1080px; margin: 0 auto; padding: .55rem 1rem;
+    display: flex; align-items: center; justify-content: space-between; gap: .5rem; flex-wrap: nowrap; }
+  .site-nav .nav-brand { display: inline-flex; align-items: center; gap: .4rem; min-width: 0;
+    font-family: "Outfit","Noto Sans JP",sans-serif; font-weight: 800; letter-spacing: .06em;
+    text-decoration: none; color: var(--text); white-space: nowrap; font-size: .85rem; }
+  .site-nav .nav-brand img { width: 24px; height: 24px; border-radius: 7px; flex: none; }
+  .site-nav .nav-links { display: flex; align-items: center; gap: clamp(.5rem, 3vw, 1.2rem); white-space: nowrap; flex: none; }
+  .site-nav .nav-links a { color: var(--sub); text-decoration: none; font-weight: 600; font-size: .8rem; }
+  .site-nav .nav-links a:hover, .site-nav .nav-links a[aria-current] { color: var(--accent2); }
+  @media (min-width: 700px) {
+    .site-nav .nav-in { padding: .65rem 1.4rem; }
+    .site-nav .nav-brand { font-size: .95rem; letter-spacing: .1em; gap: .5rem; }
+    .site-nav .nav-brand img { width: 28px; height: 28px; }
+    .site-nav .nav-links a { font-size: .85rem; }
+  }
+  @media (max-width: 470px) { .site-nav .nav-brand .bt { display: none; } }
 
   .wrap { max-width: 760px; margin: 0 auto; padding: 0 1.5rem; }
   header.hero { text-align: center; padding: 3.5rem 0 1.5rem; }
@@ -86,12 +96,12 @@
 <div class="bg-fx" aria-hidden="true"><span class="blob b1"></span><span class="blob b2"></span></div>
 <div class="grid-fx" aria-hidden="true"></div>
 
-<nav><div class="nav-in">
-  <a class="nav-brand ff" href="/mazelift/"><img src="icon.png" alt="">MAZELIFT</a>
+<nav class="site-nav"><div class="nav-in">
+  <a class="nav-brand" href="/mazelift/"><img src="/mazelift/icon.png" alt=""><span class="bt">MAZELIFT</span></a>
   <div class="nav-links">
     <a href="/mazelift/">アプリ</a>
+    <a href="/mazelift/support.html" aria-current="page">サポート</a>
     <a href="/mazelift-privacy/">プライバシー</a>
-    <a href="support.html" aria-current="page">サポート</a>
   </div>
 </div></nav>
 

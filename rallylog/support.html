@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>サポート — RallyLog</title>
+<meta name="description" content="9人制バレーボール記録アプリ RallyLog のサポート・よくある質問・お問い合わせ。">
+<link rel="icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;800;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #071A1D; --panel: rgba(18, 52, 58, .55); --stroke: rgba(94, 200, 212, .16);
+    --text: #F0F8F7; --sub: #8FB2B2; --accent: #F09A5E; --accent2: #56C4D2; --accent3: #F3C892;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; font-family: "Noto Sans JP", -apple-system, "Hiragino Sans", sans-serif;
+    background: var(--bg); color: var(--text); line-height: 1.85; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  .ff { font-family: "Outfit", "Noto Sans JP", sans-serif; }
+
+  .bg-fx { position: fixed; inset: 0; z-index: -2; overflow: hidden; background:
+    radial-gradient(1100px 700px at 85% -10%, rgba(86,196,210,.09), transparent 60%),
+    radial-gradient(900px 600px at 0% 8%, rgba(240,154,94,.07), transparent 55%), var(--bg); }
+  .blob { position: absolute; border-radius: 50%; filter: blur(80px); opacity: .42; }
+  .b1 { width: 42vw; height: 42vw; left: -10vw; top: -8vw; background: radial-gradient(circle, #1B5F6A, transparent 70%); }
+  .b2 { width: 38vw; height: 38vw; right: -12vw; top: 22vh; background: radial-gradient(circle, #8A4A26, transparent 70%); }
+  .grid-fx { position: fixed; inset: 0; z-index: -1; pointer-events: none;
+    background-image: linear-gradient(rgba(240,248,247,.04) 1px, transparent 1px), linear-gradient(90deg, rgba(240,248,247,.04) 1px, transparent 1px);
+    background-size: 44px 44px;
+    mask-image: radial-gradient(ellipse 80% 55% at 50% 0%, #000 30%, transparent 75%);
+    -webkit-mask-image: radial-gradient(ellipse 80% 55% at 50% 0%, #000 30%, transparent 75%); }
+
+  .site-nav { position: sticky; top: 0; z-index: 50; backdrop-filter: blur(14px);
+    background: linear-gradient(to bottom, rgba(7,26,29,.85), rgba(7,26,29,.4)); border-bottom: 1px solid var(--stroke); }
+  .site-nav .nav-in { max-width: 1080px; margin: 0 auto; padding: .55rem 1rem;
+    display: flex; align-items: center; justify-content: space-between; gap: .5rem; flex-wrap: nowrap; }
+  .site-nav .nav-brand { display: inline-flex; align-items: center; gap: .4rem; min-width: 0;
+    font-family: "Outfit","Noto Sans JP",sans-serif; font-weight: 800; letter-spacing: .06em;
+    text-decoration: none; color: var(--text); white-space: nowrap; font-size: .85rem; }
+  .site-nav .nav-brand img { width: 24px; height: 24px; border-radius: 7px; flex: none; }
+  .site-nav .nav-links { display: flex; align-items: center; gap: clamp(.5rem, 3vw, 1.2rem); white-space: nowrap; flex: none; }
+  .site-nav .nav-links a { color: var(--sub); text-decoration: none; font-weight: 600; font-size: .8rem; }
+  .site-nav .nav-links a:hover, .site-nav .nav-links a[aria-current] { color: var(--accent2); }
+  @media (min-width: 700px) {
+    .site-nav .nav-in { padding: .65rem 1.4rem; }
+    .site-nav .nav-brand { font-size: .95rem; letter-spacing: .1em; gap: .5rem; }
+    .site-nav .nav-brand img { width: 28px; height: 28px; }
+    .site-nav .nav-links a { font-size: .85rem; }
+  }
+  @media (max-width: 470px) { .site-nav .nav-brand .bt { display: none; } }
+
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 1.5rem; }
+  header.hero { text-align: center; padding: 3.5rem 0 1.5rem; }
+  .hero .badge img { width: 84px; height: 84px; border-radius: 20px; box-shadow: 0 14px 40px rgba(240,154,94,.28); }
+  .eyebrow { display: inline-flex; align-items: center; gap: .5rem; font-size: .76rem; letter-spacing: .2em; text-transform: uppercase;
+    color: var(--accent2); border: 1px solid var(--stroke); background: rgba(86,196,210,.06); padding: .3rem .9rem; border-radius: 999px; margin: 1.2rem 0 .8rem; }
+  .hero h1 { font-size: clamp(2rem, 6vw, 3rem); font-weight: 900; letter-spacing: .06em; margin: .2rem 0 .4rem;
+    background: linear-gradient(110deg, #F0F8F7 10%, var(--accent) 50%, var(--accent2) 85%);
+    -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  .hero .tagline { color: var(--sub); margin: 0; }
+
+  main { padding-bottom: 4rem; }
+  .lead { color: var(--sub); text-align: center; max-width: 560px; margin: 1.5rem auto 2rem; }
+
+  .card { background: var(--panel); border: 1px solid var(--stroke); border-radius: 18px; padding: 1.6rem 1.5rem; backdrop-filter: blur(8px); margin-bottom: 1.2rem; position: relative; overflow: hidden; }
+  .card::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 2px; background: linear-gradient(90deg, var(--accent), var(--accent2), transparent); opacity: .5; }
+  .card.highlight { background: linear-gradient(135deg, rgba(240,154,94,.12), rgba(86,196,210,.10)); }
+  .card h2 { font-size: 1.15rem; font-weight: 800; margin: 0 0 .7rem; }
+  .card p { color: #CBE0DE; margin: .4rem 0; }
+  .email { font-size: 1.02rem; }
+  .email a, .card a { color: var(--accent2); text-decoration: none; font-weight: 600; }
+  .card a:hover { text-decoration: underline; }
+  strong { color: var(--text); }
+
+  details { border-top: 1px solid var(--stroke); }
+  details:first-of-type { border-top: 0; }
+  summary { list-style: none; cursor: pointer; padding: 1rem 2rem 1rem 0; font-weight: 700; position: relative; color: var(--text); }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "+"; position: absolute; right: .2rem; top: 50%; transform: translateY(-50%); color: var(--accent); font-size: 1.3rem; font-weight: 400; transition: transform .2s; }
+  details[open] summary::after { content: "−"; }
+  details > p { color: var(--sub); margin: 0 0 1.1rem; font-size: .94rem; }
+  .faq { padding: .4rem 1.5rem; }
+
+  footer { border-top: 1px solid var(--stroke); padding: 2.2rem 0 3rem; text-align: center; color: var(--sub); font-size: .85rem; }
+  footer a { color: var(--accent2); text-decoration: none; }
+  .dot { opacity: .5; margin: 0 .4rem; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } details summary::after { transition: none; } }
+</style>
+</head>
+<body>
+<div class="bg-fx" aria-hidden="true"><span class="blob b1"></span><span class="blob b2"></span></div>
+<div class="grid-fx" aria-hidden="true"></div>
+
+<nav class="site-nav"><div class="nav-in">
+  <a class="nav-brand" href="/rallylog/"><img src="/rallylog/icon.png" alt=""><span class="bt">RALLYLOG</span></a>
+  <div class="nav-links">
+    <a href="/rallylog/">アプリ</a>
+    <a href="/rallylog/support.html" aria-current="page">サポート</a>
+    <a href="/rallylog/privacy.html">プライバシー</a>
+  </div>
+</div></nav>
+
+<header class="hero wrap">
+  <div class="badge"><img src="icon.png" alt="RallyLog アイコン" width="84" height="84"></div>
+  <p class="eyebrow"><span class="dot" style="opacity:1">●</span> Support</p>
+  <h1 class="ff">RallyLog</h1>
+  <p class="tagline">困ったときは、こちらをご確認ください。</p>
+</header>
+
+<main class="wrap">
+  <p class="lead">RallyLog をご利用いただきありがとうございます。お問い合わせ先と、よくある質問をご案内します。</p>
+
+  <section class="card highlight">
+    <h2>お問い合わせ</h2>
+    <p>不具合のご報告・機能のご要望は、お気軽にご連絡ください。</p>
+    <p class="email">📮 <a href="https://docs.google.com/forms/d/e/1FAIpQLSccsRbVvDanocr8VwE7wxdfNyDCA3YMpBDSXYg425A4jNXBuA/viewform" target="_blank" rel="noopener">お問い合わせフォームを開く</a></p>
+    <p>通常2〜3日以内に確認しています（返信が必要な場合はフォームに連絡先をご記入ください）。</p>
+  </section>
+
+  <section class="card faq">
+    <details>
+      <summary>クイック記録と詳細入力の違いは？</summary>
+      <p>「クイック記録」は得点ボタンをタップするだけの試合中向けモードで、次のサーバーも自動表示されます。「詳細入力」はコート上の選手をタップしてサーブ・レセプション・スパイク・ブロックをラリー単位で残すモードです。併用も、どちらか一方だけでも使えます。</p>
+    </details>
+    <details>
+      <summary>試合中はクイックだけ記録して、あとから詳細を入力できますか？</summary>
+      <p>できます。ホームから試合を開いて詳細入力に切り替えると、クイック記録の得点の流れと突き合わせながら入力できます。1点ずれた時点で「第◯セット◯点目で相違」と表示されるので、入力ミスにすぐ気づけます。</p>
+    </details>
+    <details>
+      <summary>記録したデータはどこに保存されますか？</summary>
+      <p>入力中に自動でクラウド（Firebase）に保存されます。体育館などで電波が不安定でも端末内に記録され、通信が回復すると自動で同期されます。画面上部の「保存済み / 同期中 / 未同期」バッジで状態を確認できます。</p>
+    </details>
+    <details>
+      <summary>チームでデータを共有するには？</summary>
+      <p>「チーム」タブからチームを作成すると6桁の招待コードが発行されます。メンバーがコードを入力して参加すると、記録した試合をチーム全員が閲覧できます。誰かが記録中の試合は他のメンバーは閲覧のみになり、記録がぶつかる心配はありません。</p>
+    </details>
+    <details>
+      <summary>確定スコアを手で直せますか？</summary>
+      <p>直せます。クイック記録画面の「確定スコア」の数字をタップして編集してください。手修正した値が最優先で使われ、「✎ 戻す」で自動計算に戻せます。</p>
+    </details>
+    <details>
+      <summary>マイスタッツとは？</summary>
+      <p>自分の背番号を登録すると、直近試合の自分の成績・通算成績・成長グラフをホームからすぐ見られる機能です。無料でお使いいただけます。</p>
+    </details>
+    <details>
+      <summary>RallyLog Pro では何ができますか？</summary>
+      <p>試合レポートPDF（スコア・チーム/選手別スタッツを1枚に）と、CSVデータ出力（Excelで自由に分析）が使えるようになります。記録・チーム共有・ボックススコア・成長分析は無料のままです。</p>
+    </details>
+    <details>
+      <summary>サブスクリプションの解約方法は？</summary>
+      <p>iPhoneの「設定」→ 一番上のApple ID → 「サブスクリプション」→ RallyLog Pro を選んで解約できます。解約後も期間終了までPro機能を利用できます。</p>
+    </details>
+    <details>
+      <summary>相手チームの分析はできますか？</summary>
+      <p>アプリの設定で「相手チーム分析」をオンにすると、相手の決定を記録するときに相手選手の背番号を任意入力できます。スコア画面に「相手の得点源」が表示され、次戦の対策に使えます。</p>
+    </details>
+    <details>
+      <summary>文字が小さくて見づらいです</summary>
+      <p>ホーム右上の歯車アイコン → 設定の「文字サイズ」で「大きめ」「特大」に変更できます。</p>
+    </details>
+    <details>
+      <summary>アカウントを削除したい</summary>
+      <p>ホーム右上の歯車アイコン → 設定 → 「アカウントを削除」から削除できます。個人の試合データは完全に削除され、チームに共有済みの試合はチームオーナーに引き継がれます。この操作は取り消せません。</p>
+    </details>
+    <details>
+      <summary>間違えて記録してしまいました</summary>
+      <p>直前の記録は「1つ戻す」（詳細入力では「取り消し」）でいつでも取り消せます。詳細入力ではセット単位で入力をやり直すこともできます（パネル下部の「詳細入力のやり直し」）。</p>
+    </details>
+  </section>
+
+  <section class="card">
+    <h2>動作環境</h2>
+    <p>iOS 17.0 以降の iPhone / iPad に対応しています。クラウド保存・チーム共有にはインターネット接続が必要です（記録自体はオフラインでも可能）。</p>
+  </section>
+</main>
+
+<footer class="wrap">
+  <p>
+    <a href="/rallylog/">アプリ紹介</a><span class="dot">•</span>
+    <a href="/rallylog/privacy.html">プライバシーポリシー</a><span class="dot">•</span>
+    <a href="/">Plexel</a>
+  </p>
+  <p>© 2026 Plexel</p>
+</footer>
+</body>
+</html>

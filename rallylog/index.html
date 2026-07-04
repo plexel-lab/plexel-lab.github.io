@@ -118,20 +118,25 @@
     .ghost-btn:hover { border-color: var(--accent2); background: rgba(86,196,210,.08); }
     .note { color: var(--sub); font-size: .85rem; margin-top: 1rem; }
 
-    /* ---------- court visual ---------- */
-    .court-visual { max-width: 560px; margin: 2.6rem auto 0; padding: 0 1rem; }
-    .court { position: relative; display: grid; grid-template-columns: 1fr 1fr; border-radius: 18px; overflow: hidden;
-      border: 1px solid rgba(240,248,247,.25); box-shadow: 0 24px 60px rgba(0,0,0,.5); aspect-ratio: 2 / 1;
-      background: #2E8A96; }
-    .court::before { content: ""; position: absolute; inset: 7% 5%; background: #D07842;
-      border: 2px solid rgba(255,255,255,.9); border-radius: 4px; }
-    .court::after { content: ""; position: absolute; top: 0; bottom: 0; left: 50%; width: 3px; transform: translateX(-50%);
-      background: rgba(255,255,255,.95); box-shadow: 0 0 14px rgba(255,255,255,.5); }
-    .court .dot { position: absolute; width: 12px; height: 12px; border-radius: 50%; border: 2px solid #fff; z-index: 2; }
-    .court .dot.g { background: #1DB954; box-shadow: 0 0 12px rgba(29,185,84,.9); }
-    .court .dot.r { background: #E8334A; box-shadow: 0 0 12px rgba(232,51,74,.9); }
-    .court .line { position: absolute; height: 2px; transform-origin: left center; z-index: 1;
-      background: linear-gradient(90deg, rgba(255,255,255,.9), rgba(255,255,255,.2)); }
+    /* ---------- phone gallery (actual app screenshots) ---------- */
+    .gallery { display: flex; gap: clamp(1rem, 4vw, 2.4rem); justify-content: center; align-items: flex-end; padding: 3rem 0 1rem; perspective: 1400px; }
+    .phone { position: relative; width: clamp(150px, 30vw, 200px); border-radius: 28px; padding: 7px;
+      background: linear-gradient(160deg, #1B4A52, #0A2226); border: 1px solid rgba(255,255,255,.10);
+      box-shadow: 0 30px 60px rgba(0,0,0,.55); transition: transform .4s cubic-bezier(.2,.7,.2,1); }
+    .phone img { width: 100%; display: block; border-radius: 22px; }
+    .phone.left { transform: rotateY(18deg) translateY(14px) scale(.92); opacity: .94; }
+    .phone.right { transform: rotateY(-18deg) translateY(14px) scale(.92); opacity: .94; }
+    .phone.center { z-index: 3; box-shadow: 0 36px 80px rgba(240,154,94,.16), 0 30px 60px rgba(0,0,0,.6); }
+    .gallery:hover .phone.center { transform: translateY(-6px); }
+    .gallery:hover .phone.left { transform: rotateY(14deg) translateY(10px) scale(.94); }
+    .gallery:hover .phone.right { transform: rotateY(-14deg) translateY(10px) scale(.94); }
+    @media (max-width: 620px) { .phone.left, .phone.right { display: none; } .phone.center { width: 62vw; } }
+
+    /* screenshot strip (secondary) */
+    .shots-strip { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 1rem; max-width: 760px; margin: 0 auto; }
+    .shots-strip figure { margin: 0; }
+    .shots-strip img { width: 100%; border-radius: 16px; border: 1px solid var(--stroke); box-shadow: 0 14px 34px rgba(0,0,0,.4); display: block; }
+    .shots-strip figcaption { color: var(--sub); font-size: .82rem; text-align: center; margin-top: .5rem; }
 
     /* ---------- sections ---------- */
     section { padding: 3.4rem 0; }
@@ -224,14 +229,10 @@
     </div>
     <p class="note">iPhone / iPad 対応 ・ 記録は無料 ・ オフラインでも記録できる</p>
 
-    <div class="court-visual reveal" aria-hidden="true">
-      <div class="court">
-        <span class="line" style="left: 22%; top: 62%; width: 46%; transform: rotate(-18deg);"></span>
-        <span class="line" style="left: 30%; top: 40%; width: 38%; transform: rotate(14deg);"></span>
-        <span class="dot g" style="left: 66%; top: 44%;"></span>
-        <span class="dot r" style="left: 62%; top: 70%;"></span>
-        <span class="dot g" style="left: 20%; top: 58%;"></span>
-      </div>
+    <div class="gallery wrap reveal">
+      <div class="phone left"><img src="shots/quick.png" alt="クイック記録画面" loading="lazy"></div>
+      <div class="phone center"><img src="shots/detail.png" alt="詳細入力画面" loading="lazy"></div>
+      <div class="phone right"><img src="shots/chart.png" alt="スパイクコースチャート画面" loading="lazy"></div>
     </div>
   </header>
 
@@ -265,6 +266,20 @@
         <li class="reveal"><div class="ficon">🤝</div><h3>チーム共有</h3><span>チームコードでメンバーを招待。記録した試合は自動でクラウド保存され、チーム全員のスマホで見られる。</span></li>
         <li class="reveal"><div class="ficon">📈</div><h3>マイスタッツ & 成長分析</h3><span>自分の背番号を登録すれば、直近の成績も通算も成長グラフもすぐ手元に。試合をまたいだ推移でチームの成長が見える。</span></li>
       </ul>
+    </section>
+
+    <section id="screens">
+      <div class="sec-head reveal">
+        <span class="eyebrow"><span class="dot"></span>Screens</span>
+        <h2>画面イメージ</h2>
+        <p>実際のアプリの画面です。</p>
+      </div>
+      <div class="shots-strip reveal">
+        <figure><img src="shots/quick.png" alt="クイック記録"><figcaption>クイック記録</figcaption></figure>
+        <figure><img src="shots/detail.png" alt="詳細入力"><figcaption>詳細入力</figcaption></figure>
+        <figure><img src="shots/score.png" alt="ボックススコア"><figcaption>ボックススコア</figcaption></figure>
+        <figure><img src="shots/chart.png" alt="コースチャート"><figcaption>コースチャート</figcaption></figure>
+      </div>
     </section>
 
     <section>

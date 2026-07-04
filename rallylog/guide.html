@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>使い方ガイド — RallyLog</title>
+<meta name="description" content="9人制バレーボール記録アプリ RallyLog の使い方ガイド。各画面の機能と操作方法を紹介します。">
+<link rel="icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;800;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #071A1D; --panel: rgba(18, 52, 58, .55); --stroke: rgba(94, 200, 212, .16);
+    --text: #F0F8F7; --sub: #8FB2B2; --accent: #F09A5E; --accent2: #56C4D2; --accent3: #F3C892;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; font-family: "Noto Sans JP", -apple-system, "Hiragino Sans", sans-serif;
+    background: var(--bg); color: var(--text); line-height: 1.85; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  .ff { font-family: "Outfit", "Noto Sans JP", sans-serif; }
+
+  .bg-fx { position: fixed; inset: 0; z-index: -2; overflow: hidden; background:
+    radial-gradient(1100px 700px at 85% -10%, rgba(86,196,210,.09), transparent 60%),
+    radial-gradient(900px 600px at 0% 8%, rgba(240,154,94,.07), transparent 55%), var(--bg); }
+  .blob { position: absolute; border-radius: 50%; filter: blur(80px); opacity: .42; }
+  .b1 { width: 42vw; height: 42vw; left: -10vw; top: -8vw; background: radial-gradient(circle, #1B5F6A, transparent 70%); }
+  .b2 { width: 38vw; height: 38vw; right: -12vw; top: 22vh; background: radial-gradient(circle, #8A4A26, transparent 70%); }
+  .grid-fx { position: fixed; inset: 0; z-index: -1; pointer-events: none;
+    background-image: linear-gradient(rgba(240,248,247,.04) 1px, transparent 1px), linear-gradient(90deg, rgba(240,248,247,.04) 1px, transparent 1px);
+    background-size: 44px 44px;
+    mask-image: radial-gradient(ellipse 80% 55% at 50% 0%, #000 30%, transparent 75%);
+    -webkit-mask-image: radial-gradient(ellipse 80% 55% at 50% 0%, #000 30%, transparent 75%); }
+
+  .site-nav { position: sticky; top: 0; z-index: 50; backdrop-filter: blur(14px);
+    background: linear-gradient(to bottom, rgba(7,26,29,.85), rgba(7,26,29,.4)); border-bottom: 1px solid var(--stroke); }
+  .site-nav .nav-in { max-width: 1080px; margin: 0 auto; padding: .55rem 1rem;
+    display: flex; align-items: center; justify-content: space-between; gap: .5rem; flex-wrap: nowrap; }
+  .site-nav .nav-brand { display: inline-flex; align-items: center; gap: .4rem; min-width: 0;
+    font-family: "Outfit","Noto Sans JP",sans-serif; font-weight: 800; letter-spacing: .06em;
+    text-decoration: none; color: var(--text); white-space: nowrap; font-size: .85rem; }
+  .site-nav .nav-brand img { width: 24px; height: 24px; border-radius: 7px; flex: none; }
+  .site-nav .nav-links { display: flex; align-items: center; gap: clamp(.5rem, 3vw, 1.2rem); white-space: nowrap; flex: none; }
+  .site-nav .nav-links a { color: var(--sub); text-decoration: none; font-weight: 600; font-size: .8rem; }
+  .site-nav .nav-links a:hover, .site-nav .nav-links a[aria-current] { color: var(--accent2); }
+  @media (min-width: 700px) {
+    .site-nav .nav-in { padding: .65rem 1.4rem; }
+    .site-nav .nav-brand { font-size: .95rem; letter-spacing: .1em; gap: .5rem; }
+    .site-nav .nav-brand img { width: 28px; height: 28px; }
+    .site-nav .nav-links a { font-size: .85rem; }
+  }
+  @media (max-width: 470px) { .site-nav .nav-brand .bt { display: none; } }
+
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 1.5rem; }
+  header.hero { text-align: center; padding: 3.5rem 0 1.5rem; }
+  .hero .badge img { width: 84px; height: 84px; border-radius: 20px; box-shadow: 0 14px 40px rgba(240,154,94,.28); }
+  .eyebrow { display: inline-flex; align-items: center; gap: .5rem; font-size: .76rem; letter-spacing: .2em; text-transform: uppercase;
+    color: var(--accent2); border: 1px solid var(--stroke); background: rgba(86,196,210,.06); padding: .3rem .9rem; border-radius: 999px; margin: 1.2rem 0 .8rem; }
+  .hero h1 { font-size: clamp(2rem, 6vw, 3rem); font-weight: 900; letter-spacing: .06em; margin: .2rem 0 .4rem;
+    background: linear-gradient(110deg, #F0F8F7 10%, var(--accent) 50%, var(--accent2) 85%);
+    -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  .hero .tagline { color: var(--sub); margin: 0; }
+
+  main { padding-bottom: 4rem; }
+  .lead { color: var(--sub); text-align: center; max-width: 560px; margin: 1.5rem auto 2rem; }
+
+  .card { background: var(--panel); border: 1px solid var(--stroke); border-radius: 18px; padding: 1.6rem 1.5rem; backdrop-filter: blur(8px); margin-bottom: 1.2rem; position: relative; overflow: hidden; }
+  .card::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 2px; background: linear-gradient(90deg, var(--accent), var(--accent2), transparent); opacity: .5; }
+  .card.highlight { background: linear-gradient(135deg, rgba(240,154,94,.12), rgba(86,196,210,.10)); }
+  .card h2 { font-size: 1.15rem; font-weight: 800; margin: 0 0 .7rem; }
+  .card p { color: #CBE0DE; margin: .4rem 0; }
+  .email { font-size: 1.02rem; }
+  .email a, .card a { color: var(--accent2); text-decoration: none; font-weight: 600; }
+  .card a:hover { text-decoration: underline; }
+  strong { color: var(--text); }
+
+  details { border-top: 1px solid var(--stroke); }
+  details:first-of-type { border-top: 0; }
+  summary { list-style: none; cursor: pointer; padding: 1rem 2rem 1rem 0; font-weight: 700; position: relative; color: var(--text); }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "+"; position: absolute; right: .2rem; top: 50%; transform: translateY(-50%); color: var(--accent); font-size: 1.3rem; font-weight: 400; transition: transform .2s; }
+  details[open] summary::after { content: "−"; }
+  details > p { color: var(--sub); margin: 0 0 1.1rem; font-size: .94rem; }
+  .faq { padding: .4rem 1.5rem; }
+
+  footer { border-top: 1px solid var(--stroke); padding: 2.2rem 0 3rem; text-align: center; color: var(--sub); font-size: .85rem; }
+  footer a { color: var(--accent2); text-decoration: none; }
+  .dot { opacity: .5; margin: 0 .4rem; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } details summary::after { transition: none; } }
+</style>
+</head>
+<body>
+<div class="bg-fx" aria-hidden="true"><span class="blob b1"></span><span class="blob b2"></span></div>
+<div class="grid-fx" aria-hidden="true"></div>
+
+<nav class="site-nav"><div class="nav-in">
+  <a class="nav-brand" href="/rallylog/"><img src="/rallylog/icon.png" alt=""><span class="bt">RALLYLOG</span></a>
+  <div class="nav-links">
+    <a href="/rallylog/">アプリ</a>
+    <a href="/rallylog/guide.html" aria-current="page">使い方</a>
+    <a href="/rallylog/support.html">サポート</a>
+    <a href="/rallylog/privacy.html">プライバシー</a>
+  </div>
+</div></nav>
+
+<header class="hero wrap">
+  <div class="badge"><img src="icon.png" alt="RallyLog アイコン" width="84" height="84"></div>
+  <p class="eyebrow"><span class="dot" style="opacity:1">●</span> Guide</p>
+  <h1 class="ff">使い方ガイド</h1>
+  <p class="tagline">各画面の機能と操作方法をまとめています。</p>
+</header>
+
+<main class="wrap">
+  <p class="lead">RallyLog は「クイック記録」と「詳細入力」の2つの記録方法を中心に、ボックススコア・チャート・チーム共有・観戦まで対応しています。各画面でできることと操作方法を、タップで開いてご確認ください。</p>
+
+  <section class="card faq">
+    <h2>🏠 ホーム</h2>
+    <details><summary>新しい試合を作る</summary><p>「新しい試合」から試合作成へ進みます。前回のメンバー・サーブ順・ルール・ユニフォーム色がそのまま引き継がれるので、対戦相手など違うところだけ直せばすぐ始められます。</p></details>
+    <details><summary>大会でまとめる</summary><p>「大会を作成」で大会フォルダを作り、試合をまとめられます。試合カードから大会へ追加できます。</p></details>
+    <details><summary>試合を再開・結果を見る</summary><p>試合カードをタップすると、続きを記録したり結果を確認したりできます。</p></details>
+    <details><summary>マイスタッツ / 成長分析</summary><p>自分の背番号を登録すると、自分の成績や試合をまたいだ成長グラフをすぐ見られます。</p></details>
+    <details><summary>ゴミ箱</summary><p>削除した試合は30日間ゴミ箱に残り、復元できます。30日後に自動で完全削除されます。</p></details>
+  </section>
+
+  <section class="card faq">
+    <h2>📋 試合作成</h2>
+    <details><summary>メンバー登録</summary><p>スタメン9人＋控えを、背番号と氏名（任意）で登録します。名簿を登録しておくとプルダウンで選べます。コート上は9人です。</p></details>
+    <details><summary>サーブ順</summary><p>ドラッグで並べ替えて登録します。9人制はローテーションがないため、次のサーバーは得点に応じて自動判定されます。</p></details>
+    <details><summary>競技区分と交代上限</summary><p>一般9人制／ママさん（家庭婦人）を選びます。交代上限の既定（6回／3回）は編集できます。地域・大会で異なるためご確認ください。</p></details>
+    <details><summary>ユニフォーム色・ルール</summary><p>自チーム・相手チームの色を21色から選べます。セット数・1セットの点数・デュース・最終セットの点数も設定できます。</p></details>
+    <details><summary>配置編集</summary><p>コート上の選手をドラッグして初期配置を決められます。記録中も配置編集に切り替えて変更できます。</p></details>
+  </section>
+
+  <section class="card faq">
+    <h2>⚡ 入力 — クイック記録</h2>
+    <details><summary>得点を記録する</summary><p>「得点 +1」を押すだけ。得点に応じて次のサーバー（自チームは背番号＋名前、相手は背番号のみ）が自動表示されます。</p></details>
+    <details><summary>最初のサーブ / タイムアウト・交代</summary><p>0-0のとき最初のサーブを選べます。各チームのTO・交代を回数でカウントし、上限超過は警告します（記録は続けられます）。</p></details>
+    <details><summary>1つ戻す</summary><p>直前の入力を取り消します。何を取り消したかが表示されるので誤タップと区別できます。</p></details>
+    <details><summary>確定スコア</summary><p>各セットの最終スコアが表示されます。数字をタップして手修正でき、「✎ 戻す」で自動計算に戻せます。</p></details>
+  </section>
+
+  <section class="card faq">
+    <h2>🏐 入力 — 詳細入力</h2>
+    <details><summary>記録の流れ</summary><p>コート上の選手をタップ → アクション（サーブ／レセプ／スパイク／ブロック）→ 結果を選び、最後に「入力確定」を押すと記録・得点に反映されます。</p></details>
+    <details><summary>コントロールの3ボタン</summary><p>画面下は左から［セット終了］［取り消し］［入力確定］。取り消しは継続の自動入力や上書きも含めて1手戻します。</p></details>
+    <details><summary>スパイクのコース（任意）</summary><p>スパイク決定でIN／ブロックアウト／フェイントを選び、コートをタップすると落下点を記録できます。打点から落下点までがチャートに線で表示されます。</p></details>
+    <details><summary>継続の自動入力</summary><p>ラリーが続く間、コート上の選手をタップするたびにその選手のスパイク（継続）が自動記録され、最後に結果を確定すると同じ選手の直近の継続が置き換わります。</p></details>
+    <details><summary>配置編集・選手交代</summary><p>「配置編集」に切り替えると、ドラッグで移動、控えをタップ→コートの選手をタップで交代できます（記録は一時停止）。</p></details>
+    <details><summary>クイックとの照合・やり直し</summary><p>クイックで記録済みの試合を後から詳細入力すると、得点の順序を突き合わせて食い違った点を教えてくれます。セット単位で詳細だけを入れ直すこともできます（クイック記録は残ります）。</p></details>
+  </section>
+
+  <section class="card faq">
+    <h2>📊 スコア・チャート</h2>
+    <details><summary>ボックススコア</summary><p>チーム全体／選手別／セット別で集計を切り替えられます。サーブ効果率・レセプA率・アタック決定率・ブロックポイントを記録から自動計算します。</p></details>
+    <details><summary>スパイクコースチャート</summary><p>フルコート図に打点から落下点までを線で描画します。色は得点者（自チーム＝緑／相手＝赤）。全員／選手別で切り替えられます。</p></details>
+    <details><summary>相手の得点源</summary><p>設定で「相手チーム分析」をオンにして相手番号を記録すると、相手のどの選手に決められたかが表示されます。</p></details>
+    <details><summary>出力</summary><p>MVPカード（無料）／試合レポートPDF・CSV（Pro）を書き出して共有できます。</p></details>
+  </section>
+
+  <section class="card faq">
+    <h2>👥 チーム・共有・観戦</h2>
+    <details><summary>チームを作る／参加する</summary><p>チームを作成すると招待コードが発行されます。メンバーがコードを入力するとチームに参加し、記録した試合を全員で見られます。</p></details>
+    <details><summary>記録中の共有と編集ロック</summary><p>誰かが記録中の試合は、他のメンバーには閲覧のみになります。編集がぶつかる心配はありません。</p></details>
+    <details><summary>観戦コード（サポーター招待）</summary><p>オーナーが観戦コードを発行すると、家族や控え選手を「観戦のみ」で招待できます。サポーターはスコアとサーブ順だけをリアルタイムで見られ、記録や分析には一切関われません。</p></details>
+    <details><summary>共有のタイミング</summary><p>試合作成時に「即時共有」か「入力終了後に共有」を選べます。後者は試合が終わるまで他のメンバーには表示されません。</p></details>
+  </section>
+
+  <section class="card faq">
+    <h2>⚙️ 設定・その他</h2>
+    <details><summary>文字サイズ</summary><p>標準／大きめ／特大から選べます。アプリ全体の文字が大きくなります。</p></details>
+    <details><summary>同期の状態</summary><p>入力画面の上部に「同期中／保存済み／未同期」が表示されます。電波が不安定でも記録は端末に残り、回復すると自動で同期されます。</p></details>
+    <details><summary>アカウント削除</summary><p>設定からアカウントと個人の試合データを完全に削除できます。チームに共有済みの試合はチームに残ります。</p></details>
+  </section>
+
+  <section class="card highlight">
+    <h2>解決しないときは</h2>
+    <p>操作でお困りのときや不具合のご報告は、<a href="/rallylog/support.html">サポート・よくある質問</a>もあわせてご確認ください。</p>
+  </section>
+</main>
+
+<footer class="wrap">
+  <p>
+    <a href="/rallylog/">アプリ紹介</a><span class="dot">•</span>
+    <a href="/rallylog/support.html">サポート</a><span class="dot">•</span>
+    <a href="/rallylog/privacy.html">プライバシーポリシー</a><span class="dot">•</span>
+    <a href="/">Plexel</a>
+  </p>
+  <p>© 2026 Plexel</p>
+</footer>
+</body>
+</html>

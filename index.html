@@ -9,10 +9,11 @@
   <meta property="og:url" content="https://plexel-lab.github.io/">
   <meta property="og:title" content="Plexel — Creative Tech Lab">
   <meta property="og:description" content="Plexel が手がけるアプリとゲームのご紹介。">
-  <meta property="og:image" content="https://plexel-lab.github.io/rallylog/icon.png">
+  <meta property="og:image" content="https://plexel-lab.github.io/assets/plexel-icon-512.png">
   <meta name="twitter:card" content="summary">
   <link rel="canonical" href="https://plexel-lab.github.io/">
-  <link rel="icon" href="/mazelift/icon.png">
+  <link rel="icon" href="/assets/favicon-64.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
@@ -73,9 +74,14 @@
     .badge-soon { font-size: .7rem; font-weight: 700; color: var(--sub); border: 1px solid var(--stroke); background: rgba(151,163,192,.1);
       padding: .2rem .6rem; border-radius: 999px; align-self: flex-start; }
 
+    .about { text-align: center; padding: 1.2rem 0 3.2rem; }
+    .about h2 { font-size: 1.4rem; font-weight: 800; letter-spacing: .06em; margin: 0 0 .6rem; }
+    .about p { color: var(--sub); max-width: 560px; margin: 0 auto 1.1rem; font-size: .95rem; }
+
     footer { border-top: 1px solid var(--stroke); padding: 2.2rem 0 3rem; text-align: center; color: var(--sub); font-size: .9rem; }
     footer a { color: var(--accent2); text-decoration: none; }
     footer a:hover { text-decoration: underline; }
+    .foot-nav { display: flex; gap: 1.2rem; justify-content: center; flex-wrap: wrap; margin-bottom: .9rem; font-size: .85rem; }
 
     .reveal { opacity: 0; transform: translateY(22px); transition: opacity .7s ease, transform .7s cubic-bezier(.2,.7,.2,1); }
     .reveal.in { opacity: 1; transform: none; }
@@ -147,8 +153,22 @@
       </div>
     </div>
 
+    <section class="about reveal" id="about">
+      <h2 class="ff">About</h2>
+      <p>Plexel は個人で運営する小さなアプリ制作ラボです。スポーツの記録、釣り、家計簿、パズル——
+        日々の「あったらいいな」を、すぐ使えるかたちにして届けます。</p>
+      <div class="links" style="justify-content:center">
+        <a class="chip primary" href="https://docs.google.com/forms/d/e/1FAIpQLSccsRbVvDanocr8VwE7wxdfNyDCA3YMpBDSXYg425A4jNXBuA/viewform" target="_blank" rel="noopener">お問い合わせフォーム</a>
+      </div>
+    </section>
+
     <footer>
-      <p>お問い合わせは各アプリの紹介ページから。</p>
+      <nav class="foot-nav">
+        <a href="/mazelift/">MazeLift</a>
+        <a href="/catchlog/">CatchLog</a>
+        <a href="/nakayoshi-kakeibo/">仲良し家計簿</a>
+        <a href="/rallylog/">RallyLog</a>
+      </nav>
       <p>© 2026 Plexel</p>
     </footer>
   </div>

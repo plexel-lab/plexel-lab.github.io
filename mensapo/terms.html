@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>めんサポ - 利用規約</title>
+<meta name="description" content="めんサポ の利用規約。サービス内容・ユーザー投稿・報酬とプレミアムについて。">
+<link rel="canonical" href="https://plexel-lab.github.io/mensapo/terms.html">
+<link rel="icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;800;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #14100C; --panel: rgba(48, 33, 22, .55); --stroke: rgba(255, 178, 94, .16);
+    --text: #FDF6EE; --sub: #BFA78F; --accent: #FF8A3D; --accent2: #FFC24D; --accent3: #FFE0A8;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; font-family: "Noto Sans JP", -apple-system, "Hiragino Sans", sans-serif;
+    background: var(--bg); color: var(--text); line-height: 1.9; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  .ff { font-family: "Outfit", "Noto Sans JP", sans-serif; }
+
+  .bg-fx { position: fixed; inset: 0; z-index: -2; overflow: hidden; background:
+    radial-gradient(1100px 700px at 85% -10%, rgba(255,138,61,.10), transparent 60%),
+    radial-gradient(900px 600px at 0% 8%, rgba(255,194,77,.07), transparent 55%), var(--bg); }
+  .blob { position: absolute; border-radius: 50%; filter: blur(80px); opacity: .42; }
+  .b1 { width: 42vw; height: 42vw; left: -10vw; top: -8vw; background: radial-gradient(circle, #8A4718, transparent 70%); }
+  .b2 { width: 38vw; height: 38vw; right: -12vw; top: 24vh; background: radial-gradient(circle, #96631B, transparent 70%); }
+  .grid-fx { position: fixed; inset: 0; z-index: -1; pointer-events: none;
+    background-image: linear-gradient(rgba(253,246,238,.04) 1px, transparent 1px), linear-gradient(90deg, rgba(253,246,238,.04) 1px, transparent 1px);
+    background-size: 44px 44px;
+    mask-image: radial-gradient(ellipse 80% 55% at 50% 0%, #000 30%, transparent 75%);
+    -webkit-mask-image: radial-gradient(ellipse 80% 55% at 50% 0%, #000 30%, transparent 75%); }
+
+  .site-nav { position: sticky; top: 0; z-index: 50; backdrop-filter: blur(14px);
+    background: linear-gradient(to bottom, rgba(20,16,12,.85), rgba(20,16,12,.4)); border-bottom: 1px solid var(--stroke); }
+  .site-nav .nav-in { max-width: 1080px; margin: 0 auto; padding: .55rem 1rem;
+    display: flex; align-items: center; justify-content: space-between; gap: .5rem; flex-wrap: nowrap; }
+  .site-nav .nav-brand { display: inline-flex; align-items: center; gap: .4rem; min-width: 0;
+    font-family: "Outfit","Noto Sans JP",sans-serif; font-weight: 800; letter-spacing: .06em;
+    text-decoration: none; color: var(--text); white-space: nowrap; font-size: .85rem; }
+  .site-nav .nav-brand img { width: 24px; height: 24px; border-radius: 7px; flex: none; }
+  .site-nav .nav-links { display: flex; align-items: center; gap: clamp(.5rem, 3vw, 1.2rem); white-space: nowrap; flex: none; }
+  .site-nav .nav-links a { color: var(--sub); text-decoration: none; font-weight: 600; font-size: .8rem; }
+  .site-nav .nav-links a:hover, .site-nav .nav-links a[aria-current] { color: var(--accent2); }
+  @media (min-width: 700px) {
+    .site-nav .nav-in { padding: .65rem 1.4rem; }
+    .site-nav .nav-brand { font-size: .95rem; letter-spacing: .1em; gap: .5rem; }
+    .site-nav .nav-brand img { width: 28px; height: 28px; }
+    .site-nav .nav-links a { font-size: .85rem; }
+  }
+  @media (max-width: 470px) { .site-nav .nav-brand .bt { display: none; } }
+
+  .wrap { max-width: 760px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; }
+  .doc { background: var(--panel); border: 1px solid var(--stroke); border-radius: 22px; padding: clamp(1.6rem, 4vw, 2.8rem); backdrop-filter: blur(8px); }
+
+  h1 { font-size: clamp(1.5rem, 4.5vw, 2rem); font-weight: 900; letter-spacing: .02em; line-height: 1.3; margin: 0 0 .3rem;
+    background: linear-gradient(110deg, #FDF6EE 15%, var(--accent) 55%, var(--accent2) 90%);
+    -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  h2 { font-size: 1.05rem; font-weight: 700; margin: 2rem 0 .4rem; padding-left: .7rem; border-left: 3px solid var(--accent2); }
+  p, li { font-size: .95rem; color: #E4D6C6; }
+  strong { color: var(--text); }
+  ul { padding-left: 1.2rem; }
+  li { margin-bottom: .3rem; }
+  a { color: var(--accent2); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .updated { color: var(--sub); font-size: .8rem; }
+  .lede { background: rgba(255,194,77,.07); border: 1px solid var(--stroke); border-radius: 14px; padding: 1rem 1.2rem; margin: 1.4rem 0 0; }
+  .lede p { margin: 0; }
+
+  footer { text-align: center; color: var(--sub); font-size: .85rem; margin-top: 2rem; }
+  footer a { color: var(--accent2); }
+
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+<div class="bg-fx" aria-hidden="true"><span class="blob b1"></span><span class="blob b2"></span></div>
+<div class="grid-fx" aria-hidden="true"></div>
+
+<nav class="site-nav"><div class="nav-in">
+  <a class="nav-brand" href="/mensapo/"><img src="/mensapo/icon.png" alt=""><span class="bt">めんサポ</span></a>
+  <div class="nav-links">
+    <a href="/mensapo/">アプリ</a>
+    <a href="/mensapo/support.html">サポート</a>
+    <a href="/mensapo/terms.html" aria-current="page">利用規約</a>
+    <a href="/mensapo/privacy.html">プライバシー</a>
+  </div>
+</div></nav>
+
+<div class="wrap">
+  <div class="doc">
+    <h1 class="ff">めんサポ 利用規約</h1>
+    <p class="updated">制定日: 2026年7月29日</p>
+
+    <p>本利用規約（以下「本規約」）は、Plexel（以下「当方」）が提供する iOSアプリ「めんサポ」（以下「本アプリ」）の利用条件を定めるものです。ユーザーは本アプリを利用することで本規約に同意したものとみなされます。</p>
+
+    <div class="lede">
+      <p><strong>調理に関する重要なお願い</strong> — 本アプリが表示する待ち時間・湯切りの有無・手順は参考情報です。商品のリニューアル等により実物と異なる場合がありますので、<strong>実際の調理は必ず商品パッケージの表示を優先してください</strong>。調理には熱湯を使用します。やけどには十分ご注意ください。</p>
+    </div>
+
+    <h2>1. サービス内容</h2>
+    <p>本アプリは、カップ麺等の商品情報の閲覧・検索、調理手順のナビゲート、タイマー、ユーザーによるアレンジレシピの投稿・レビュー（以下「ユーザー投稿」）、商品データの提供・検証、プレミアム機能の提供を行います。掲載する商品情報は名称・調理時間などの事実情報であり、<strong>本アプリは各食品メーカーとは関係ありません</strong>。商品名は各社の商標です。</p>
+
+    <h2>2. アカウント</h2>
+    <p>アレンジの投稿・レビュー・商品データの提供・報酬の受け取りには Sign in with Apple によるサインインが必要です。商品の閲覧・調理・タイマーの利用にサインインは不要です。ユーザーはアプリ内の設定からいつでもアカウントを削除できます。</p>
+
+    <h2>3. ユーザー投稿</h2>
+    <p>ユーザーは、自ら投稿する内容について適法な権利を有し、第三者の権利を侵害しないことを保証します。以下の内容の投稿を禁止します。</p>
+    <ul>
+      <li>法令または公序良俗に反する内容</li>
+      <li>第三者の著作権・商標権・プライバシー等を侵害する内容</li>
+      <li>虚偽・誹謗中傷・わいせつ・差別的な内容、その他不適切な内容</li>
+      <li>パッケージ表記の転載、宣伝・勧誘・連絡先の記載</li>
+      <li>事実と異なる商品データの登録</li>
+    </ul>
+    <p>当方は、通報・自動検知等により不適切と判断した投稿を、事前の通知なく非表示・削除できます。悪質なユーザーの利用を制限することがあります。ユーザーは各投稿の通報機能および他ユーザーのブロック機能を利用できます。</p>
+
+    <h2>4. 投稿の利用許諾</h2>
+    <p>ユーザーは、投稿内容を本アプリ上で表示・利用するために必要な範囲で、当方に対し無償の利用を許諾するものとします。めん開拓により確定した商品データは、事実情報として本アプリの商品マスタに取り込まれ、投稿者と切り離して利用されます。</p>
+
+    <h2>5. 報酬・プレミアム</h2>
+    <ul>
+      <li>自らの投稿アレンジが所定の条件（<strong>レビュー3件以上かつ平均★2.0以上</strong>）を満たした場合、および商品データの提供が確定した場合に、ポイント（巨匠ポイント・開拓ポイント）を付与します。</li>
+      <li>ポイントの累計に応じてレベルが上がり、<strong>レベルが1つ上がるごとにプレミアム機能を1ヶ月間無料で開放</strong>します。必要ポイントはレベルが上がるほど増加します。</li>
+      <li>すでにプレミアムが有効な場合（購入によるものを含む）は、有効期限を加算して延長します。</li>
+      <li>不正な手段（自作自演・相互レビュー・虚偽データの登録等）による取得は禁止し、該当する場合は付与を保留・取り消すことがあります。</li>
+      <li>プレミアムは<strong>月額または年額の自動更新サブスクリプション</strong>です。料金・更新・解約は App Store の定めに従い、解約はいつでも端末の「設定 → サブスクリプション」から行えます。特典は「広告の非表示」と「アレンジの★の多い順表示」の2つです。</li>
+    </ul>
+
+    <h2>6. 免責</h2>
+    <p>本アプリの情報は正確性を保証するものではありません。調理結果・やけど等の事故について、当方は法令で認められる範囲で責任を負いません。本アプリは各食品メーカーとは無関係です。</p>
+
+    <h2>7. 規約の変更</h2>
+    <p>当方は本規約を必要に応じて変更できます。重要な変更はアプリ内または本ページで告知します。</p>
+
+    <h2>8. お問い合わせ</h2>
+    <p>本規約に関するお問い合わせは、<a href="https://docs.google.com/forms/d/e/1FAIpQLSccsRbVvDanocr8VwE7wxdfNyDCA3YMpBDSXYg425A4jNXBuA/viewform" target="_blank" rel="noopener">お問い合わせフォーム</a>よりご連絡ください。</p>
+  </div>
+
+  <footer>
+    <p><a href="/mensapo/">アプリ紹介</a> ・ <a href="/mensapo/support.html">サポート</a> ・ <a href="/mensapo/privacy.html">プライバシーポリシー</a> ・ <a href="/">Plexel</a></p>
+    <p>© 2026 Plexel</p>
+  </footer>
+</div>
+</body>
+</html>

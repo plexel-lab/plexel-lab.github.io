@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>めんサポ - サポート / よくある質問</title>
+<meta name="description" content="めんサポ のサポートページ。お問い合わせ先と、タイマー・通知・未登録商品・プレミアムなどのよくある質問。">
+<link rel="canonical" href="https://plexel-lab.github.io/mensapo/support.html">
+<link rel="icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;800;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #14100C; --panel: rgba(48, 33, 22, .55); --stroke: rgba(255, 178, 94, .16);
+    --text: #FDF6EE; --sub: #BFA78F; --accent: #FF8A3D; --accent2: #FFC24D; --accent3: #FFE0A8;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; font-family: "Noto Sans JP", -apple-system, "Hiragino Sans", sans-serif;
+    background: var(--bg); color: var(--text); line-height: 1.85; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  .ff { font-family: "Outfit", "Noto Sans JP", sans-serif; }
+
+  .bg-fx { position: fixed; inset: 0; z-index: -2; overflow: hidden; background:
+    radial-gradient(1100px 700px at 85% -10%, rgba(255,138,61,.10), transparent 60%),
+    radial-gradient(900px 600px at 0% 8%, rgba(255,194,77,.07), transparent 55%), var(--bg); }
+  .blob { position: absolute; border-radius: 50%; filter: blur(80px); opacity: .42; }
+  .b1 { width: 42vw; height: 42vw; left: -10vw; top: -8vw; background: radial-gradient(circle, #8A4718, transparent 70%); }
+  .b2 { width: 38vw; height: 38vw; right: -12vw; top: 24vh; background: radial-gradient(circle, #96631B, transparent 70%); }
+  .grid-fx { position: fixed; inset: 0; z-index: -1; pointer-events: none;
+    background-image: linear-gradient(rgba(253,246,238,.04) 1px, transparent 1px), linear-gradient(90deg, rgba(253,246,238,.04) 1px, transparent 1px);
+    background-size: 44px 44px;
+    mask-image: radial-gradient(ellipse 80% 55% at 50% 0%, #000 30%, transparent 75%);
+    -webkit-mask-image: radial-gradient(ellipse 80% 55% at 50% 0%, #000 30%, transparent 75%); }
+
+  .site-nav { position: sticky; top: 0; z-index: 50; backdrop-filter: blur(14px);
+    background: linear-gradient(to bottom, rgba(20,16,12,.85), rgba(20,16,12,.4)); border-bottom: 1px solid var(--stroke); }
+  .site-nav .nav-in { max-width: 1080px; margin: 0 auto; padding: .55rem 1rem;
+    display: flex; align-items: center; justify-content: space-between; gap: .5rem; flex-wrap: nowrap; }
+  .site-nav .nav-brand { display: inline-flex; align-items: center; gap: .4rem; min-width: 0;
+    font-family: "Outfit","Noto Sans JP",sans-serif; font-weight: 800; letter-spacing: .06em;
+    text-decoration: none; color: var(--text); white-space: nowrap; font-size: .85rem; }
+  .site-nav .nav-brand img { width: 24px; height: 24px; border-radius: 7px; flex: none; }
+  .site-nav .nav-links { display: flex; align-items: center; gap: clamp(.5rem, 3vw, 1.2rem); white-space: nowrap; flex: none; }
+  .site-nav .nav-links a { color: var(--sub); text-decoration: none; font-weight: 600; font-size: .8rem; }
+  .site-nav .nav-links a:hover, .site-nav .nav-links a[aria-current] { color: var(--accent2); }
+  @media (min-width: 700px) {
+    .site-nav .nav-in { padding: .65rem 1.4rem; }
+    .site-nav .nav-brand { font-size: .95rem; letter-spacing: .1em; gap: .5rem; }
+    .site-nav .nav-brand img { width: 28px; height: 28px; }
+    .site-nav .nav-links a { font-size: .85rem; }
+  }
+  @media (max-width: 470px) { .site-nav .nav-brand .bt { display: none; } }
+
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 1.5rem; }
+  /* .wrap と併用するため左右 padding を明示（.wrap より後に定義され上書きするため）。 */
+  header.hero { text-align: center; padding: 3.5rem 1.5rem 1.5rem; }
+  .hero .badge img { width: 84px; height: 84px; border-radius: 20px; box-shadow: 0 14px 40px rgba(255,138,61,.3); }
+  .eyebrow { display: inline-flex; align-items: center; gap: .5rem; font-size: .76rem; letter-spacing: .2em; text-transform: uppercase;
+    color: var(--accent2); border: 1px solid var(--stroke); background: rgba(255,194,77,.06); padding: .3rem .9rem; border-radius: 999px; margin: 1.2rem 0 .8rem; }
+  .hero h1 { font-size: clamp(2rem, 6vw, 3rem); font-weight: 900; letter-spacing: .06em; margin: .2rem 0 .4rem;
+    background: linear-gradient(110deg, #FDF6EE 10%, var(--accent) 50%, var(--accent2) 85%);
+    -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  .hero .tagline { color: var(--sub); margin: 0; }
+
+  main { padding-bottom: 4rem; }
+  .lead { color: var(--sub); text-align: center; max-width: 560px; margin: 1.5rem auto 2rem; }
+
+  .card { background: var(--panel); border: 1px solid var(--stroke); border-radius: 18px; padding: 1.6rem 1.5rem; backdrop-filter: blur(8px); margin-bottom: 1.2rem; position: relative; overflow: hidden; }
+  .card::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 2px; background: linear-gradient(90deg, var(--accent), var(--accent2), transparent); opacity: .5; }
+  .card.highlight { background: linear-gradient(135deg, rgba(255,138,61,.12), rgba(255,194,77,.10)); }
+  .card h2 { font-size: 1.15rem; font-weight: 800; margin: 0 0 .7rem; }
+  .card p { color: #E4D6C6; margin: .4rem 0; }
+  .email { font-size: 1.02rem; }
+  .email a, .card a { color: var(--accent2); text-decoration: none; font-weight: 600; }
+  .card a:hover { text-decoration: underline; }
+  strong { color: var(--text); }
+
+  details { border-top: 1px solid var(--stroke); }
+  details:first-of-type { border-top: 0; }
+  summary { list-style: none; cursor: pointer; padding: 1rem 2rem 1rem 0; font-weight: 700; position: relative; color: var(--text); }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "+"; position: absolute; right: .2rem; top: 50%; transform: translateY(-50%); color: var(--accent); font-size: 1.3rem; font-weight: 400; transition: transform .2s; }
+  details[open] summary::after { content: "−"; }
+  details > p { color: var(--sub); margin: 0 0 1.1rem; font-size: .94rem; }
+  .faq { padding: .4rem 1.5rem; }
+  .faq-head { font-size: .78rem; letter-spacing: .12em; color: var(--accent2); font-weight: 700; padding: 1.1rem 0 .2rem; }
+
+  footer { border-top: 1px solid var(--stroke); padding: 2.2rem 0 3rem; text-align: center; color: var(--sub); font-size: .85rem; }
+  footer a { color: var(--accent2); text-decoration: none; }
+  .dot { opacity: .5; margin: 0 .4rem; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } details summary::after { transition: none; } }
+</style>
+</head>
+<body>
+<div class="bg-fx" aria-hidden="true"><span class="blob b1"></span><span class="blob b2"></span></div>
+<div class="grid-fx" aria-hidden="true"></div>
+
+<nav class="site-nav"><div class="nav-in">
+  <a class="nav-brand" href="/mensapo/"><img src="/mensapo/icon.png" alt=""><span class="bt">めんサポ</span></a>
+  <div class="nav-links">
+    <a href="/mensapo/">アプリ</a>
+    <a href="/mensapo/support.html" aria-current="page">サポート</a>
+    <a href="/mensapo/terms.html">利用規約</a>
+    <a href="/mensapo/privacy.html">プライバシー</a>
+  </div>
+</div></nav>
+
+<header class="hero wrap">
+  <div class="badge"><img src="icon.png" alt="めんサポ アイコン" width="84" height="84"></div>
+  <p class="eyebrow"><span class="dot" style="opacity:1">●</span> Support</p>
+  <h1 class="ff">めんサポ</h1>
+  <p class="tagline">困ったときは、こちらをご確認ください。</p>
+</header>
+
+<main class="wrap">
+  <p class="lead">めんサポ をご利用いただきありがとうございます。お問い合わせ先と、よくある質問をご案内します。</p>
+
+  <section class="card highlight">
+    <h2>お問い合わせ</h2>
+    <p>不具合のご報告、商品データの誤りのご指摘、機能のご要望、不適切な投稿のご連絡は、お気軽にご連絡ください。</p>
+    <p class="email">📮 <a href="https://docs.google.com/forms/d/e/1FAIpQLSccsRbVvDanocr8VwE7wxdfNyDCA3YMpBDSXYg425A4jNXBuA/viewform" target="_blank" rel="noopener">お問い合わせフォームを開く</a></p>
+    <p>通常2〜3日以内に確認しています（返信が必要な場合はフォームに連絡先をご記入ください）。</p>
+    <p>商品データの誤りは、アプリ内の商品ページにある「この内容、なんか違うかも」または「詳しく報告」からもお送りいただけます。</p>
+  </section>
+
+  <section class="card faq">
+    <p class="faq-head">つかいかた</p>
+    <details>
+      <summary>バーコードを読み取っても商品が出てきません</summary>
+      <p>まだデータベースに登録がない商品です。その場で「作り方を自分で登録する」を選べば、次回からはスキャンだけで使えるようになります。登録した内容は「めん開拓」からみんなに提供することもできます。コンビニ限定や発売直後の商品は未登録のことがあります。</p>
+    </details>
+    <details>
+      <summary>暗くてバーコードが読めません</summary>
+      <p>スキャン画面右下のライトボタンで、カメラのライトを点けられます。それでも読み取れない場合は、画面下の「番号を手入力」からバーコードの数字（8桁または13桁）を入力してください。</p>
+    </details>
+    <details>
+      <summary>「まだ入れない」って何ですか？</summary>
+      <p>お湯を入れる前ではなく、できあがってから入れる同梱物（液体ソース・後入れかやく・ふりかけなど）のことです。先に入れてしまうと風味が飛んでしまうため、下準備の画面では「お湯を入れる前に入れる」と分けて表示しています。取り出して脇に置いておくと、仕上げの画面でそのまま使えます。</p>
+    </details>
+    <details>
+      <summary>麺のかたさを変えられますか？</summary>
+      <p>下準備の画面で「かため／ふつう／やわらかめ」を選べます。待ち時間が30秒ずつ前後します。</p>
+    </details>
+    <details>
+      <summary>アプリを閉じてもタイマーは動きますか？</summary>
+      <p>動きます。めんサポのタイマーは「終了予定時刻」で管理しているため、アプリを閉じても、他のアプリを使っていても、端末を再起動しても残り時間はズレません。できあがりは通知でお知らせします。</p>
+    </details>
+    <details>
+      <summary>できあがりの通知が届きません</summary>
+      <p>通知が許可されていない可能性があります。iPhoneの「設定 → 通知 → めんサポ」から通知を許可してください。アプリ内の「設定」画面でも通知の状態を確認でき、オフの場合はそこから設定アプリを開けます。なお通知が使えない場合でも、タイマー画面を開いたままにしておけば残り時間を確認できます。</p>
+    </details>
+    <details>
+      <summary>タイマーを使わずに待ってしまいました</summary>
+      <p>タイマー画面の「もうできた（仕上げへ進む）」を押すと、残り時間を待たずに湯切り・仕上げの手順へ進めます。</p>
+    </details>
+
+    <p class="faq-head">アレンジ・投稿</p>
+    <details>
+      <summary>アレンジのレビューに星が表示されません</summary>
+      <p>レビューが3件に満たないアレンジは、星もコメントも表示していません。数人の評価で印象が決まってしまうのを避けるためです。3件以上集まると、平均の星と件数が表示され、コメントも読めるようになります。</p>
+    </details>
+    <details>
+      <summary>「本来の食べ方」に星が付かないのはなぜ？</summary>
+      <p>「本来の食べ方」はパッケージ表示どおりの作り方であり、評価の対象ではないためです。星とレビューはユーザー投稿のアレンジにのみ付きます。</p>
+    </details>
+    <details>
+      <summary>投稿やレビューにサインインが必要なのはなぜ？</summary>
+      <p>投稿・レビューは他の利用者に公開され、報酬の対象にもなるため、同一人物による自作自演や重複投稿を防ぐ目的で Sign in with Apple を必須にしています。氏名やメールアドレスは取得しません。商品の閲覧・調理・タイマーの利用にサインインは不要です。</p>
+    </details>
+    <details>
+      <summary>投稿したアレンジを修正したい</summary>
+      <p>現在、投稿内容の直接編集には対応していません。「めん巨匠」タブのマイ投稿から一度削除して、作り直してください。</p>
+    </details>
+    <details>
+      <summary>不適切な投稿を見つけました</summary>
+      <p>各アレンジの「…」メニュー、または各レビューの旗アイコンから通報できます。一定数の通報が集まった投稿は自動的に非表示になり、こちらで内容を確認します。特定の利用者をブロックすると、その方の投稿やレビューはあなたには表示されなくなります。お急ぎの場合は上記のお問い合わせフォームからご連絡ください。</p>
+    </details>
+
+    <p class="faq-head">ポイント・プレミアム</p>
+    <details>
+      <summary>プレミアムでは何ができますか？</summary>
+      <p>「広告の非表示」と「アレンジを★の多い順に並べ替え」の2つです。スキャン・タイマー・調理ナビ・アレンジの閲覧と投稿は、すべて無料のままお使いいただけます。</p>
+    </details>
+    <details>
+      <summary>ポイントはどうやってたまりますか？</summary>
+      <p>2種類あります。<strong>巨匠ポイント</strong>は、投稿したアレンジがレビュー3件以上・平均★2.0以上になると1つにつき5pt。<strong>開拓ポイント</strong>は、めん開拓で提供した商品データが確定したときにたまります。それぞれレベルがあり、<strong>レベルが1つ上がるごとにプレミアムが1ヶ月無料</strong>になります。必要ポイントはレベルが上がるほど増えていきます（Lv2は10pt、Lv3はさらに15pt…）。</p>
+    </details>
+    <details>
+      <summary>すでに課金しているときに報酬を獲得したら？</summary>
+      <p>現在の有効期限に1ヶ月が加算されて延長されます。無駄にはなりません。</p>
+    </details>
+    <details>
+      <summary>解約したい</summary>
+      <p>iPhoneの「設定 → 自分の名前 → サブスクリプション」から、いつでも解約できます。解約後も、購入済みの期間が終わるまではプレミアムをご利用いただけます。</p>
+    </details>
+    <details>
+      <summary>機種変更したらプレミアムが無効になりました</summary>
+      <p>アプリ内の「設定 → プレミアム」または「めん巨匠」タブから「購入を復元」をお試しください。報酬で獲得した分は、同じ Apple アカウントでサインインすると復元されます。</p>
+    </details>
+
+    <p class="faq-head">データ・その他</p>
+    <details>
+      <summary>商品の待ち時間や湯切りの表示が実物と違います</summary>
+      <p>お手数ですが、商品ページの「この内容、なんか違うかも」からご報告ください。確認のうえ修正します。<strong>実際の調理は、必ず実物のパッケージ表示を優先してください。</strong>リニューアル等で内容が変わることがあります。</p>
+    </details>
+    <details>
+      <summary>「めん開拓」とは？</summary>
+      <p>まだ登録されていない商品を、利用者どうしで登録・確認していく機能です。あなたが登録した商品を、別の2人が実物を見ながら各項目に○を付けると「確定」となり、みんながスキャンで使えるようになります。確定すると開拓ポイントがたまります。</p>
+    </details>
+    <details>
+      <summary>履歴やお気に入りは他の端末と同期されますか？</summary>
+      <p>同期されません。調理履歴・お気に入り・自分で登録した商品・表示設定は、端末の中にのみ保存されます。アプリを削除すると消えますのでご注意ください。</p>
+    </details>
+    <details>
+      <summary>オフラインでも使えますか？</summary>
+      <p>使えます。バーコードの照合、検索、調理手順、タイマー、履歴は通信なしで動きます。みんなのアレンジとレビューの表示、投稿、めん開拓には通信が必要です。</p>
+    </details>
+    <details>
+      <summary>アカウントを削除したい</summary>
+      <p>アプリ内の「設定 → アカウントを削除」から削除できます。投稿したアレンジ・レビュー・権利情報も一緒に削除されます。詳しくは<a href="privacy.html">プライバシーポリシー</a>をご覧ください。</p>
+    </details>
+  </section>
+</main>
+
+<footer>
+  <p><a href="/mensapo/">アプリ紹介</a><span class="dot">・</span><a href="/mensapo/terms.html">利用規約</a><span class="dot">・</span><a href="/mensapo/privacy.html">プライバシーポリシー</a><span class="dot">・</span><a href="/">Plexel</a></p>
+  <p>© 2026 Plexel</p>
+</footer>
+</body>
+</html>

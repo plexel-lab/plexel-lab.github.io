@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "dataVersion": 14,
+  "dataVersion": 17,
   "products": [
     {
       "id": "49698626",
@@ -1647,29 +1647,42 @@
       ]
     },
     {
-      "id": "4901734030867",
-      "janCode": "4901734030867",
+      "id": "4901734053613",
+      "janCode": "4901734053613",
       "name": "サッポロ一番 塩らーめんどんぶり",
       "maker": "サンヨー食品",
       "kana": "さっぽろいちばん しおらーめんどんぶり",
       "genre": "ラーメン(塩)",
       "waitTimeSec": 180,
       "needsDraining": false,
-      "note": "かやく・スープはカップに入っています",
+      "note": "かやく・スープはカップに入っています。公式ページの現行JANに補正(旧 4901734030867)。2025年8月「あさりだし仕上げ」版はかやく・特製スープの2袋(袋の表記を確認)",
       "lastVerifiedAt": null,
-      "steps": [],
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        },
+        {
+          "phase": "pre",
+          "order": 1,
+          "itemType": "powder",
+          "text": "特製スープを入れる"
+        }
+      ],
       "recipes": []
     },
     {
-      "id": "4901734043850",
-      "janCode": "4901734043850",
+      "id": "4901734053576",
+      "janCode": "4901734053576",
       "name": "サッポロ一番 しょうゆ味どんぶり",
       "maker": "サンヨー食品",
       "kana": "さっぽろいちばん しょうゆあじどんぶり",
       "genre": "ラーメン(しょうゆ)",
       "waitTimeSec": 180,
       "needsDraining": false,
-      "note": "かやく・スープ・焼のりはカップに入っています",
+      "note": "かやく・スープ・焼のりはカップに入っています。公式ページの現行JANに補正(旧 4901734043850)",
       "lastVerifiedAt": null,
       "steps": [],
       "recipes": []
@@ -5907,6 +5920,4050 @@
       "needsDraining": false,
       "lastVerifiedAt": "2026-07-25",
       "steps": []
+    },
+    {
+      "id": "4902105267837",
+      "janCode": "4902105267837",
+      "name": "カップヌードル 辛麺",
+      "maker": "日清食品",
+      "kana": "かっぷぬーどる からめん",
+      "genre": "ラーメン(その他)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "かやく・スープはカップに入っています。辛口",
+      "lastVerifiedAt": null,
+      "steps": [],
+      "recipes": []
+    },
+    {
+      "id": "4902105279595",
+      "janCode": "4902105279595",
+      "name": "カップヌードル 担担",
+      "maker": "日清食品",
+      "kana": "かっぷぬーどる たんたん",
+      "genre": "その他",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "かやく・スープはカップに入っています",
+      "lastVerifiedAt": null,
+      "steps": [],
+      "recipes": []
+    },
+    {
+      "id": "4902105289327",
+      "janCode": "4902105289327",
+      "name": "カップヌードル 魚豚",
+      "maker": "日清食品",
+      "kana": "かっぷぬーどる ぎょとん",
+      "genre": "ラーメン(豚骨)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "魚粉は仕上げにかける",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "powder",
+          "text": "追い魚粉をかけて混ぜる",
+          "item": "追い魚粉"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902105278246",
+      "janCode": "4902105278246",
+      "name": "カップヌードル シンガポール風ラクサ",
+      "maker": "日清食品",
+      "kana": "かっぷぬーどる しんがぽーるふうらくさ",
+      "genre": "その他",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "ペーストは待ち時間中にフタの上で温めておく",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "ラクサペーストを入れてよく混ぜる",
+          "item": "ラクサペースト"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902105288436",
+      "janCode": "4902105288436",
+      "name": "カップヌードル 14種のスパイス麻辣湯",
+      "maker": "日清食品",
+      "kana": "かっぷぬーどる じゅうよんしゅのすぱいすまーらーたん",
+      "genre": "その他",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "オイルは仕上げに入れる。シビ辛",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "oil",
+          "text": "スパイスフレーバードオイルを入れて混ぜる",
+          "item": "スパイスフレーバードオイル"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902105286883",
+      "janCode": "4902105286883",
+      "name": "カップヌードルPRO 高たんぱく&低糖質",
+      "maker": "日清食品",
+      "kana": "かっぷぬーどるぷろ こうたんぱく ていとうしつ",
+      "genre": "ラーメン(しょうゆ)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "かやく・スープはカップに入っています。しょうゆ味",
+      "lastVerifiedAt": null,
+      "steps": [],
+      "recipes": []
+    },
+    {
+      "id": "4902105286890",
+      "janCode": "4902105286890",
+      "name": "カップヌードルPRO 高たんぱく&低糖質 シーフードヌードル",
+      "maker": "日清食品",
+      "kana": "かっぷぬーどるぷろ しーふーどぬーどる",
+      "genre": "ラーメン(シーフード)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "かやく・スープはカップに入っています",
+      "lastVerifiedAt": null,
+      "steps": [],
+      "recipes": []
+    },
+    {
+      "id": "4902105289549",
+      "janCode": "4902105289549",
+      "name": "カップヌードルPRO 高たんぱく&低糖質 カレー",
+      "maker": "日清食品",
+      "kana": "かっぷぬーどるぷろ かれー",
+      "genre": "ラーメン(カレー)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "かやく・スープはカップに入っています",
+      "lastVerifiedAt": null,
+      "steps": [],
+      "recipes": []
+    },
+    {
+      "id": "4902105286906",
+      "janCode": "4902105286906",
+      "name": "カップヌードルPRO 高たんぱく&低糖質 チリトマトヌードル",
+      "maker": "日清食品",
+      "kana": "かっぷぬーどるぷろ ちりとまとぬーどる",
+      "genre": "その他",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "かやく・スープはカップに入っています",
+      "lastVerifiedAt": null,
+      "steps": [],
+      "recipes": []
+    },
+    {
+      "id": "4902105242421",
+      "janCode": "4902105242421",
+      "name": "カップヌードル チリトマトヌードル ビッグ",
+      "maker": "日清食品",
+      "kana": "かっぷぬーどる ちりとまとぬーどる びっぐ",
+      "genre": "その他",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "ビッグサイズ。かやく・スープはカップに入っています",
+      "lastVerifiedAt": null,
+      "steps": [],
+      "recipes": []
+    },
+    {
+      "id": "4902105289501",
+      "janCode": "4902105289501",
+      "name": "カップヌードル パクチー香るトムヤムクン ビッグ",
+      "maker": "日清食品",
+      "kana": "かっぷぬーどる ぱくちーかおるとむやむくん びっぐ",
+      "genre": "その他",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "ビッグサイズ。かやく・スープはカップに入っています",
+      "lastVerifiedAt": null,
+      "steps": [],
+      "recipes": []
+    },
+    {
+      "id": "49698169",
+      "janCode": "49698169",
+      "name": "カップヌードル ミニ",
+      "maker": "日清食品",
+      "kana": "かっぷぬーどる みに",
+      "genre": "ラーメン(しょうゆ)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "ミニサイズ(お湯160ml)。かやく・スープはカップに入っています",
+      "lastVerifiedAt": null,
+      "steps": [],
+      "recipes": []
+    },
+    {
+      "id": "49698183",
+      "janCode": "49698183",
+      "name": "カップヌードル カレー ミニ",
+      "maker": "日清食品",
+      "kana": "かっぷぬーどる かれー みに",
+      "genre": "ラーメン(カレー)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "ミニサイズ。かやく・スープはカップに入っています",
+      "lastVerifiedAt": null,
+      "steps": [],
+      "recipes": []
+    },
+    {
+      "id": "49698190",
+      "janCode": "49698190",
+      "name": "カップヌードル シーフードヌードル ミニ",
+      "maker": "日清食品",
+      "kana": "かっぷぬーどる しーふーどぬーどる みに",
+      "genre": "ラーメン(シーフード)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "ミニサイズ。かやく・スープはカップに入っています",
+      "lastVerifiedAt": null,
+      "steps": [],
+      "recipes": []
+    },
+    {
+      "id": "4902105271476",
+      "janCode": "4902105271476",
+      "name": "カップヌードル 味噌 ミニ",
+      "maker": "日清食品",
+      "kana": "かっぷぬーどる みそ みに",
+      "genre": "ラーメン(みそ)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "ミニサイズ。かやく・スープはカップに入っています",
+      "lastVerifiedAt": null,
+      "steps": [],
+      "recipes": []
+    },
+    {
+      "id": "4901990325189",
+      "janCode": "4901990325189",
+      "name": "マルちゃん 黒い豚カレーうどん",
+      "maker": "東洋水産",
+      "kana": "まるちゃん くろいぶたかれーうどん",
+      "genre": "うどん",
+      "waitTimeSec": 300,
+      "needsDraining": false,
+      "note": "粉末スープは先入れ。底に沈んだスープをよく溶かす。とろみあり",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901990022095",
+      "janCode": "4901990022095",
+      "name": "マルちゃん 黒いまめ豚カレーうどん",
+      "maker": "東洋水産",
+      "kana": "まるちゃん くろいまめぶたかれーうどん",
+      "genre": "うどん",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "ミニサイズ。粉末スープは先入れ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901990368056",
+      "janCode": "4901990368056",
+      "name": "マルちゃん 赤いきつねうどん でか盛",
+      "maker": "東洋水産",
+      "kana": "まるちゃん あかいきつねうどん でかもり",
+      "genre": "うどん",
+      "waitTimeSec": 300,
+      "needsDraining": false,
+      "note": "大盛(お揚げ2枚)。東向け/西向けで味が異なるがJANは共通。粉末スープに七味付き",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "topping",
+          "text": "七味(お好みで)",
+          "item": "七味"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901990374033",
+      "janCode": "4901990374033",
+      "name": "マルちゃん 赤いきつねうどん 2枚入りお揚げ",
+      "maker": "東洋水産",
+      "kana": "まるちゃん あかいきつねうどん にまいいりおあげ",
+      "genre": "うどん",
+      "waitTimeSec": 300,
+      "needsDraining": false,
+      "note": "東向け/西向けで味が異なるがJANは共通。粉末スープに七味付き",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "topping",
+          "text": "七味(お好みで)",
+          "item": "七味"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901990360920",
+      "janCode": "4901990360920",
+      "name": "マルちゃん 赤いきつねうどん(関西)",
+      "maker": "東洋水産",
+      "kana": "まるちゃん あかいきつねうどん かんさい",
+      "genre": "うどん",
+      "waitTimeSec": 300,
+      "needsDraining": false,
+      "note": "関西向け(昆布・雑節だし)。粉末スープに七味付き",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "topping",
+          "text": "七味(お好みで)",
+          "item": "七味"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901990360944",
+      "janCode": "4901990360944",
+      "name": "マルちゃん 赤いきつねうどん(北海道)",
+      "maker": "東洋水産",
+      "kana": "まるちゃん あかいきつねうどん ほっかいどう",
+      "genre": "うどん",
+      "waitTimeSec": 300,
+      "needsDraining": false,
+      "note": "北海道向け(利尻昆布だし)。粉末スープに七味付き",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "topping",
+          "text": "七味(お好みで)",
+          "item": "七味"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901990024518",
+      "janCode": "4901990024518",
+      "name": "マルちゃん 赤いまめきつねうどん",
+      "maker": "東洋水産",
+      "kana": "まるちゃん あかいまめきつねうどん",
+      "genre": "うどん",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "ミニサイズ。東向け/西向けでJAN共通。粉末スープは先入れ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901990369268",
+      "janCode": "4901990369268",
+      "name": "マルちゃん だし香るまめ天ぷらうどん",
+      "maker": "東洋水産",
+      "kana": "まるちゃん だしかおるまめてんぷらうどん",
+      "genre": "うどん",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "ミニサイズ。粉末スープは先入れ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901990331784",
+      "janCode": "4901990331784",
+      "name": "マルちゃん バリうま まめごぼ天うどん",
+      "maker": "東洋水産",
+      "kana": "まるちゃん ばりうま まめごぼてんうどん",
+      "genre": "うどん",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "ミニサイズ。粉末スープは先入れ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901990368063",
+      "janCode": "4901990368063",
+      "name": "マルちゃん 緑のたぬき天そば でか盛",
+      "maker": "東洋水産",
+      "kana": "まるちゃん みどりのたぬきてんそば でかもり",
+      "genre": "そば",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "大盛(大判天ぷら)。東向け/西向けで味が異なるがJANは共通。粉末スープに七味付き",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "topping",
+          "text": "七味(お好みで)",
+          "item": "七味"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901990374071",
+      "janCode": "4901990374071",
+      "name": "マルちゃん 緑のたぬき天そば 小えび三昧天ぷら",
+      "maker": "東洋水産",
+      "kana": "まるちゃん みどりのたぬきてんそば こえびざんまいてんぷら",
+      "genre": "そば",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "東向け/西向けで味が異なるがJANは共通。粉末スープに七味付き",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "topping",
+          "text": "七味(お好みで)",
+          "item": "七味"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901990360968",
+      "janCode": "4901990360968",
+      "name": "マルちゃん 緑のたぬき天そば(関西)",
+      "maker": "東洋水産",
+      "kana": "まるちゃん みどりのたぬきてんそば かんさい",
+      "genre": "そば",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "関西向け。粉末スープに七味付き。天ぷらはカップに入っています",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "topping",
+          "text": "七味(お好みで)",
+          "item": "七味"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901990360982",
+      "janCode": "4901990360982",
+      "name": "マルちゃん 緑のたぬき天そば(北海道)",
+      "maker": "東洋水産",
+      "kana": "まるちゃん みどりのたぬきてんそば ほっかいどう",
+      "genre": "そば",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "北海道向け。粉末スープに七味付き。天ぷらはカップに入っています",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "topping",
+          "text": "七味(お好みで)",
+          "item": "七味"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901990024525",
+      "janCode": "4901990024525",
+      "name": "マルちゃん 緑のまめたぬき天そば",
+      "maker": "東洋水産",
+      "kana": "まるちゃん みどりのまめたぬきてんそば",
+      "genre": "そば",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "ミニサイズ。東向け/西向けでJAN共通。粉末スープは先入れ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901990362337",
+      "janCode": "4901990362337",
+      "name": "マルちゃん 紺のきつねそば",
+      "maker": "東洋水産",
+      "kana": "まるちゃん こんのきつねそば",
+      "genre": "そば",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "粉末スープは先入れ(七味付き)",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "topping",
+          "text": "七味(お好みで)",
+          "item": "七味"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901990330619",
+      "janCode": "4901990330619",
+      "name": "マルちゃん おそば屋さんの鴨だしそば",
+      "maker": "東洋水産",
+      "kana": "まるちゃん おそばやさんのかもだしそば",
+      "genre": "そば",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "液体つゆは後入れ。かまぼこはカップに入っています",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体つゆを入れてよく混ぜる",
+          "item": "液体スープ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901990380225",
+      "janCode": "4901990380225",
+      "name": "マルちゃん ごつ盛り 豚骨醤油ラーメン",
+      "maker": "東洋水産",
+      "kana": "まるちゃん ごつもり とんこつしょうゆらーめん",
+      "genre": "ラーメン(豚骨)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "液体スープは後入れ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        },
+        {
+          "phase": "pre",
+          "order": 1,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体スープを入れてよく混ぜる",
+          "item": "液体スープ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901990325561",
+      "janCode": "4901990325561",
+      "name": "マルちゃん ごつ盛り コク豚骨ラーメン",
+      "maker": "東洋水産",
+      "kana": "まるちゃん ごつもり こくとんこつらーめん",
+      "genre": "ラーメン(豚骨)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "調味料は後入れ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体スープを入れてよく混ぜる",
+          "item": "液体スープ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901990362962",
+      "janCode": "4901990362962",
+      "name": "マルちゃん ごつ盛り 塩担々麺",
+      "maker": "東洋水産",
+      "kana": "まるちゃん ごつもり しおたんたんめん",
+      "genre": "ラーメン(塩)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "調味料は後入れ。にんにく・ラー油きかせ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体スープを入れてよく混ぜる",
+          "item": "液体スープ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901990375849",
+      "janCode": "4901990375849",
+      "name": "マルちゃん ごつ盛り ちゃんぽん",
+      "maker": "東洋水産",
+      "kana": "まるちゃん ごつもり ちゃんぽん",
+      "genre": "ちゃんぽん",
+      "waitTimeSec": 300,
+      "needsDraining": false,
+      "note": "粉末スープ・液体スープはどちらも後入れ(先に開けない)",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れてよく混ぜる",
+          "item": "粉末スープ"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "liquid",
+          "text": "液体スープを入れてよく混ぜる",
+          "item": "液体スープ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901990381659",
+      "janCode": "4901990381659",
+      "name": "マルちゃん ごつ盛り 沖縄琉球そば",
+      "maker": "東洋水産",
+      "kana": "まるちゃん ごつもり おきなわりゅうきゅうそば",
+      "genre": "ラーメン(その他)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "調味料は後入れ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体スープを入れてよく混ぜる",
+          "item": "液体スープ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901990382090",
+      "janCode": "4901990382090",
+      "name": "マルちゃん正麺 カップ 芳醇醤油",
+      "maker": "東洋水産",
+      "kana": "まるちゃんせいめん かっぷ ほうじゅんしょうゆ",
+      "genre": "ラーメン(しょうゆ)",
+      "waitTimeSec": 300,
+      "needsDraining": false,
+      "note": "液体スープは待ち時間中にフタの上で温めておく。旧「芳醇こく醤油」(別JAN)の現行品",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体スープを入れてよく混ぜる",
+          "item": "液体スープ"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "topping",
+          "text": "焼のりをのせる",
+          "item": "焼のり"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901990384636",
+      "janCode": "4901990384636",
+      "name": "マルちゃん正麺 カップ 中華そば",
+      "maker": "東洋水産",
+      "kana": "まるちゃんせいめん かっぷ ちゅうかそば",
+      "genre": "ラーメン(しょうゆ)",
+      "waitTimeSec": 300,
+      "needsDraining": false,
+      "note": "ワンタン入り。液体スープは後入れ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体スープを入れてよく混ぜる",
+          "item": "液体スープ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901990383486",
+      "janCode": "4901990383486",
+      "name": "マルちゃん正麺 カップ 汁なし担々麺",
+      "maker": "東洋水産",
+      "kana": "まるちゃんせいめん かっぷ しるなしたんたんめん",
+      "genre": "油そば/まぜそば",
+      "waitTimeSec": 300,
+      "needsDraining": true,
+      "note": "湯切り前に麺を軽くほぐすとお湯を捨てやすい",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れてよく混ぜる",
+          "item": "粉末スープ"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "liquid",
+          "text": "液体スープを入れてよく混ぜる",
+          "item": "液体スープ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901990381901",
+      "janCode": "4901990381901",
+      "name": "マルちゃん 麺づくり 野菜ちゃんぽん",
+      "maker": "東洋水産",
+      "kana": "まるちゃん めんづくり やさいちゃんぽん",
+      "genre": "ちゃんぽん",
+      "waitTimeSec": 300,
+      "needsDraining": false,
+      "note": "粉末スープは後入れ。特製油は仕上げ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れてよく混ぜる",
+          "item": "粉末スープ"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "oil",
+          "text": "調味油を入れてよく混ぜる",
+          "item": "調味油"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901990364263",
+      "janCode": "4901990364263",
+      "name": "マルちゃん 激めん ワンタンメン",
+      "maker": "東洋水産",
+      "kana": "まるちゃん げきめん わんたんめん",
+      "genre": "ラーメン(しょうゆ)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "粉末スープは先入れ。ワンタン・メンマはカップに入っています",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901990027298",
+      "janCode": "4901990027298",
+      "name": "マルちゃん まめ激めんワンタンメン",
+      "maker": "東洋水産",
+      "kana": "まるちゃん まめげきめんわんたんめん",
+      "genre": "ラーメン(しょうゆ)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "ミニサイズ。粉末スープは先入れ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901990322737",
+      "janCode": "4901990322737",
+      "name": "マルちゃん ミニ和歌山ラーメン",
+      "maker": "東洋水産",
+      "kana": "まるちゃん みにわかやまらーめん",
+      "genre": "ラーメン(豚骨)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "ミニサイズ。粉末スープは先入れ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901990363761",
+      "janCode": "4901990363761",
+      "name": "マルちゃん 黄色いまめ博多ラーメン",
+      "maker": "東洋水産",
+      "kana": "まるちゃん きいろいまめはかたらーめん",
+      "genre": "ラーメン(豚骨)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "ミニサイズ。粉末スープは先入れ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901990327107",
+      "janCode": "4901990327107",
+      "name": "マルちゃん ミニまる コーンみそラーメン バター風味",
+      "maker": "東洋水産",
+      "kana": "まるちゃん みにまる こーんみそらーめん ばたーふうみ",
+      "genre": "ラーメン(みそ)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "ミニサイズ。粉末スープは先入れ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901990327084",
+      "janCode": "4901990327084",
+      "name": "マルちゃん ミニまる コク醤油ワンタン麺",
+      "maker": "東洋水産",
+      "kana": "まるちゃん みにまる こくしょうゆわんたんめん",
+      "genre": "ラーメン(しょうゆ)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "ミニサイズ。粉末スープは先入れ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901990375986",
+      "janCode": "4901990375986",
+      "name": "マルちゃん 推しの一杯 ラーメン横綱 豚骨しょう油",
+      "maker": "東洋水産",
+      "kana": "まるちゃん おしのいっぱい らーめんよこづな とんこつしょうゆ",
+      "genre": "ラーメン(豚骨)",
+      "waitTimeSec": 300,
+      "needsDraining": false,
+      "note": "液体スープは待ち時間中にフタの上で温めておく",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        },
+        {
+          "phase": "pre",
+          "order": 1,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体スープを入れてよく混ぜる",
+          "item": "液体スープ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901990380430",
+      "janCode": "4901990380430",
+      "name": "マルちゃん 推しの一杯 麺屋彩未 札幌味噌",
+      "maker": "東洋水産",
+      "kana": "まるちゃん おしのいっぱい めんやさいみ さっぽろみそ",
+      "genre": "ラーメン(みそ)",
+      "waitTimeSec": 300,
+      "needsDraining": false,
+      "note": "粉末スープ・液体スープはどちらも後入れ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れてよく混ぜる",
+          "item": "粉末スープ"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "liquid",
+          "text": "液体スープを入れてよく混ぜる",
+          "item": "液体スープ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901990384483",
+      "janCode": "4901990384483",
+      "name": "マルちゃん 推しの一杯 ラーメン環2家 横浜家系醤油豚骨",
+      "maker": "東洋水産",
+      "kana": "まるちゃん おしのいっぱい らーめんかんにや よこはまいえけいしょうゆとんこつ",
+      "genre": "ラーメン(豚骨)",
+      "waitTimeSec": 300,
+      "needsDraining": false,
+      "note": "粉末スープ・液体スープはどちらも後入れ。焼のりは仕上げ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れてよく混ぜる",
+          "item": "粉末スープ"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "liquid",
+          "text": "液体スープを入れてよく混ぜる",
+          "item": "液体スープ"
+        },
+        {
+          "phase": "post",
+          "order": 2,
+          "itemType": "topping",
+          "text": "焼のりをのせる",
+          "item": "焼のり"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901990378345",
+      "janCode": "4901990378345",
+      "name": "マルちゃん 日本うまいもん 青森津軽煮干しラーメン 激にぼ",
+      "maker": "東洋水産",
+      "kana": "まるちゃん にほんうまいもん あおもりつがるにぼしらーめん げきにぼ",
+      "genre": "ラーメン(しょうゆ)",
+      "waitTimeSec": 300,
+      "needsDraining": false,
+      "note": "粉末スープ・液体スープはどちらも後入れ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れてよく混ぜる",
+          "item": "粉末スープ"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "liquid",
+          "text": "液体スープを入れてよく混ぜる",
+          "item": "液体スープ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901990375313",
+      "janCode": "4901990375313",
+      "name": "マルちゃん 麺之助 ワンタン麺 中華そば",
+      "maker": "東洋水産",
+      "kana": "まるちゃん めんのすけ わんたんめん ちゅうかそば",
+      "genre": "ラーメン(しょうゆ)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "粉末スープは先入れ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901990375337",
+      "janCode": "4901990375337",
+      "name": "マルちゃん 麺之助 ワンタン麺 鶏だし塩そば",
+      "maker": "東洋水産",
+      "kana": "まるちゃん めんのすけ わんたんめん とりだししおそば",
+      "genre": "ラーメン(塩)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "粉末スープは先入れ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901990375351",
+      "janCode": "4901990375351",
+      "name": "マルちゃん 麺之助 ワンタン麺 旨辛麺",
+      "maker": "東洋水産",
+      "kana": "まるちゃん めんのすけ わんたんめん うまからめん",
+      "genre": "ラーメン(しょうゆ)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "粉末スープは先入れ。辛口",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901990373876",
+      "janCode": "4901990373876",
+      "name": "マルちゃん 俺の塩",
+      "maker": "東洋水産",
+      "kana": "まるちゃん おれのしお",
+      "genre": "焼そば",
+      "waitTimeSec": 60,
+      "needsDraining": true,
+      "note": "熱湯1分。かやくは先入れ、粉末ソース・液体ソースは湯切り後",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末ソースを入れる",
+          "item": "粉末ソース"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "liquid",
+          "text": "液体ソースを入れてよく混ぜる",
+          "item": "液体ソース"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901990380393",
+      "janCode": "4901990380393",
+      "name": "マルちゃん焼そば(カップ)",
+      "maker": "東洋水産",
+      "kana": "まるちゃんやきそば かっぷ",
+      "genre": "焼そば",
+      "waitTimeSec": 180,
+      "needsDraining": true,
+      "note": "「マルちゃん焼そば3人前」のカップ版。粉末ソース仕上げ・ふりかけ付き",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末ソースを入れてよく混ぜる",
+          "item": "粉末ソース"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "topping",
+          "text": "ふりかけをかける",
+          "item": "ふりかけ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901990375726",
+      "janCode": "4901990375726",
+      "name": "マルちゃん 日本うまいもん 富士宮やきそば",
+      "maker": "東洋水産",
+      "kana": "まるちゃん にほんうまいもん ふじのみややきそば",
+      "genre": "焼そば",
+      "waitTimeSec": 180,
+      "needsDraining": true,
+      "note": "仕上げに削り粉をかける",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体ソースを入れてよく混ぜる",
+          "item": "液体ソース"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "topping",
+          "text": "いわし削り粉をかける",
+          "item": "削り粉"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901990384421",
+      "janCode": "4901990384421",
+      "name": "マルちゃん ごつ盛り 中華風焼そば",
+      "maker": "東洋水産",
+      "kana": "まるちゃん ごつもり ちゅうかふうやきそば",
+      "genre": "焼そば",
+      "waitTimeSec": 180,
+      "needsDraining": true,
+      "note": "液体ソースは湯切り後",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体ソースを入れてよく混ぜる",
+          "item": "液体ソース"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901990375375",
+      "janCode": "4901990375375",
+      "name": "マルちゃん 麺之助 ソース焼そば",
+      "maker": "東洋水産",
+      "kana": "まるちゃん めんのすけ そーすやきそば",
+      "genre": "焼そば",
+      "waitTimeSec": 180,
+      "needsDraining": true,
+      "note": "ソースは湯切り後。ふりかけ付き",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体ソースを入れてよく混ぜる",
+          "item": "液体ソース"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "topping",
+          "text": "ふりかけをかける",
+          "item": "ふりかけ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901990028936",
+      "janCode": "4901990028936",
+      "name": "マルちゃん 大判やきそば弁当",
+      "maker": "東洋水産",
+      "kana": "まるちゃん おおばんやきそばべんとう",
+      "genre": "焼そば",
+      "waitTimeSec": 180,
+      "needsDraining": true,
+      "note": "北海道向け(麺1.3倍)。湯切りしたお湯で中華スープを作れます",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体ソースを入れてよく混ぜる",
+          "item": "液体ソース"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "topping",
+          "text": "ふりかけをかける",
+          "item": "ふりかけ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901990529105",
+      "janCode": "4901990529105",
+      "name": "マルちゃん でっかいやきそば弁当",
+      "maker": "東洋水産",
+      "kana": "まるちゃん でっかいやきそばべんとう",
+      "genre": "焼そば",
+      "waitTimeSec": 180,
+      "needsDraining": true,
+      "note": "北海道向け(麺2倍)。湯切りしたお湯で中華スープを作れます",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体ソースを入れてよく混ぜる",
+          "item": "液体ソース"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "topping",
+          "text": "ふりかけをかける",
+          "item": "ふりかけ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901990332910",
+      "janCode": "4901990332910",
+      "name": "マルちゃん やきそば弁当 ちょい辛",
+      "maker": "東洋水産",
+      "kana": "まるちゃん やきそばべんとう ちょいから",
+      "genre": "焼そば",
+      "waitTimeSec": 180,
+      "needsDraining": true,
+      "note": "北海道向け。湯切りしたお湯でコンソメスープを作れます",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体ソースを入れてよく混ぜる",
+          "item": "液体ソース"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "topping",
+          "text": "ふりかけをかける",
+          "item": "ふりかけ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901990027489",
+      "janCode": "4901990027489",
+      "name": "マルちゃん 焼そばバゴォーン",
+      "maker": "東洋水産",
+      "kana": "まるちゃん やきそばばごおーん",
+      "genre": "焼そば",
+      "waitTimeSec": 180,
+      "needsDraining": true,
+      "note": "東北・信越向け。湯切りしたお湯でわかめスープを作れます",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体ソースを入れてよく混ぜる",
+          "item": "液体ソース"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "topping",
+          "text": "ふりかけをかける",
+          "item": "ふりかけ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901990380126",
+      "janCode": "4901990380126",
+      "name": "マルちゃん 塩焼そばバゴォーン",
+      "maker": "東洋水産",
+      "kana": "まるちゃん しおやきそばばごおーん",
+      "genre": "焼そば",
+      "waitTimeSec": 180,
+      "needsDraining": true,
+      "note": "東北・信越向け。湯切りしたお湯でわかめスープを作れます",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体ソースを入れてよく混ぜる",
+          "item": "液体ソース"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "topping",
+          "text": "ふりかけをかける",
+          "item": "ふりかけ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902105291290",
+      "janCode": "4902105291290",
+      "name": "日清のどん兵衛 辛麺",
+      "maker": "日清食品",
+      "kana": "にっしんのどんべえ からめん",
+      "genre": "うどん",
+      "waitTimeSec": 300,
+      "needsDraining": false,
+      "note": "粉末スープ・かやくとも先入れ。辛口",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        },
+        {
+          "phase": "pre",
+          "order": 1,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902105295885",
+      "janCode": "4902105295885",
+      "name": "日清の最強どん兵衛 博多ごぼ天うどん",
+      "maker": "日清食品",
+      "kana": "にっしんのさいきょうどんべえ はかたごぼてんうどん",
+      "genre": "うどん",
+      "waitTimeSec": 480,
+      "needsDraining": false,
+      "note": "熱湯8分。液体つゆは後入れ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "ごぼ天をのせる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体つゆを入れてよく混ぜる",
+          "item": "液体つゆ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902105295892",
+      "janCode": "4902105295892",
+      "name": "日清の辛どん兵衛 豚だしうどん",
+      "maker": "日清食品",
+      "kana": "にっしんのからどんべえ ぶただしうどん",
+      "genre": "うどん",
+      "waitTimeSec": 300,
+      "needsDraining": false,
+      "note": "液体つゆ・辛鰹粉は後入れ。辛口",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体つゆを入れてよく混ぜる",
+          "item": "液体つゆ"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "topping",
+          "text": "辛鰹粉をかける",
+          "item": "辛鰹粉"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902105295908",
+      "janCode": "4902105295908",
+      "name": "日清の辛どん兵衛 牛だしそば",
+      "maker": "日清食品",
+      "kana": "にっしんのからどんべえ ぎゅうだしそば",
+      "genre": "そば",
+      "waitTimeSec": 300,
+      "needsDraining": false,
+      "note": "液体つゆ・辛鰹粉は後入れ。辛口",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体つゆを入れてよく混ぜる",
+          "item": "液体つゆ"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "topping",
+          "text": "辛鰹粉をかける",
+          "item": "辛鰹粉"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902105285879",
+      "janCode": "4902105285879",
+      "name": "日清のどん兵衛PRO 高たんぱく&低糖質 きつねうどん",
+      "maker": "日清食品",
+      "kana": "にっしんのどんべえぷろ きつねうどん",
+      "genre": "うどん",
+      "waitTimeSec": 300,
+      "needsDraining": false,
+      "note": "お揚げはカップに入っています",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "topping",
+          "text": "七味をお好みでかける",
+          "item": "彩り七味(お好みで)"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902105286494",
+      "janCode": "4902105286494",
+      "name": "たまごをおとして食べる チキンラーメンどんぶり",
+      "maker": "日清食品",
+      "kana": "たまごをおとしてたべる ちきんらーめんどんぶり",
+      "genre": "ラーメン(しょうゆ)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "別添なし。生卵は自分で用意",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "other",
+          "text": "(お好みで)生卵を麺のくぼみに落とす"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902105297032",
+      "janCode": "4902105297032",
+      "name": "チキンラーメンどんぶり 旨辛チゲ味",
+      "maker": "日清食品",
+      "kana": "ちきんらーめんどんぶり うまからちげあじ",
+      "genre": "ラーメン(その他)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "粉末スープは先入れ。辛口",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902105297049",
+      "janCode": "4902105297049",
+      "name": "チキンラーメン汁なしどんぶり 台湾まぜそば味",
+      "maker": "日清食品",
+      "kana": "ちきんらーめんしるなしどんぶり たいわんまぜそばあじ",
+      "genre": "油そば/まぜそば",
+      "waitTimeSec": 180,
+      "needsDraining": true,
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体たれを入れてよく混ぜる",
+          "item": "液体たれ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902105295939",
+      "janCode": "4902105295939",
+      "name": "チキンラーメン汁なしどんぶり スパイス香るドライカレー味",
+      "maker": "日清食品",
+      "kana": "ちきんらーめんしるなしどんぶり どらいかれーあじ",
+      "genre": "油そば/まぜそば",
+      "waitTimeSec": 180,
+      "needsDraining": true,
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体ソースを入れてよく混ぜる",
+          "item": "液体ソース"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "topping",
+          "text": "後がけスパイスをかける",
+          "item": "後がけスパイス"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902105294925",
+      "janCode": "4902105294925",
+      "name": "出前一丁どんぶり",
+      "maker": "日清食品",
+      "kana": "でまえいっちょうどんぶり",
+      "genre": "ラーメン(しょうゆ)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "ごまラー油は仕上げ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "oil",
+          "text": "ごまラー油を入れて混ぜる",
+          "item": "ごまラー油"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902105279007",
+      "janCode": "4902105279007",
+      "name": "日清焼そばU.F.O. ポックンミョン 濃い濃い韓国風甘辛カルボ",
+      "maker": "日清食品",
+      "kana": "にっしんやきそばゆーふぉー ぽっくんみょん かんこくふうあまからかるぼ",
+      "genre": "焼そば",
+      "waitTimeSec": 300,
+      "needsDraining": true,
+      "note": "熱湯5分・湯切り。粉末ソースを混ぜる。辛口",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末ソースを入れてよく混ぜる",
+          "item": "粉末ソース"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902105290217",
+      "janCode": "4902105290217",
+      "name": "日清焼そばU.F.O.爆盛バーレル 油そば",
+      "maker": "日清食品",
+      "kana": "にっしんやきそばゆーふぉー ばくもりばーれる あぶらそば",
+      "genre": "油そば/まぜそば",
+      "waitTimeSec": 300,
+      "needsDraining": true,
+      "note": "超大盛(麺180g)。熱湯5分",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体だれを入れてよく混ぜる",
+          "item": "液体だれ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902105289914",
+      "janCode": "4902105289914",
+      "name": "日清の京うどん",
+      "maker": "日清食品",
+      "kana": "にっしんのきょううどん",
+      "genre": "うどん",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "かやく・つゆはカップに入っています",
+      "lastVerifiedAt": null,
+      "steps": [],
+      "recipes": []
+    },
+    {
+      "id": "4902105289921",
+      "janCode": "4902105289921",
+      "name": "日清の博多風うどん",
+      "maker": "日清食品",
+      "kana": "にっしんのはかたふううどん",
+      "genre": "うどん",
+      "waitTimeSec": 300,
+      "needsDraining": false,
+      "note": "かやく・つゆはカップに入っています",
+      "lastVerifiedAt": null,
+      "steps": [],
+      "recipes": []
+    },
+    {
+      "id": "4902105295236",
+      "janCode": "4902105295236",
+      "name": "日清の江戸そば",
+      "maker": "日清食品",
+      "kana": "にっしんのえどそば",
+      "genre": "そば",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "かやく・つゆはカップに入っています",
+      "lastVerifiedAt": null,
+      "steps": [],
+      "recipes": []
+    },
+    {
+      "id": "4902105290873",
+      "janCode": "4902105290873",
+      "name": "塩元帥 旨塩ラーメン",
+      "maker": "日清食品",
+      "kana": "しおげんすい うましおらーめん",
+      "genre": "ラーメン(塩)",
+      "waitTimeSec": 300,
+      "needsDraining": false,
+      "note": "液体スープは後入れ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやく(2袋)を入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体スープを入れてよく混ぜる",
+          "item": "液体スープ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902105283004",
+      "janCode": "4902105283004",
+      "name": "AFURI 柚子塩らーめん",
+      "maker": "日清食品",
+      "kana": "あふり ゆずしおらーめん",
+      "genre": "ラーメン(塩)",
+      "waitTimeSec": 240,
+      "needsDraining": false,
+      "note": "液体スープは後入れ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやく(2袋)を入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体スープを入れてよく混ぜる",
+          "item": "液体スープ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902105291337",
+      "janCode": "4902105291337",
+      "name": "ラーメン山岡家 醤油ラーメン",
+      "maker": "日清食品",
+      "kana": "らーめんやまおかや しょうゆらーめん",
+      "genre": "ラーメン(豚骨)",
+      "waitTimeSec": 300,
+      "needsDraining": false,
+      "note": "液体スープは後入れ。焼のりは仕上げ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        },
+        {
+          "phase": "pre",
+          "order": 1,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体スープを入れてよく混ぜる",
+          "item": "液体スープ"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "topping",
+          "text": "焼のりをのせる",
+          "item": "焼のり"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902105287569",
+      "janCode": "4902105287569",
+      "name": "九州熊本豚骨 味千拉麺",
+      "maker": "日清食品",
+      "kana": "きゅうしゅうくまもととんこつ あじせんらーめん",
+      "genre": "ラーメン(豚骨)",
+      "waitTimeSec": 300,
+      "needsDraining": false,
+      "note": "液体スープ・マー油は後入れ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体スープを入れてよく混ぜる",
+          "item": "液体スープ"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "oil",
+          "text": "マー油を入れて混ぜる",
+          "item": "特製マー油"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902105295540",
+      "janCode": "4902105295540",
+      "name": "博龍軒監修 豚骨ラーメン(本当は教えたくないウマい店 in博多)",
+      "maker": "日清食品",
+      "kana": "はくりゅうけんかんしゅう とんこつらーめん",
+      "genre": "ラーメン(豚骨)",
+      "waitTimeSec": 240,
+      "needsDraining": false,
+      "note": "醤油だれは後入れ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "特製醤油だれを入れてよく混ぜる",
+          "item": "特製醤油だれ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902105255797",
+      "janCode": "4902105255797",
+      "name": "日清ソース焼そばカップ チキンスープ付き",
+      "maker": "日清食品",
+      "kana": "にっしんそーすやきそばかっぷ ちきんすーぷつき",
+      "genre": "焼そば",
+      "waitTimeSec": 180,
+      "needsDraining": true,
+      "note": "湯切りしたお湯でチキンスープを作れます",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末ソースを入れてよく混ぜる",
+          "item": "粉末ソース"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902105978979",
+      "janCode": "4902105978979",
+      "name": "完全メシ 汁なしカップヌードル",
+      "maker": "日清食品",
+      "kana": "かんぜんめし しるなしかっぷぬーどる",
+      "genre": "油そば/まぜそば",
+      "waitTimeSec": 300,
+      "needsDraining": true,
+      "note": "熱湯5分・湯切り",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末ソースを入れてよく混ぜる",
+          "item": "粉末ソース"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "oil",
+          "text": "調味オイルを入れてよく混ぜる",
+          "item": "調味オイル"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902105978955",
+      "janCode": "4902105978955",
+      "name": "完全メシ カップヌードル 汁なしシーフードヌードル",
+      "maker": "日清食品",
+      "kana": "かんぜんめし しるなししーふーどぬーどる",
+      "genre": "油そば/まぜそば",
+      "waitTimeSec": 300,
+      "needsDraining": true,
+      "note": "熱湯5分・湯切り",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末ソースを入れてよく混ぜる",
+          "item": "粉末ソース"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "oil",
+          "text": "調味オイルを入れてよく混ぜる",
+          "item": "調味オイル"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902105978986",
+      "janCode": "4902105978986",
+      "name": "完全メシ 日清のどん兵衛 カレーうどん",
+      "maker": "日清食品",
+      "kana": "かんぜんめし にっしんのどんべえ かれーうどん",
+      "genre": "うどん",
+      "waitTimeSec": 300,
+      "needsDraining": false,
+      "note": "和風だし粉末は先入れ、カレースープ・オイルは後入れ(袋の表記を確認)",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "特製カレースープを入れてよく混ぜる",
+          "item": "特製カレースープ"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "oil",
+          "text": "調味オイルを入れて混ぜる",
+          "item": "調味オイル"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902105297193",
+      "janCode": "4902105297193",
+      "name": "日清ラ王 とろまろ塩",
+      "maker": "日清食品",
+      "kana": "にっしんらおう とろまろしお",
+      "genre": "ラーメン(塩)",
+      "waitTimeSec": 300,
+      "needsDraining": false,
+      "note": "液体スープは後入れ。2026年リニューアル版(旧JAN 4902105280485)",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体スープを入れてよく混ぜる",
+          "item": "液体スープ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902105297223",
+      "janCode": "4902105297223",
+      "name": "日清ラ王 とろ熟味噌",
+      "maker": "日清食品",
+      "kana": "にっしんらおう とろじゅくみそ",
+      "genre": "ラーメン(みそ)",
+      "waitTimeSec": 300,
+      "needsDraining": false,
+      "note": "液体スープは後入れ。2026年リニューアル版(旧JAN 4902105280478)",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体スープを入れてよく混ぜる",
+          "item": "液体スープ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "49698329",
+      "janCode": "49698329",
+      "name": "日清のどん兵衛 きつねうどんミニ(東)",
+      "maker": "日清食品",
+      "kana": "にっしんのどんべえ きつねうどんみに ひがし",
+      "genre": "うどん",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "ミニサイズ。粉末スープは先入れ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "49698510",
+      "janCode": "49698510",
+      "name": "日清のどん兵衛 きつねうどんミニ(西)",
+      "maker": "日清食品",
+      "kana": "にっしんのどんべえ きつねうどんみに にし",
+      "genre": "うどん",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "ミニサイズ(西日本版)。粉末スープは先入れ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "49698336",
+      "janCode": "49698336",
+      "name": "日清のどん兵衛 天ぷらそばミニ(東)",
+      "maker": "日清食品",
+      "kana": "にっしんのどんべえ てんぷらそばみに ひがし",
+      "genre": "そば",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "ミニサイズ。粉末スープは先入れ。天ぷらはカップに入っています",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "49698527",
+      "janCode": "49698527",
+      "name": "日清のどん兵衛 天ぷらそばミニ(西)",
+      "maker": "日清食品",
+      "kana": "にっしんのどんべえ てんぷらそばみに にし",
+      "genre": "そば",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "ミニサイズ(西日本版)。粉末スープは先入れ。天ぷらはカップに入っています",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "49698534",
+      "janCode": "49698534",
+      "name": "日清のどん兵衛 肉うどんミニ",
+      "maker": "日清食品",
+      "kana": "にっしんのどんべえ にくうどんみに",
+      "genre": "うどん",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "ミニサイズ。粉末スープは先入れ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902105221051",
+      "janCode": "4902105221051",
+      "name": "日清のどん兵衛 鴨だしそばミニ",
+      "maker": "日清食品",
+      "kana": "にっしんのどんべえ かもだしそばみに",
+      "genre": "そば",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "ミニサイズ。粉末スープは先入れ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "49698541",
+      "janCode": "49698541",
+      "name": "チキンラーメンどんぶりミニ",
+      "maker": "日清食品",
+      "kana": "ちきんらーめんどんぶりみに",
+      "genre": "ラーメン(しょうゆ)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "ミニサイズ。別添なし",
+      "lastVerifiedAt": null,
+      "steps": [],
+      "recipes": []
+    },
+    {
+      "id": "4902105200438",
+      "janCode": "4902105200438",
+      "name": "北のどん兵衛 きつねうどん",
+      "maker": "日清食品",
+      "kana": "きたのどんべえ きつねうどん",
+      "genre": "うどん",
+      "waitTimeSec": 300,
+      "needsDraining": false,
+      "note": "北海道向け。お揚げはカップに入っています",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "topping",
+          "text": "七味をお好みでかける",
+          "item": "彩り七味(お好みで)"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902105200445",
+      "janCode": "4902105200445",
+      "name": "北のどん兵衛 天ぷらそば",
+      "maker": "日清食品",
+      "kana": "きたのどんべえ てんぷらそば",
+      "genre": "そば",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "北海道向け。天ぷらは後のせでサクサク",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "topping",
+          "text": "天ぷらをのせる",
+          "item": "天ぷら"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "topping",
+          "text": "七味をお好みでかける",
+          "item": "彩り七味(お好みで)"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902105282694",
+      "janCode": "4902105282694",
+      "name": "北のどん兵衛 カレーうどん",
+      "maker": "日清食品",
+      "kana": "きたのどんべえ かれーうどん",
+      "genre": "うどん",
+      "waitTimeSec": 300,
+      "needsDraining": false,
+      "note": "北海道向け。かやくはカップに入っています",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902105201688",
+      "janCode": "4902105201688",
+      "name": "北のどん兵衛 天ぷらうどん",
+      "maker": "日清食品",
+      "kana": "きたのどんべえ てんぷらうどん",
+      "genre": "うどん",
+      "waitTimeSec": 300,
+      "needsDraining": false,
+      "note": "北海道向け。天ぷらは後のせでサクサク",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "topping",
+          "text": "天ぷらをのせる",
+          "item": "天ぷら"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "topping",
+          "text": "七味をお好みでかける",
+          "item": "彩り七味(お好みで)"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902105284308",
+      "janCode": "4902105284308",
+      "name": "北のどん兵衛 鴨だしそば",
+      "maker": "日清食品",
+      "kana": "きたのどんべえ かもだしそば",
+      "genre": "そば",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "北海道向け。液体つゆは後入れ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "other",
+          "text": "かやくを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "other",
+          "text": "液体つゆを入れる",
+          "item": "液体つゆ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902881416290",
+      "janCode": "4902881416290",
+      "name": "明星 チャルメラ 油そばカップ",
+      "maker": "明星食品",
+      "kana": "みょうじょう ちゃるめら あぶらそばかっぷ",
+      "genre": "油そば/まぜそば",
+      "waitTimeSec": 300,
+      "needsDraining": true,
+      "note": "熱湯5分・湯切り。液体ソースは後入れ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体ソースを入れてよく混ぜる",
+          "item": "液体ソース"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902881454971",
+      "janCode": "4902881454971",
+      "name": "明星 チャルメラ 汁なし宮崎辛麺",
+      "maker": "明星食品",
+      "kana": "みょうじょう ちゃるめら しるなしみやざきからめん",
+      "genre": "油そば/まぜそば",
+      "waitTimeSec": 180,
+      "needsDraining": true,
+      "note": "湯切り後に粉末たれ・調味油・ふりかけ。辛口",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末たれを入れてよく混ぜる",
+          "item": "粉末たれ"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "oil",
+          "text": "調味油を入れてよく混ぜる",
+          "item": "調味油"
+        },
+        {
+          "phase": "post",
+          "order": 2,
+          "itemType": "topping",
+          "text": "ふりかけをかける",
+          "item": "ふりかけ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902881456647",
+      "janCode": "4902881456647",
+      "name": "明星 中華三昧タテ型 榮林 酸辣湯麺",
+      "maker": "明星食品",
+      "kana": "みょうじょう ちゅうかざんまいたてがた えいりん さんらーたんめん",
+      "genre": "その他",
+      "waitTimeSec": 240,
+      "needsDraining": false,
+      "note": "熱湯4分。香酢は仕上げ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "香酢を入れて混ぜる",
+          "item": "香酢(ひとさじ)"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902881459211",
+      "janCode": "4902881459211",
+      "name": "明星 中華三昧タテ型 重慶飯店 麻辣湯麺",
+      "maker": "明星食品",
+      "kana": "みょうじょう ちゅうかざんまいたてがた じゅうけいはんてん まーらーたんめん",
+      "genre": "その他",
+      "waitTimeSec": 240,
+      "needsDraining": false,
+      "note": "熱湯4分。花椒は仕上げ。シビ辛",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "oil",
+          "text": "花椒オイルを入れて混ぜる",
+          "item": "花椒(ひとさじ)"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902881454728",
+      "janCode": "4902881454728",
+      "name": "明星 一平ちゃん夜店の焼そば 醤油バター明太子味",
+      "maker": "明星食品",
+      "kana": "みょうじょう いっぺいちゃんよみせのやきそば しょうゆばたーめんたいこあじ",
+      "genre": "焼そば",
+      "waitTimeSec": 180,
+      "needsDraining": true,
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体ソースを入れてよく混ぜる",
+          "item": "液体ソース"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "liquid",
+          "text": "マヨネーズをかける",
+          "item": "マヨビーム"
+        },
+        {
+          "phase": "post",
+          "order": 2,
+          "itemType": "topping",
+          "text": "ふりかけをかける",
+          "item": "ふりかけ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902881456708",
+      "janCode": "4902881456708",
+      "name": "明星 一平ちゃん夜店の焼そば 関西風お好み焼ソース味",
+      "maker": "明星食品",
+      "kana": "みょうじょう いっぺいちゃんよみせのやきそば かんさいふうおこのみやきそーすあじ",
+      "genre": "焼そば",
+      "waitTimeSec": 300,
+      "needsDraining": true,
+      "note": "熱湯5分(太麺)",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体ソースを入れてよく混ぜる",
+          "item": "液体ソース"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "liquid",
+          "text": "マヨネーズをかける",
+          "item": "マヨネーズ"
+        },
+        {
+          "phase": "post",
+          "order": 2,
+          "itemType": "topping",
+          "text": "紅生姜入りふりかけをかける",
+          "item": "ふりかけ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902881459624",
+      "janCode": "4902881459624",
+      "name": "明星 一平ちゃん夜店の焼そば 大盛 レモン香る豚肉塩だれ味",
+      "maker": "明星食品",
+      "kana": "みょうじょう いっぺいちゃんよみせのやきそば おおもり れもんかおるぶたにくしおだれあじ",
+      "genre": "焼そば",
+      "waitTimeSec": 180,
+      "needsDraining": true,
+      "note": "大盛",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体ソースを入れてよく混ぜる",
+          "item": "液体ソース"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "liquid",
+          "text": "ガーリックマヨネーズをかける",
+          "item": "ガーリックマヨネーズ"
+        },
+        {
+          "phase": "post",
+          "order": 2,
+          "itemType": "topping",
+          "text": "ふりかけをかける",
+          "item": "ふりかけ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902881433792",
+      "janCode": "4902881433792",
+      "name": "明星 評判屋 わんたん塩ラーメン",
+      "maker": "明星食品",
+      "kana": "みょうじょう ひょうばんや わんたんしおらーめん",
+      "genre": "ラーメン(塩)",
+      "waitTimeSec": 240,
+      "needsDraining": false,
+      "note": "粉末スープ・液体スープは後入れ(袋の表記を確認)",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れてよく混ぜる",
+          "item": "粉末スープ"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "liquid",
+          "text": "液体スープを入れてよく混ぜる",
+          "item": "液体スープ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902881457651",
+      "janCode": "4902881457651",
+      "name": "明星 ロカボNOODLES 濃厚コク旨豚骨",
+      "maker": "明星食品",
+      "kana": "みょうじょう ろかぼぬーどるず のうこうこくうまとんこつ",
+      "genre": "ラーメン(豚骨)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "液体スープは後入れ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体スープを入れてよく混ぜる",
+          "item": "液体スープ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902881456791",
+      "janCode": "4902881456791",
+      "name": "明星 ロカボNOODLES 濃厚鶏白湯",
+      "maker": "明星食品",
+      "kana": "みょうじょう ろかぼぬーどるず のうこうとりぱいたん",
+      "genre": "ラーメン(鶏白湯)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "液体スープは後入れ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体スープを入れてよく混ぜる",
+          "item": "液体スープ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902881456777",
+      "janCode": "4902881456777",
+      "name": "明星 ロカボNOODLES こってり醤油",
+      "maker": "明星食品",
+      "kana": "みょうじょう ろかぼぬーどるず こってりしょうゆ",
+      "genre": "ラーメン(しょうゆ)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "液体スープは後入れ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体スープを入れてよく混ぜる",
+          "item": "液体スープ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902881456838",
+      "janCode": "4902881456838",
+      "name": "明星 ロカボNOODLES コク旨ソース焼そば",
+      "maker": "明星食品",
+      "kana": "みょうじょう ろかぼぬーどるず こくうまそーすやきそば",
+      "genre": "焼そば",
+      "waitTimeSec": 240,
+      "needsDraining": true,
+      "note": "熱湯4分。液体ソース・粉末ソースは湯切り後",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体ソースを入れてよく混ぜる",
+          "item": "液体ソース"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "powder",
+          "text": "粉末ソースを入れてよく混ぜる",
+          "item": "粉末ソース"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902881458542",
+      "janCode": "4902881458542",
+      "name": "明星 別格麺神 京都鶏白湯",
+      "maker": "明星食品",
+      "kana": "みょうじょう べっかくめがみ きょうととりぱいたん",
+      "genre": "ラーメン(鶏白湯)",
+      "waitTimeSec": 300,
+      "needsDraining": false,
+      "note": "粉末スープ・液体スープは後入れ(袋の表記を確認)",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れてよく混ぜる",
+          "item": "粉末スープ"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "liquid",
+          "text": "液体スープを入れてよく混ぜる",
+          "item": "液体スープ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902881419697",
+      "janCode": "4902881419697",
+      "name": "明星 別格麺神 名古屋台湾ラーメン",
+      "maker": "明星食品",
+      "kana": "みょうじょう べっかくめがみ なごやたいわんらーめん",
+      "genre": "ラーメン(しょうゆ)",
+      "waitTimeSec": 300,
+      "needsDraining": false,
+      "note": "粉末スープ・液体スープは後入れ(袋の表記を確認)。辛口",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやく(2袋)を入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れてよく混ぜる",
+          "item": "粉末スープ"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "liquid",
+          "text": "液体スープを入れてよく混ぜる",
+          "item": "液体スープ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902881458535",
+      "janCode": "4902881458535",
+      "name": "明星 別格麺神 横浜家系豚骨醤油",
+      "maker": "明星食品",
+      "kana": "みょうじょう べっかくめがみ よこはまいえけいとんこつしょうゆ",
+      "genre": "ラーメン(豚骨)",
+      "waitTimeSec": 300,
+      "needsDraining": false,
+      "note": "粉末スープ・液体スープは後入れ(袋の表記を確認)",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れてよく混ぜる",
+          "item": "粉末スープ"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "liquid",
+          "text": "液体スープを入れてよく混ぜる",
+          "item": "液体スープ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902881454384",
+      "janCode": "4902881454384",
+      "name": "明星 すうどんでっせ",
+      "maker": "明星食品",
+      "kana": "みょうじょう すうどんでっせ",
+      "genre": "うどん",
+      "waitTimeSec": 300,
+      "needsDraining": false,
+      "note": "粉末スープは先入れ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902881454407",
+      "janCode": "4902881454407",
+      "name": "明星 かけそばでっせ",
+      "maker": "明星食品",
+      "kana": "みょうじょう かけそばでっせ",
+      "genre": "そば",
+      "waitTimeSec": 300,
+      "needsDraining": false,
+      "note": "粉末スープは先入れ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902881412827",
+      "janCode": "4902881412827",
+      "name": "明星 喜多方ラーメン坂内 コク醤油ワンタン麺",
+      "maker": "明星食品",
+      "kana": "みょうじょう きたかたらーめんばんない こくしょうゆわんたんめん",
+      "genre": "ラーメン(しょうゆ)",
+      "waitTimeSec": 300,
+      "needsDraining": false,
+      "note": "液体スープは後入れ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやく(2袋)を入れる"
+        },
+        {
+          "phase": "pre",
+          "order": 1,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体スープを入れてよく混ぜる",
+          "item": "液体スープ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902881459372",
+      "janCode": "4902881459372",
+      "name": "明星 一杯満足 しょうゆ味ヌードル",
+      "maker": "明星食品",
+      "kana": "みょうじょう いっぱいまんぞく しょうゆあじぬーどる",
+      "genre": "ラーメン(しょうゆ)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "かやく・スープはカップに入っています",
+      "lastVerifiedAt": null,
+      "steps": [],
+      "recipes": []
+    },
+    {
+      "id": "4902881411578",
+      "janCode": "4902881411578",
+      "name": "明星 一杯満足 シーフード味ヌードル",
+      "maker": "明星食品",
+      "kana": "みょうじょう いっぱいまんぞく しーふーどあじぬーどる",
+      "genre": "ラーメン(シーフード)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "かやく・スープはカップに入っています",
+      "lastVerifiedAt": null,
+      "steps": [],
+      "recipes": []
+    },
+    {
+      "id": "4902881411646",
+      "janCode": "4902881411646",
+      "name": "明星 一杯満足 スパイシーカレー味ヌードル",
+      "maker": "明星食品",
+      "kana": "みょうじょう いっぱいまんぞく すぱいしーかれーあじぬーどる",
+      "genre": "ラーメン(カレー)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "かやく・スープはカップに入っています",
+      "lastVerifiedAt": null,
+      "steps": [],
+      "recipes": []
+    },
+    {
+      "id": "4902881459648",
+      "janCode": "4902881459648",
+      "name": "明星 一杯満足 旨辛チゲ味ヌードル",
+      "maker": "明星食品",
+      "kana": "みょうじょう いっぱいまんぞく うまからちげあじぬーどる",
+      "genre": "ラーメン(その他)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "かやく・スープはカップに入っています。辛口",
+      "lastVerifiedAt": null,
+      "steps": [],
+      "recipes": []
+    },
+    {
+      "id": "4902881439596",
+      "janCode": "4902881439596",
+      "name": "明星庵 天ぷらそば 大盛",
+      "maker": "明星食品",
+      "kana": "みょうじょうあん てんぷらそば おおもり",
+      "genre": "そば",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "大盛。粉末スープは先入れ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902881439572",
+      "janCode": "4902881439572",
+      "name": "明星庵 きつねうどん 大盛",
+      "maker": "明星食品",
+      "kana": "みょうじょうあん きつねうどん おおもり",
+      "genre": "うどん",
+      "waitTimeSec": 300,
+      "needsDraining": false,
+      "note": "大盛。粉末スープは先入れ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4902881406574",
+      "janCode": "4902881406574",
+      "name": "明星 のりたま 焼うどん だし醤油味",
+      "maker": "明星食品",
+      "kana": "みょうじょう のりたま やきうどん だししょうゆあじ",
+      "genre": "焼そば",
+      "waitTimeSec": 300,
+      "needsDraining": true,
+      "note": "熱湯5分・湯切り",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体ソースを入れてよく混ぜる",
+          "item": "液体ソース"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "topping",
+          "text": "のりたまをかける",
+          "item": "のりたま"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901071410797",
+      "janCode": "4901071410797",
+      "name": "スーパーカップ1.5倍 みそラーメン",
+      "maker": "エースコック",
+      "kana": "すーぱーかっぷ みそらーめん",
+      "genre": "ラーメン(みそ)",
+      "waitTimeSec": 240,
+      "needsDraining": false,
+      "note": "2026年9月リニューアル版(旧JAN 4901071235734)。液体スープは後入れ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "かやく入り粉末スープを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体スープを入れてよく混ぜる",
+          "item": "液体スープ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901071410810",
+      "janCode": "4901071410810",
+      "name": "スーパーカップ1.5倍 豚キムチラーメン",
+      "maker": "エースコック",
+      "kana": "すーぱーかっぷ ぶたきむちらーめん",
+      "genre": "ラーメン(みそ)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "2026年9月リニューアル版(旧JAN 4901071235758)。液体スープは後入れ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "かやく入り粉末スープを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体スープを入れてよく混ぜる",
+          "item": "液体スープ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901071409531",
+      "janCode": "4901071409531",
+      "name": "スーパーカップ超大盛り 魚介豚骨醤油ラーメン",
+      "maker": "エースコック",
+      "kana": "すーぱーかっぷちょうおおもり ぎょかいとんこつしょうゆらーめん",
+      "genre": "ラーメン(豚骨)",
+      "waitTimeSec": 300,
+      "needsDraining": false,
+      "note": "超大盛(麺130g)。液体スープ・ふりかけは後入れ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "かやく入り粉末スープを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体スープを入れてよく混ぜる",
+          "item": "液体スープ"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "topping",
+          "text": "ふりかけをかける",
+          "item": "ふりかけ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901071408206",
+      "janCode": "4901071408206",
+      "name": "スーパーカップ超大盛り 濃厚豚醤油ラーメン",
+      "maker": "エースコック",
+      "kana": "すーぱーかっぷちょうおおもり のうこうぶたしょうゆらーめん",
+      "genre": "ラーメン(豚骨)",
+      "waitTimeSec": 300,
+      "needsDraining": false,
+      "note": "超大盛(麺130g)。液体スープは後入れ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        },
+        {
+          "phase": "pre",
+          "order": 1,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体スープを入れてよく混ぜる",
+          "item": "液体スープ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901071408183",
+      "janCode": "4901071408183",
+      "name": "スーパーカップ超大盛り 横浜家系豚骨醤油ラーメン",
+      "maker": "エースコック",
+      "kana": "すーぱーかっぷちょうおおもり よこはまいえけいとんこつしょうゆらーめん",
+      "genre": "ラーメン(豚骨)",
+      "waitTimeSec": 300,
+      "needsDraining": false,
+      "note": "超大盛(麺130g)。液体スープは後入れ(袋の表記を確認)",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        },
+        {
+          "phase": "pre",
+          "order": 1,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体スープを入れてよく混ぜる",
+          "item": "液体スープ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901071410650",
+      "janCode": "4901071410650",
+      "name": "タテ型 飲み干す一杯 味噌バター味ラーメン",
+      "maker": "エースコック",
+      "kana": "たてがた のみほすいっぱい みそばたーあじらーめん",
+      "genre": "ラーメン(みそ)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "2026年9月リニューアル版(旧JAN 4901071239824)",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "oil",
+          "text": "バター状ブロックを入れて溶かす",
+          "item": "バター状ブロック"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901071410674",
+      "janCode": "4901071410674",
+      "name": "タテ型 飲み干す一杯 担担麺",
+      "maker": "エースコック",
+      "kana": "たてがた のみほすいっぱい たんたんめん",
+      "genre": "ラーメン(みそ)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "2026年9月リニューアル版(旧JAN 4901071405236)。液体スープは後入れ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体スープを入れてよく混ぜる",
+          "item": "液体スープ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901071410513",
+      "janCode": "4901071410513",
+      "name": "エースコック だしの旨みで減塩 中華そば",
+      "maker": "エースコック",
+      "kana": "えーすこっく だしのうまみでげんえん ちゅうかそば",
+      "genre": "ラーメン(しょうゆ)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "2026年8月リニューアル版(旧JAN 4901071245412)。液体スープは後入れ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体スープを入れてよく混ぜる",
+          "item": "液体スープ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901071410490",
+      "janCode": "4901071410490",
+      "name": "エースコック だしの旨みで減塩 小海老天そば",
+      "maker": "エースコック",
+      "kana": "えーすこっく だしのうまみでげんえん こえびてんそば",
+      "genre": "そば",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "2026年8月リニューアル版(旧JAN 4901071245405)。液体スープは後入れ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体スープを入れてよく混ぜる",
+          "item": "液体スープ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901071406516",
+      "janCode": "4901071406516",
+      "name": "わかめラーメン しじみだし・みそ",
+      "maker": "エースコック",
+      "kana": "わかめらーめん しじみだし みそ",
+      "genre": "ラーメン(みそ)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "液体スープは後入れ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体スープを入れてよく混ぜる",
+          "item": "液体スープ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901071220013",
+      "janCode": "4901071220013",
+      "name": "ミニわかめラーメン ごま・しょうゆ",
+      "maker": "エースコック",
+      "kana": "みにわかめらーめん ごま しょうゆ",
+      "genre": "ラーメン(しょうゆ)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "ミニサイズ。かやく・スープはカップに入っています",
+      "lastVerifiedAt": null,
+      "steps": [],
+      "recipes": []
+    },
+    {
+      "id": "4901071246167",
+      "janCode": "4901071246167",
+      "name": "まる旨 きつねうどん",
+      "maker": "エースコック",
+      "kana": "まるうま きつねうどん",
+      "genre": "うどん",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "かやく・スープはカップに入っています",
+      "lastVerifiedAt": null,
+      "steps": [],
+      "recipes": []
+    },
+    {
+      "id": "4901071406783",
+      "janCode": "4901071406783",
+      "name": "まる旨 ホタテだし塩ラーメン",
+      "maker": "エースコック",
+      "kana": "まるうま ほたてだししおらーめん",
+      "genre": "ラーメン(塩)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "かやく・スープはカップに入っています",
+      "lastVerifiedAt": null,
+      "steps": [],
+      "recipes": []
+    },
+    {
+      "id": "4901071246228",
+      "janCode": "4901071246228",
+      "name": "まる旨 豚骨ラーメン",
+      "maker": "エースコック",
+      "kana": "まるうま とんこつらーめん",
+      "genre": "ラーメン(豚骨)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "かやく・スープはカップに入っています",
+      "lastVerifiedAt": null,
+      "steps": [],
+      "recipes": []
+    },
+    {
+      "id": "4901071246204",
+      "janCode": "4901071246204",
+      "name": "まる旨 ワンタン中華そば",
+      "maker": "エースコック",
+      "kana": "まるうま わんたんちゅうかそば",
+      "genre": "ラーメン(しょうゆ)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "かやく・スープはカップに入っています",
+      "lastVerifiedAt": null,
+      "steps": [],
+      "recipes": []
+    },
+    {
+      "id": "4901071246181",
+      "janCode": "4901071246181",
+      "name": "まる旨 カレーうどん",
+      "maker": "エースコック",
+      "kana": "まるうま かれーうどん",
+      "genre": "うどん",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "かやく・スープはカップに入っています",
+      "lastVerifiedAt": null,
+      "steps": [],
+      "recipes": []
+    },
+    {
+      "id": "4901071246174",
+      "janCode": "4901071246174",
+      "name": "まる旨 小海老天そば",
+      "maker": "エースコック",
+      "kana": "まるうま こえびてんそば",
+      "genre": "そば",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "かやく・スープはカップに入っています",
+      "lastVerifiedAt": null,
+      "steps": [],
+      "recipes": []
+    },
+    {
+      "id": "4901071246198",
+      "janCode": "4901071246198",
+      "name": "まる旨 柚子香るそうめん",
+      "maker": "エースコック",
+      "kana": "まるうま ゆずかおるそうめん",
+      "genre": "その他",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "かやく・スープはカップに入っています",
+      "lastVerifiedAt": null,
+      "steps": [],
+      "recipes": []
+    },
+    {
+      "id": "4901071404000",
+      "janCode": "4901071404000",
+      "name": "ご当地の一杯 札幌 濃厚味噌ラーメン",
+      "maker": "エースコック",
+      "kana": "ごとうちのいっぱい さっぽろ のうこうみそらーめん",
+      "genre": "ラーメン(みそ)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "液体スープは後入れ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体スープを入れてよく混ぜる",
+          "item": "液体スープ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901071404024",
+      "janCode": "4901071404024",
+      "name": "ご当地の一杯 横浜 豚骨醤油ラーメン",
+      "maker": "エースコック",
+      "kana": "ごとうちのいっぱい よこはま とんこつしょうゆらーめん",
+      "genre": "ラーメン(豚骨)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "液体スープは後入れ(袋の表記を確認)",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体スープを入れてよく混ぜる",
+          "item": "液体スープ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901071404048",
+      "janCode": "4901071404048",
+      "name": "ご当地の一杯 仙台 辛味噌ラーメン",
+      "maker": "エースコック",
+      "kana": "ごとうちのいっぱい せんだい からみそらーめん",
+      "genre": "ラーメン(みそ)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "液体スープは後入れ(袋の表記を確認)。辛口",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体スープを入れてよく混ぜる",
+          "item": "液体スープ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901071404062",
+      "janCode": "4901071404062",
+      "name": "ご当地の一杯 京都 背脂醤油ラーメン",
+      "maker": "エースコック",
+      "kana": "ごとうちのいっぱい きょうと せあぶらしょうゆらーめん",
+      "genre": "ラーメン(しょうゆ)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "液体スープは後入れ(袋の表記を確認)",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体スープを入れてよく混ぜる",
+          "item": "液体スープ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901071404109",
+      "janCode": "4901071404109",
+      "name": "ご当地の一杯 函館 塩ラーメン",
+      "maker": "エースコック",
+      "kana": "ごとうちのいっぱい はこだて しおらーめん",
+      "genre": "ラーメン(塩)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "液体スープは後入れ(袋の表記を確認)",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体スープを入れてよく混ぜる",
+          "item": "液体スープ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901071406837",
+      "janCode": "4901071406837",
+      "name": "ご当地の一杯 博多 背脂とんこつラーメン",
+      "maker": "エースコック",
+      "kana": "ごとうちのいっぱい はかた せあぶらとんこつらーめん",
+      "genre": "ラーメン(豚骨)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "液体スープは後入れ(袋の表記を確認)",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体スープを入れてよく混ぜる",
+          "item": "液体スープ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901071277321",
+      "janCode": "4901071277321",
+      "name": "スーパーカップミニ 野菜ちゃんぽん",
+      "maker": "エースコック",
+      "kana": "すーぱーかっぷみに やさいちゃんぽん",
+      "genre": "ちゃんぽん",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "ミニサイズ。かやく・スープはカップに入っています",
+      "lastVerifiedAt": null,
+      "steps": [],
+      "recipes": []
+    },
+    {
+      "id": "4901071276942",
+      "janCode": "4901071276942",
+      "name": "スーパーカップミニ もやしみそラーメン",
+      "maker": "エースコック",
+      "kana": "すーぱーかっぷみに もやしみそらーめん",
+      "genre": "ラーメン(みそ)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "ミニサイズ。かやく・スープはカップに入っています",
+      "lastVerifiedAt": null,
+      "steps": [],
+      "recipes": []
+    },
+    {
+      "id": "4901071268299",
+      "janCode": "4901071268299",
+      "name": "スープはるさめ すごい！どっさりわかめ",
+      "maker": "エースコック",
+      "kana": "すーぷはるさめ すごいどっさりわかめ",
+      "genre": "その他",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "かやく・スープはカップに入っています",
+      "lastVerifiedAt": null,
+      "steps": [],
+      "recipes": []
+    },
+    {
+      "id": "4901071229788",
+      "janCode": "4901071229788",
+      "name": "ヌードルはるさめ 1/3日分の野菜 ちゃんぽん味",
+      "maker": "エースコック",
+      "kana": "ぬーどるはるさめ さんぶんのいちにちぶんのやさい ちゃんぽんあじ",
+      "genre": "その他",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "かやく・スープはカップに入っています",
+      "lastVerifiedAt": null,
+      "steps": [],
+      "recipes": []
+    },
+    {
+      "id": "4901071229764",
+      "janCode": "4901071229764",
+      "name": "ヌードルはるさめ 1/3日分の野菜 うま辛チゲ",
+      "maker": "エースコック",
+      "kana": "ぬーどるはるさめ さんぶんのいちにちぶんのやさい うまからちげ",
+      "genre": "その他",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "かやく・スープはカップに入っています。辛口",
+      "lastVerifiedAt": null,
+      "steps": [],
+      "recipes": []
+    },
+    {
+      "id": "4901734053637",
+      "janCode": "4901734053637",
+      "name": "サッポロ一番 ごま味ラーメンどんぶり",
+      "maker": "サンヨー食品",
+      "kana": "さっぽろいちばん ごまあじらーめんどんぶり",
+      "genre": "ラーメン(しょうゆ)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "かやく・スープはカップに入っています",
+      "lastVerifiedAt": null,
+      "steps": [],
+      "recipes": []
+    },
+    {
+      "id": "4901734062707",
+      "janCode": "4901734062707",
+      "name": "サッポロ一番 塩とんこつらーめんどんぶり",
+      "maker": "サンヨー食品",
+      "kana": "さっぽろいちばん しおとんこつらーめんどんぶり",
+      "genre": "ラーメン(豚骨)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "かやく・スープはカップに入っています(袋の有無を確認)",
+      "lastVerifiedAt": null,
+      "steps": [],
+      "recipes": []
+    },
+    {
+      "id": "4901734043935",
+      "janCode": "4901734043935",
+      "name": "サッポロ一番 しょうゆ味ミニどんぶり",
+      "maker": "サンヨー食品",
+      "kana": "さっぽろいちばん しょうゆあじみにどんぶり",
+      "genre": "ラーメン(しょうゆ)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "ミニサイズ。かやく・スープはカップに入っています",
+      "lastVerifiedAt": null,
+      "steps": [],
+      "recipes": []
+    },
+    {
+      "id": "4901734043973",
+      "janCode": "4901734043973",
+      "name": "サッポロ一番 塩らーめんミニどんぶり",
+      "maker": "サンヨー食品",
+      "kana": "さっぽろいちばん しおらーめんみにどんぶり",
+      "genre": "ラーメン(塩)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "ミニサイズ。かやく・スープはカップに入っています",
+      "lastVerifiedAt": null,
+      "steps": [],
+      "recipes": []
+    },
+    {
+      "id": "4901734059530",
+      "janCode": "4901734059530",
+      "name": "サッポロ一番 塩とんこつらーめんミニどんぶり",
+      "maker": "サンヨー食品",
+      "kana": "さっぽろいちばん しおとんこつらーめんみにどんぶり",
+      "genre": "ラーメン(豚骨)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "ミニサイズ。かやく・スープはカップに入っています",
+      "lastVerifiedAt": null,
+      "steps": [],
+      "recipes": []
+    },
+    {
+      "id": "4901734061960",
+      "janCode": "4901734061960",
+      "name": "サッポロ一番 ポケモンヌードル しょうゆ味",
+      "maker": "サンヨー食品",
+      "kana": "さっぽろいちばん ぽけもんぬーどる しょうゆあじ",
+      "genre": "ラーメン(しょうゆ)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "ミニサイズ。かやく・スープはカップに入っています",
+      "lastVerifiedAt": null,
+      "steps": [],
+      "recipes": []
+    },
+    {
+      "id": "4901734061946",
+      "janCode": "4901734061946",
+      "name": "サッポロ一番 ポケモンヌードル シーフード味",
+      "maker": "サンヨー食品",
+      "kana": "さっぽろいちばん ぽけもんぬーどる しーふーどあじ",
+      "genre": "ラーメン(シーフード)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "ミニサイズ。かやく・スープはカップに入っています",
+      "lastVerifiedAt": null,
+      "steps": [],
+      "recipes": []
+    },
+    {
+      "id": "4901734051268",
+      "janCode": "4901734051268",
+      "name": "サッポロ一番 名店の味 天下一品 京都濃厚鶏白湯 大口径",
+      "maker": "サンヨー食品",
+      "kana": "さっぽろいちばん めいてんのあじ てんかいっぴん きょうとのうこうとりぱいたん",
+      "genre": "ラーメン(鶏白湯)",
+      "waitTimeSec": 240,
+      "needsDraining": false,
+      "note": "熱湯4分。粉末スープ・液体スープは後入れ(袋の表記を確認)。よく混ぜてとろみを出す",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れてよく混ぜる",
+          "item": "粉末スープ"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "liquid",
+          "text": "液体スープを入れてよく混ぜる",
+          "item": "液体スープ"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901734055440",
+      "janCode": "4901734055440",
+      "name": "サッポロ一番 名店の味 天下一品 京都濃厚鶏白湯 ミニカップ",
+      "maker": "サンヨー食品",
+      "kana": "さっぽろいちばん めいてんのあじ てんかいっぴん みにかっぷ",
+      "genre": "ラーメン(鶏白湯)",
+      "waitTimeSec": 180,
+      "needsDraining": false,
+      "note": "ミニサイズ。かやく・スープはカップに入っています(袋の有無を確認)",
+      "lastVerifiedAt": null,
+      "steps": [],
+      "recipes": []
+    },
+    {
+      "id": "4901734017554",
+      "janCode": "4901734017554",
+      "name": "サッポロ一番 塩カルビ味焼そば",
+      "maker": "サンヨー食品",
+      "kana": "さっぽろいちばん しおかるびあじやきそば",
+      "genre": "焼そば",
+      "waitTimeSec": 180,
+      "needsDraining": true,
+      "note": "粉末ソース・調味油は湯切り後",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末ソースを入れてよく混ぜる",
+          "item": "粉末ソース"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "oil",
+          "text": "調味油を入れてよく混ぜる",
+          "item": "調味油"
+        }
+      ],
+      "recipes": []
+    },
+    {
+      "id": "4901734059417",
+      "janCode": "4901734059417",
+      "name": "サッポロ一番 ご当地熱愛麺 坂内食堂 喜多方本店監修 中華そば",
+      "maker": "サンヨー食品",
+      "kana": "さっぽろいちばん ごとうちねつあいめん ばんないしょくどう ちゅうかそば",
+      "genre": "ラーメン(しょうゆ)",
+      "waitTimeSec": 240,
+      "needsDraining": false,
+      "note": "熱湯4分。仕上げの小袋は後入れ",
+      "lastVerifiedAt": null,
+      "steps": [
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "oil",
+          "text": "仕上げの小袋を入れて混ぜる",
+          "item": "仕上げの小袋"
+        }
+      ],
+      "recipes": []
     }
   ]
 }

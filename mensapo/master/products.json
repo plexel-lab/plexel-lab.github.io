@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "dataVersion": 21,
+  "dataVersion": 22,
   "products": [
     {
       "id": "49698626",
@@ -5021,23 +5021,9 @@
       "waitTimeSec": 180,
       "needsDraining": false,
       "lastVerifiedAt": null,
-      "steps": [
-        {
-          "phase": "pre",
-          "order": 0,
-          "itemType": "kayaku",
-          "text": "かやくを入れる"
-        },
-        {
-          "phase": "post",
-          "order": 0,
-          "itemType": "liquid",
-          "text": "液体スープを入れてよく混ぜる",
-          "item": "液体スープ"
-        }
-      ],
+      "steps": [],
       "recipes": [],
-      "note": "調味料は後入れ",
+      "note": "かやく・スープはカップに入っています(別添袋なし)。同シリーズの「はま塩」を実物確認した結果に合わせた(この味は実物未確認)",
       "kana": "まるちゃん ほっとぬーどる ねお しょうゆ"
     },
     {
@@ -5048,24 +5034,10 @@
       "genre": "ラーメン(塩)",
       "waitTimeSec": 180,
       "needsDraining": false,
-      "lastVerifiedAt": null,
-      "steps": [
-        {
-          "phase": "pre",
-          "order": 0,
-          "itemType": "kayaku",
-          "text": "かやくを入れる"
-        },
-        {
-          "phase": "post",
-          "order": 0,
-          "itemType": "liquid",
-          "text": "液体スープを入れてよく混ぜる",
-          "item": "液体スープ"
-        }
-      ],
+      "lastVerifiedAt": "2026-09-23",
+      "steps": [],
       "recipes": [],
-      "note": "調味料は後入れ",
+      "note": "かやく・スープはカップに入っています(別添袋なし)。お湯 280ml",
       "kana": "まるちゃん ほっとぬーどる ねお はましお"
     },
     {
@@ -5077,23 +5049,9 @@
       "waitTimeSec": 180,
       "needsDraining": false,
       "lastVerifiedAt": null,
-      "steps": [
-        {
-          "phase": "pre",
-          "order": 0,
-          "itemType": "kayaku",
-          "text": "かやくを入れる"
-        },
-        {
-          "phase": "post",
-          "order": 0,
-          "itemType": "liquid",
-          "text": "液体スープを入れてよく混ぜる",
-          "item": "液体スープ"
-        }
-      ],
+      "steps": [],
       "recipes": [],
-      "note": "調味料は後入れ",
+      "note": "かやく・スープはカップに入っています(別添袋なし)。同シリーズの「はま塩」を実物確認した結果に合わせた(この味は実物未確認)",
       "kana": "まるちゃん ほっとぬーどる ねお たんたんめん"
     },
     {

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "dataVersion": 22,
+  "dataVersion": 23,
   "products": [
     {
       "id": "49698626",
@@ -853,73 +853,6 @@
       "lastVerifiedAt": null,
       "steps": [],
       "recipes": []
-    },
-    {
-      "id": "4902105261903",
-      "janCode": "4902105261903",
-      "name": "蒙古タンメン中本 辛旨味噌",
-      "maker": "日清食品(セブンプレミアム)",
-      "kana": "もうこたんめんなかもと からうまみそ",
-      "genre": "ラーメン(みそ)",
-      "waitTimeSec": 300,
-      "needsDraining": false,
-      "note": "辛旨オイルは待ち時間中にフタの上で温めておく。辛さ注意",
-      "lastVerifiedAt": null,
-      "steps": [
-        {
-          "phase": "post",
-          "order": 0,
-          "itemType": "oil",
-          "item": "辛旨オイル",
-          "text": "辛旨オイルを入れて混ぜる"
-        }
-      ],
-      "recipes": [
-        {
-          "rid": "cr-mk-cheese",
-          "title": "チーズでまろやか",
-          "tag": "まろやか",
-          "desc": "溶けたチーズがとろみとコクを足して辛さがやわらぐ。",
-          "ingredients": [
-            {
-              "name": "とろけるスライスチーズ",
-              "amount": "1枚"
-            }
-          ],
-          "preAdd": [],
-          "postAdd": [
-            {
-              "phase": "post",
-              "order": 0,
-              "itemType": "topping",
-              "item": "チーズ(1枚)",
-              "text": "チーズをのせて溶かし、混ぜる"
-            }
-          ]
-        },
-        {
-          "rid": "cr-mk-egg",
-          "title": "卵黄で辛さ中和",
-          "tag": "まろやか",
-          "desc": "卵黄を崩しながら混ぜると辛さがマイルドになりコクが増す。",
-          "ingredients": [
-            {
-              "name": "卵黄(または温泉卵)",
-              "amount": "1個"
-            }
-          ],
-          "preAdd": [],
-          "postAdd": [
-            {
-              "phase": "post",
-              "order": 0,
-              "itemType": "topping",
-              "item": "卵黄",
-              "text": "卵黄をのせ、崩しながら混ぜる"
-            }
-          ]
-        }
-      ]
     },
     {
       "id": "4902775070171",
@@ -4237,118 +4170,6 @@
       ],
       "note": "まぜそば(湯切りあり)",
       "kana": "にっしんらおう たいわんまぜそば"
-    },
-    {
-      "id": "4549167967123",
-      "janCode": "4549167967123",
-      "name": "すみれ 札幌濃厚みそ",
-      "maker": "日清食品(セブンプレミアムゴールド)",
-      "genre": "ラーメン(みそ)",
-      "waitTimeSec": 300,
-      "needsDraining": false,
-      "lastVerifiedAt": null,
-      "steps": [
-        {
-          "phase": "pre",
-          "order": 0,
-          "itemType": "powder",
-          "text": "粉末スープを入れる"
-        },
-        {
-          "phase": "post",
-          "order": 0,
-          "itemType": "liquid",
-          "text": "液体スープを入れてよく混ぜる",
-          "item": "液体スープ"
-        },
-        {
-          "phase": "post",
-          "order": 1,
-          "itemType": "oil",
-          "text": "香味油を回しかける",
-          "item": "香味油"
-        }
-      ],
-      "recipes": [],
-      "note": "液体スープ・香味油は後入れ",
-      "kana": "すみれ さっぽろのうこうみそ"
-    },
-    {
-      "id": "4549167967130",
-      "janCode": "4549167967130",
-      "name": "一風堂 赤丸新味 博多とんこつ",
-      "maker": "日清食品(セブンプレミアムゴールド)",
-      "genre": "ラーメン(豚骨)",
-      "waitTimeSec": 180,
-      "needsDraining": false,
-      "lastVerifiedAt": null,
-      "steps": [
-        {
-          "phase": "pre",
-          "order": 0,
-          "itemType": "powder",
-          "text": "粉末スープを入れる"
-        },
-        {
-          "phase": "post",
-          "order": 0,
-          "itemType": "liquid",
-          "text": "液体スープを入れてよく混ぜる",
-          "item": "液体スープ"
-        },
-        {
-          "phase": "post",
-          "order": 1,
-          "itemType": "oil",
-          "text": "黒香油を回しかける",
-          "item": "黒香油"
-        },
-        {
-          "phase": "post",
-          "order": 2,
-          "itemType": "topping",
-          "text": "辛みそを入れる",
-          "item": "辛みそ"
-        }
-      ],
-      "recipes": [],
-      "note": "液体スープ・黒香油・辛みそは後入れ",
-      "kana": "いっぷうどう あかまるしんあじ はかたとんこつ"
-    },
-    {
-      "id": "4549167967147",
-      "janCode": "4549167967147",
-      "name": "山頭火 旭川とんこつ塩",
-      "maker": "日清食品(セブンプレミアムゴールド)",
-      "genre": "ラーメン(塩)",
-      "waitTimeSec": 240,
-      "needsDraining": false,
-      "lastVerifiedAt": null,
-      "steps": [
-        {
-          "phase": "pre",
-          "order": 0,
-          "itemType": "powder",
-          "text": "粉末スープを入れる"
-        },
-        {
-          "phase": "post",
-          "order": 0,
-          "itemType": "liquid",
-          "text": "液体スープを入れてよく混ぜる",
-          "item": "液体スープ"
-        },
-        {
-          "phase": "post",
-          "order": 1,
-          "itemType": "oil",
-          "text": "香味油を回しかける",
-          "item": "香味油"
-        }
-      ],
-      "recipes": [],
-      "note": "液体スープ・香味油は後入れ",
-      "kana": "さんとうか あさひかわとんこつしお"
     },
     {
       "id": "4562214822374",
@@ -13403,7 +13224,7 @@
       "genre": "ラーメン(みそ)",
       "waitTimeSec": 300,
       "needsDraining": false,
-      "note": "セブンプレミアム公式サイト掲載JAN(既存 4902105261903 と併存)。辛旨オイルは待ち時間中にフタの上で温めておく。辛さ注意",
+      "note": "辛旨オイルは待ち時間中にフタの上で温めておく。辛さ注意",
       "lastVerifiedAt": null,
       "steps": [
         {
@@ -13425,7 +13246,7 @@
       "genre": "ラーメン(みそ)",
       "waitTimeSec": 300,
       "needsDraining": false,
-      "note": "セブンプレミアム公式サイト掲載JAN(既存 4549167967123 と併存)。液体スープ・香味油は後入れ",
+      "note": "液体スープ・香味油は後入れ",
       "lastVerifiedAt": null,
       "steps": [
         {
@@ -13460,7 +13281,7 @@
       "genre": "ラーメン(豚骨)",
       "waitTimeSec": 180,
       "needsDraining": false,
-      "note": "セブンプレミアム公式サイト掲載JAN(既存 4549167967130 と併存)。液体スープ・黒香油・辛みそは後入れ",
+      "note": "液体スープ・黒香油・辛みそは後入れ",
       "lastVerifiedAt": null,
       "steps": [
         {
@@ -13502,7 +13323,7 @@
       "genre": "ラーメン(塩)",
       "waitTimeSec": 240,
       "needsDraining": false,
-      "note": "セブンプレミアム公式サイト掲載JAN(既存 4549167967147 と併存)。液体スープ・香味油は後入れ",
+      "note": "液体スープ・香味油は後入れ",
       "lastVerifiedAt": null,
       "steps": [
         {

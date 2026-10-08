@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "dataVersion": 24,
+  "dataVersion": 25,
   "products": [
     {
       "id": "49698626",
@@ -14504,9 +14504,11 @@
       "janCode": "4902881435093",
       "name": "明星 チャルメラ ちいかわラーメン しょうゆ味",
       "maker": "明星食品",
+      "kana": "ちゃるめら ちいかわらーめん しょうゆあじ",
+      "genre": "ラーメン(しょうゆ)",
       "waitTimeSec": 180,
       "needsDraining": false,
-      "dataStatus": "skeleton",
+      "note": "別添袋なし",
       "lastVerifiedAt": null,
       "steps": []
     },
@@ -14561,24 +14563,69 @@
       "janCode": "4902881459358",
       "name": "明星 一平ちゃん夜店の焼そば 焦がしにんにくたまり醤油味",
       "maker": "明星食品",
+      "kana": "いっぺいちゃんよみせのやきそば こがしにんにくたまりしょうゆあじ",
       "genre": "焼そば",
-      "waitTimeSec": 180,
-      "needsDraining": false,
-      "dataStatus": "skeleton",
+      "waitTimeSec": 300,
+      "needsDraining": true,
+      "note": "熱湯5分",
       "lastVerifiedAt": null,
-      "steps": []
+      "steps": [
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体ソースを入れてよく混ぜる",
+          "item": "液体ソース"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "topping",
+          "text": "マヨネーズをかける",
+          "item": "マヨネーズ"
+        },
+        {
+          "phase": "post",
+          "order": 2,
+          "itemType": "topping",
+          "text": "ふりかけをかける",
+          "item": "ふりかけ"
+        }
+      ]
     },
     {
       "id": "4902881459259",
       "janCode": "4902881459259",
       "name": "明星 一平ちゃん夜店の焼そば わさびマヨ醤油味",
       "maker": "明星食品",
+      "kana": "いっぺいちゃんよみせのやきそば わさびまよしょうゆあじ",
       "genre": "焼そば",
       "waitTimeSec": 180,
-      "needsDraining": false,
-      "dataStatus": "skeleton",
+      "needsDraining": true,
       "lastVerifiedAt": null,
-      "steps": []
+      "steps": [
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体ソースを入れてよく混ぜる",
+          "item": "液体ソース"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "topping",
+          "text": "わさびマヨをかける",
+          "item": "わさびマヨ"
+        },
+        {
+          "phase": "post",
+          "order": 2,
+          "itemType": "topping",
+          "text": "ふりかけをかける",
+          "item": "ふりかけ"
+        }
+      ]
     },
     {
       "id": "4902881459686",
@@ -14597,12 +14644,34 @@
       "janCode": "4902881459235",
       "name": "明星 一平ちゃん夜店の焼そば 大盛 わさびマヨ醤油味",
       "maker": "明星食品",
+      "kana": "いっぺいちゃんよみせのやきそば おおもり わさびまよしょうゆあじ",
       "genre": "焼そば",
       "waitTimeSec": 180,
-      "needsDraining": false,
-      "dataStatus": "skeleton",
+      "needsDraining": true,
       "lastVerifiedAt": null,
-      "steps": []
+      "steps": [
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体ソースを入れてよく混ぜる",
+          "item": "液体ソース"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "topping",
+          "text": "わさびマヨをかける",
+          "item": "わさびマヨ"
+        },
+        {
+          "phase": "post",
+          "order": 2,
+          "itemType": "topping",
+          "text": "ふりかけをかける",
+          "item": "ふりかけ"
+        }
+      ]
     },
     {
       "id": "4902881433754",
@@ -14702,11 +14771,40 @@
       "janCode": "4902881405287",
       "name": "明星 らぁ麺や嶋 トリュフ香る白醤油らぁ麺",
       "maker": "明星食品",
-      "waitTimeSec": 180,
+      "kana": "らぁめんやしま とりゅふかおるしろしょうゆらぁめん",
+      "genre": "ラーメン(しょうゆ)",
+      "waitTimeSec": 300,
       "needsDraining": false,
-      "dataStatus": "skeleton",
+      "note": "熱湯5分",
       "lastVerifiedAt": null,
-      "steps": []
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        },
+        {
+          "phase": "pre",
+          "order": 1,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体スープを入れる",
+          "item": "液体スープ"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "oil",
+          "text": "トリュフオイルを入れる",
+          "item": "トリュフオイル"
+        }
+      ]
     },
     {
       "id": "4902881405089",
@@ -14736,33 +14834,72 @@
       "janCode": "4902881405782",
       "name": "明星 東京デザイン専門学校コラボ 今日もおつ豆さま えだ豆味焼そば",
       "maker": "明星食品",
+      "kana": "きょうもおつまめさま えだまめあじやきそば",
       "genre": "焼そば",
       "waitTimeSec": 180,
-      "needsDraining": false,
-      "dataStatus": "skeleton",
+      "needsDraining": true,
       "lastVerifiedAt": null,
-      "steps": []
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末ソースを入れてよく混ぜる",
+          "item": "粉末ソース"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "oil",
+          "text": "調味油を入れてよく混ぜる",
+          "item": "調味油"
+        }
+      ]
     },
     {
       "id": "4902881406635",
       "janCode": "4902881406635",
       "name": "明星 築地銀だこ監修 たこ焼味焼そば",
       "maker": "明星食品",
+      "kana": "つきじぎんだこかんしゅう たこやきあじやきそば",
       "genre": "焼そば",
-      "waitTimeSec": 180,
-      "needsDraining": false,
-      "dataStatus": "skeleton",
+      "waitTimeSec": 240,
+      "needsDraining": true,
+      "note": "熱湯4分",
       "lastVerifiedAt": null,
-      "steps": []
+      "steps": [
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体ソースを入れてよく混ぜる",
+          "item": "液体ソース"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "topping",
+          "text": "ふりかけをかける",
+          "item": "ふりかけ"
+        }
+      ]
     },
     {
       "id": "4902105299197",
       "janCode": "4902105299197",
       "name": "カップヌードル 感謝の謎肉増量",
       "maker": "日清食品",
+      "kana": "かっぷぬーどる かんしゃのなぞにくぞうりょう",
+      "genre": "ラーメン(しょうゆ)",
       "waitTimeSec": 180,
       "needsDraining": false,
-      "dataStatus": "skeleton",
+      "note": "別添袋なし",
       "lastVerifiedAt": null,
       "steps": []
     },
@@ -14771,9 +14908,11 @@
       "janCode": "4902105299203",
       "name": "カップヌードル カレー 感謝の謎肉増量",
       "maker": "日清食品",
+      "kana": "かっぷぬーどる かれー かんしゃのなぞにくぞうりょう",
+      "genre": "ラーメン(カレー)",
       "waitTimeSec": 180,
       "needsDraining": false,
-      "dataStatus": "skeleton",
+      "note": "別添袋なし",
       "lastVerifiedAt": null,
       "steps": []
     },
@@ -14782,9 +14921,11 @@
       "janCode": "4902105299210",
       "name": "カップヌードル シーフードヌードル 感謝のカニカマ増量",
       "maker": "日清食品",
+      "kana": "かっぷぬーどる しーふーどぬーどる かんしゃのかにかまぞうりょう",
+      "genre": "ラーメン(シーフード)",
       "waitTimeSec": 180,
       "needsDraining": false,
-      "dataStatus": "skeleton",
+      "note": "別添袋なし",
       "lastVerifiedAt": null,
       "steps": []
     },
@@ -14793,9 +14934,11 @@
       "janCode": "4902105299227",
       "name": "カップヌードル チリトマトヌードル 感謝の謎肉増量",
       "maker": "日清食品",
+      "kana": "かっぷぬーどる ちりとまとぬーどる かんしゃのなぞにくぞうりょう",
+      "genre": "その他",
       "waitTimeSec": 180,
       "needsDraining": false,
-      "dataStatus": "skeleton",
+      "note": "別添袋なし",
       "lastVerifiedAt": null,
       "steps": []
     },
@@ -14804,9 +14947,11 @@
       "janCode": "4902105296493",
       "name": "カップヌードル レッドシーフードヌードル",
       "maker": "日清食品",
+      "kana": "かっぷぬーどる れっどしーふーどぬーどる",
+      "genre": "ラーメン(シーフード)",
       "waitTimeSec": 180,
       "needsDraining": false,
-      "dataStatus": "skeleton",
+      "note": "別添袋なし",
       "lastVerifiedAt": null,
       "steps": []
     },
@@ -14815,20 +14960,31 @@
       "janCode": "4902105298169",
       "name": "カップヌードル レモンシーフードヌードル",
       "maker": "日清食品",
+      "kana": "かっぷぬーどる れもんしーふーどぬーどる",
+      "genre": "ラーメン(シーフード)",
       "waitTimeSec": 180,
       "needsDraining": false,
-      "dataStatus": "skeleton",
       "lastVerifiedAt": null,
-      "steps": []
+      "steps": [
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "powder",
+          "text": "レモン&ブラックペッパーパウダーを入れる",
+          "item": "レモン&ブラックペッパーパウダー"
+        }
+      ]
     },
     {
       "id": "4902105295472",
       "janCode": "4902105295472",
       "name": "冷しカップヌードル ピリ辛キムチ味",
       "maker": "日清食品",
-      "waitTimeSec": 180,
+      "kana": "ひやしかっぷぬーどる ぴりからきむちあじ",
+      "genre": "ラーメン(その他)",
+      "waitTimeSec": 300,
       "needsDraining": false,
-      "dataStatus": "skeleton",
+      "note": "お湯ではなく冷たい水で作る。別添袋なし",
       "lastVerifiedAt": null,
       "steps": []
     },
@@ -14837,45 +14993,103 @@
       "janCode": "4902105294857",
       "name": "カップヌードル 辛豚",
       "maker": "日清食品",
+      "kana": "かっぷぬーどる からぶた",
+      "genre": "ラーメン(豚骨)",
       "waitTimeSec": 180,
       "needsDraining": false,
-      "dataStatus": "skeleton",
       "lastVerifiedAt": null,
-      "steps": []
+      "steps": [
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "oil",
+          "text": "旨辛ぁ油を入れる",
+          "item": "旨辛ぁ油"
+        }
+      ]
     },
     {
       "id": "4902105801284",
       "janCode": "4902105801284",
       "name": "完全メシ 汁なしカップヌードル シーフードヌードル",
       "maker": "日清食品",
-      "waitTimeSec": 180,
-      "needsDraining": false,
-      "dataStatus": "skeleton",
+      "kana": "かんぜんめし しるなしかっぷぬーどる しーふーどぬーどる",
+      "genre": "油そば/まぜそば",
+      "waitTimeSec": 300,
+      "needsDraining": true,
+      "note": "熱湯5分・湯切り",
       "lastVerifiedAt": null,
-      "steps": []
+      "steps": [
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末ソースを入れてよく混ぜる",
+          "item": "粉末ソース"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "oil",
+          "text": "調味オイルを入れてよく混ぜる",
+          "item": "調味オイル"
+        }
+      ]
     },
     {
       "id": "4902105296509",
       "janCode": "4902105296509",
       "name": "カップヌードル シビ辛スタミナ ビッグ",
       "maker": "日清食品",
+      "kana": "かっぷぬーどる しびからすたみな びっぐ",
+      "genre": "ラーメン(しょうゆ)",
       "waitTimeSec": 180,
       "needsDraining": false,
-      "dataStatus": "skeleton",
       "lastVerifiedAt": null,
-      "steps": []
+      "steps": [
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "oil",
+          "text": "特製旨辛オイルを入れる",
+          "item": "特製旨辛オイル"
+        }
+      ]
     },
     {
       "id": "4902105294888",
       "janCode": "4902105294888",
       "name": "日清のどん兵衛 焼うどん",
       "maker": "日清食品",
+      "kana": "にっしんのどんべえ やきうどん",
       "genre": "うどん",
-      "waitTimeSec": 180,
-      "needsDraining": false,
-      "dataStatus": "skeleton",
+      "waitTimeSec": 300,
+      "needsDraining": true,
+      "note": "熱湯5分・湯切り",
       "lastVerifiedAt": null,
-      "steps": []
+      "steps": [
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体つゆを入れてよく混ぜる",
+          "item": "液体つゆ"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "powder",
+          "text": "七味入り粉末だしをかける",
+          "item": "七味入り粉末だし"
+        },
+        {
+          "phase": "post",
+          "order": 2,
+          "itemType": "topping",
+          "text": "あげ玉をかける",
+          "item": "あげ玉"
+        }
+      ]
     },
     {
       "id": "4902105271506",
@@ -14906,12 +15120,26 @@
       "janCode": "4902105296714",
       "name": "日清のどん兵衛 カップヌードルシーフードうどん",
       "maker": "日清食品",
+      "kana": "にっしんのどんべえ かっぷぬーどるしーふーどうどん",
       "genre": "うどん",
-      "waitTimeSec": 180,
+      "waitTimeSec": 300,
       "needsDraining": false,
-      "dataStatus": "skeleton",
+      "note": "熱湯5分",
       "lastVerifiedAt": null,
-      "steps": []
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        },
+        {
+          "phase": "pre",
+          "order": 1,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        }
+      ]
     },
     {
       "id": "4902105286982",
@@ -14965,35 +15193,60 @@
       "janCode": "4902105296837",
       "name": "日清のどん兵衛 特盛和スパイスカレーきつねうどん",
       "maker": "日清食品",
+      "kana": "にっしんのどんべえ とくもりわすぱいすかれーきつねうどん",
       "genre": "うどん",
-      "waitTimeSec": 180,
+      "waitTimeSec": 300,
       "needsDraining": false,
-      "dataStatus": "skeleton",
+      "note": "熱湯5分。お揚げはカップに入っています",
       "lastVerifiedAt": null,
-      "steps": []
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        }
+      ]
     },
     {
       "id": "4902105297056",
       "janCode": "4902105297056",
       "name": "チキンラーメンビッグカップ すきやき味",
       "maker": "日清食品",
+      "kana": "ちきんらーめんびっぐかっぷ すきやきあじ",
+      "genre": "ラーメン(その他)",
       "waitTimeSec": 180,
       "needsDraining": false,
-      "dataStatus": "skeleton",
       "lastVerifiedAt": null,
-      "steps": []
+      "steps": [
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "oil",
+          "text": "牛すき風味オイルを入れる",
+          "item": "牛すき風味オイル"
+        }
+      ]
     },
     {
       "id": "4902105297117",
       "janCode": "4902105297117",
       "name": "日清焼そばU.F.O. カップヌードルシーフード焼そば",
       "maker": "日清食品",
+      "kana": "にっしんやきそばゆーふぉー かっぷぬーどるしーふーどやきそば",
       "genre": "焼そば",
       "waitTimeSec": 180,
-      "needsDraining": false,
-      "dataStatus": "skeleton",
+      "needsDraining": true,
       "lastVerifiedAt": null,
-      "steps": []
+      "steps": [
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体ソースを入れてよく混ぜる",
+          "item": "液体ソース"
+        }
+      ]
     },
     {
       "id": "4902105801291",
@@ -15082,12 +15335,19 @@
       "janCode": "4902105256046",
       "name": "日清デカうま わかめそば",
       "maker": "日清食品",
+      "kana": "にっしんでかうま わかめそば",
       "genre": "そば",
       "waitTimeSec": 180,
       "needsDraining": false,
-      "dataStatus": "skeleton",
       "lastVerifiedAt": null,
-      "steps": []
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        }
+      ]
     },
     {
       "id": "4902105256091",
@@ -15106,24 +15366,47 @@
       "janCode": "4901990383196",
       "name": "マルちゃん 旨辛キムチチゲうどん",
       "maker": "東洋水産",
+      "kana": "まるちゃん うまからきむちちげうどん",
       "genre": "うどん",
-      "waitTimeSec": 180,
+      "waitTimeSec": 300,
       "needsDraining": false,
-      "dataStatus": "skeleton",
+      "note": "熱湯5分",
       "lastVerifiedAt": null,
-      "steps": []
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        },
+        {
+          "phase": "pre",
+          "order": 1,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        }
+      ]
     },
     {
       "id": "4901990333405",
       "janCode": "4901990333405",
       "name": "マルちゃん 日本うまいもん 吉田のうどん",
       "maker": "東洋水産",
+      "kana": "まるちゃん にほんうまいもん よしだのうどん",
       "genre": "うどん",
-      "waitTimeSec": 180,
+      "waitTimeSec": 240,
       "needsDraining": false,
-      "dataStatus": "skeleton",
+      "note": "熱湯4分",
       "lastVerifiedAt": null,
-      "steps": []
+      "steps": [
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "特製スープを入れる",
+          "item": "特製スープ"
+        }
+      ]
     },
     {
       "id": "4901990378499",
@@ -15217,13 +15500,26 @@
       "janCode": "4901990328609",
       "name": "マルちゃん 山菜乱切りそば",
       "maker": "東洋水産",
+      "kana": "まるちゃん さんさいらんぎりそば",
       "genre": "そば",
-      "waitTimeSec": 180,
+      "waitTimeSec": 300,
       "needsDraining": false,
-      "dataStatus": "skeleton",
+      "note": "熱湯5分",
       "lastVerifiedAt": null,
-      "steps": [],
-      "note": "販売地域: 北海道"
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        },
+        {
+          "phase": "pre",
+          "order": 1,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        }
+      ]
     },
     {
       "id": "4901990369046",
@@ -15279,9 +15575,11 @@
       "janCode": "4901990384650",
       "name": "マルちゃん MARUCHAN QTTA カルボナーラ味",
       "maker": "東洋水産",
+      "kana": "まるちゃん くった かるぼなーらあじ",
+      "genre": "ラーメン(その他)",
       "waitTimeSec": 180,
       "needsDraining": false,
-      "dataStatus": "skeleton",
+      "note": "別添袋なし",
       "lastVerifiedAt": null,
       "steps": []
     },
@@ -15302,37 +15600,81 @@
       "janCode": "4901990384469",
       "name": "マルちゃん 激めんワンタンメン 仙台辛味噌",
       "maker": "東洋水産",
+      "kana": "まるちゃん げきめんわんたんめん せんだいからみそ",
+      "genre": "ラーメン(みそ)",
       "waitTimeSec": 180,
       "needsDraining": false,
-      "dataStatus": "skeleton",
+      "note": "販売地域: 名古屋以東(北陸含む)",
       "lastVerifiedAt": null,
-      "steps": [],
-      "note": "販売地域: 名古屋以東(北陸含む)"
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体スープを入れる",
+          "item": "液体スープ"
+        }
+      ]
     },
     {
       "id": "4901990378512",
       "janCode": "4901990378512",
       "name": "マルちゃん 激めんワンタンメン わかめ醤油",
       "maker": "東洋水産",
+      "kana": "まるちゃん げきめんわんたんめん わかめしょうゆ",
+      "genre": "ラーメン(しょうゆ)",
       "waitTimeSec": 180,
       "needsDraining": false,
-      "dataStatus": "skeleton",
+      "note": "販売地域: 名古屋以東(北陸含む)",
       "lastVerifiedAt": null,
-      "steps": [],
-      "note": "販売地域: 名古屋以東(北陸含む)"
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "powder",
+          "text": "粉末スープを入れる"
+        }
+      ]
     },
     {
       "id": "4901990384506",
       "janCode": "4901990384506",
       "name": "マルちゃん やきそば弁当 塩だれ味 豚カルビ風",
       "maker": "東洋水産",
+      "kana": "まるちゃん やきそばべんとう しおだれあじ ぶたかるびふう",
       "genre": "焼そば",
       "waitTimeSec": 180,
-      "needsDraining": false,
-      "dataStatus": "skeleton",
+      "needsDraining": true,
+      "note": "湯切りしたお湯で中華スープを作れます",
       "lastVerifiedAt": null,
-      "steps": [],
-      "note": "販売地域: 北海道"
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体ソースを入れてよく混ぜる",
+          "item": "液体ソース"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "topping",
+          "text": "ふりかけをかける",
+          "item": "ふりかけ"
+        }
+      ]
     },
     {
       "id": "4901990383103",
@@ -15352,26 +15694,68 @@
       "janCode": "4901990384520",
       "name": "マルちゃん やきそば弁当 復刻総選挙第1位 お好みソース味",
       "maker": "東洋水産",
+      "kana": "まるちゃん やきそばべんとう ふっこくそうせんきょ おこのみそーすあじ",
       "genre": "焼そば",
       "waitTimeSec": 180,
-      "needsDraining": false,
-      "dataStatus": "skeleton",
+      "needsDraining": true,
+      "note": "湯切りしたお湯で中華スープを作れます",
       "lastVerifiedAt": null,
-      "steps": [],
-      "note": "販売地域: 北海道"
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体ソースを入れてよく混ぜる",
+          "item": "液体ソース"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "topping",
+          "text": "ふりかけをかける",
+          "item": "ふりかけ"
+        }
+      ]
     },
     {
       "id": "4901990378888",
       "janCode": "4901990378888",
       "name": "マルちゃん やきうどん弁当 利尻昆布だし醤油味",
       "maker": "東洋水産",
+      "kana": "まるちゃん やきうどんべんとう りしりこんぶだししょうゆあじ",
       "genre": "うどん",
-      "waitTimeSec": 180,
-      "needsDraining": false,
-      "dataStatus": "skeleton",
+      "waitTimeSec": 300,
+      "needsDraining": true,
+      "note": "熱湯5分。湯切りしたお湯で中華スープを作れます",
       "lastVerifiedAt": null,
-      "steps": [],
-      "note": "販売地域: 北海道"
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "kayaku",
+          "text": "かやくを入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "liquid",
+          "text": "液体ソースを入れてよく混ぜる",
+          "item": "液体ソース"
+        },
+        {
+          "phase": "post",
+          "order": 1,
+          "itemType": "topping",
+          "text": "ふりかけをかける",
+          "item": "ふりかけ"
+        }
+      ]
     },
     {
       "id": "4901990383158",

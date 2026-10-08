@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "dataVersion": 25,
+  "dataVersion": 26,
   "products": [
     {
       "id": "49698626",
@@ -1588,7 +1588,7 @@
       "genre": "ラーメン(塩)",
       "waitTimeSec": 180,
       "needsDraining": false,
-      "note": "かやく・スープはカップに入っています。公式ページの現行JANに補正(旧 4901734030867)。2025年8月「あさりだし仕上げ」版はかやく・特製スープの2袋(袋の表記を確認)",
+      "note": "かやく・スープはカップに入っています。2025年8月「あさりだし仕上げ」版はかやく・特製スープの2袋(袋の表記を確認)",
       "lastVerifiedAt": null,
       "steps": [
         {
@@ -1615,7 +1615,7 @@
       "genre": "ラーメン(しょうゆ)",
       "waitTimeSec": 180,
       "needsDraining": false,
-      "note": "かやく・スープ・焼のりはカップに入っています。公式ページの現行JANに補正(旧 4901734043850)",
+      "note": "かやく・スープ・焼のりはカップに入っています",
       "lastVerifiedAt": null,
       "steps": [],
       "recipes": []
@@ -4844,7 +4844,7 @@
       "lastVerifiedAt": null,
       "steps": [],
       "recipes": [],
-      "note": "かやく・スープはカップに入っています(別添袋なし)。同シリーズの「はま塩」を実物確認した結果に合わせた(この味は実物未確認)",
+      "note": "かやく・スープはカップに入っています(別添袋なし)",
       "kana": "まるちゃん ほっとぬーどる ねお しょうゆ"
     },
     {
@@ -4872,7 +4872,7 @@
       "lastVerifiedAt": null,
       "steps": [],
       "recipes": [],
-      "note": "かやく・スープはカップに入っています(別添袋なし)。同シリーズの「はま塩」を実物確認した結果に合わせた(この味は実物未確認)",
+      "note": "かやく・スープはカップに入っています(別添袋なし)",
       "kana": "まるちゃん ほっとぬーどる ねお たんたんめん"
     },
     {
@@ -5985,7 +5985,7 @@
       "genre": "うどん",
       "waitTimeSec": 300,
       "needsDraining": false,
-      "note": "大盛(お揚げ2枚)。東向け/西向けで味が異なるがJANは共通。粉末スープに七味付き",
+      "note": "大盛(お揚げ2枚)。東向けと西向けで味が異なります。粉末スープに七味付き",
       "lastVerifiedAt": null,
       "steps": [
         {
@@ -6013,7 +6013,7 @@
       "genre": "うどん",
       "waitTimeSec": 300,
       "needsDraining": false,
-      "note": "東向け/西向けで味が異なるがJANは共通。粉末スープに七味付き",
+      "note": "東向けと西向けで味が異なります。粉末スープに七味付き",
       "lastVerifiedAt": null,
       "steps": [
         {
@@ -6097,7 +6097,7 @@
       "genre": "うどん",
       "waitTimeSec": 180,
       "needsDraining": false,
-      "note": "ミニサイズ。東向け/西向けでJAN共通。粉末スープは先入れ",
+      "note": "ミニサイズ。粉末スープは先入れ",
       "lastVerifiedAt": null,
       "steps": [
         {
@@ -6160,7 +6160,7 @@
       "genre": "そば",
       "waitTimeSec": 180,
       "needsDraining": false,
-      "note": "大盛(大判天ぷら)。東向け/西向けで味が異なるがJANは共通。粉末スープに七味付き",
+      "note": "大盛(大判天ぷら)。東向けと西向けで味が異なります。粉末スープに七味付き",
       "lastVerifiedAt": null,
       "steps": [
         {
@@ -6188,7 +6188,7 @@
       "genre": "そば",
       "waitTimeSec": 180,
       "needsDraining": false,
-      "note": "東向け/西向けで味が異なるがJANは共通。粉末スープに七味付き",
+      "note": "東向けと西向けで味が異なります。粉末スープに七味付き",
       "lastVerifiedAt": null,
       "steps": [
         {
@@ -6272,7 +6272,7 @@
       "genre": "そば",
       "waitTimeSec": 180,
       "needsDraining": false,
-      "note": "ミニサイズ。東向け/西向けでJAN共通。粉末スープは先入れ",
+      "note": "ミニサイズ。粉末スープは先入れ",
       "lastVerifiedAt": null,
       "steps": [
         {
@@ -6502,7 +6502,7 @@
       "genre": "ラーメン(しょうゆ)",
       "waitTimeSec": 300,
       "needsDraining": false,
-      "note": "液体スープは待ち時間中にフタの上で温めておく。旧「芳醇こく醤油」(別JAN)の現行品",
+      "note": "液体スープは待ち時間中にフタの上で温めておく",
       "lastVerifiedAt": null,
       "steps": [
         {
@@ -7924,7 +7924,7 @@
       "genre": "ラーメン(塩)",
       "waitTimeSec": 300,
       "needsDraining": false,
-      "note": "液体スープは後入れ。2026年リニューアル版(旧JAN 4902105280485)",
+      "note": "液体スープは後入れ",
       "lastVerifiedAt": null,
       "steps": [
         {
@@ -7952,7 +7952,7 @@
       "genre": "ラーメン(みそ)",
       "waitTimeSec": 300,
       "needsDraining": false,
-      "note": "液体スープは後入れ。2026年リニューアル版(旧JAN 4902105280478)",
+      "note": "液体スープは後入れ",
       "lastVerifiedAt": null,
       "steps": [
         {
@@ -8938,7 +8938,7 @@
       "genre": "ラーメン(みそ)",
       "waitTimeSec": 240,
       "needsDraining": false,
-      "note": "2026年9月リニューアル版(旧JAN 4901071235734)。液体スープは後入れ",
+      "note": "液体スープは後入れ",
       "lastVerifiedAt": null,
       "steps": [
         {
@@ -8966,7 +8966,7 @@
       "genre": "ラーメン(みそ)",
       "waitTimeSec": 180,
       "needsDraining": false,
-      "note": "2026年9月リニューアル版(旧JAN 4901071235758)。液体スープは後入れ",
+      "note": "液体スープは後入れ",
       "lastVerifiedAt": null,
       "steps": [
         {
@@ -9097,7 +9097,6 @@
       "genre": "ラーメン(みそ)",
       "waitTimeSec": 180,
       "needsDraining": false,
-      "note": "2026年9月リニューアル版(旧JAN 4901071239824)",
       "lastVerifiedAt": null,
       "steps": [
         {
@@ -9125,7 +9124,7 @@
       "genre": "ラーメン(みそ)",
       "waitTimeSec": 180,
       "needsDraining": false,
-      "note": "2026年9月リニューアル版(旧JAN 4901071405236)。液体スープは後入れ",
+      "note": "液体スープは後入れ",
       "lastVerifiedAt": null,
       "steps": [
         {
@@ -9153,7 +9152,7 @@
       "genre": "ラーメン(しょうゆ)",
       "waitTimeSec": 180,
       "needsDraining": false,
-      "note": "2026年8月リニューアル版(旧JAN 4901071245412)。液体スープは後入れ",
+      "note": "液体スープは後入れ",
       "lastVerifiedAt": null,
       "steps": [
         {
@@ -9181,7 +9180,7 @@
       "genre": "そば",
       "waitTimeSec": 180,
       "needsDraining": false,
-      "note": "2026年8月リニューアル版(旧JAN 4901071245405)。液体スープは後入れ",
+      "note": "液体スープは後入れ",
       "lastVerifiedAt": null,
       "steps": [
         {
@@ -12728,7 +12727,7 @@
       "genre": "ラーメン(しょうゆ)",
       "waitTimeSec": 180,
       "needsDraining": false,
-      "note": "かやく・スープはカップに入っています。公式サイトに2つのJANが併記(パッケージ更新)",
+      "note": "かやく・スープはカップに入っています",
       "lastVerifiedAt": null,
       "steps": [],
       "recipes": []
@@ -12756,7 +12755,7 @@
       "genre": "ラーメン(シーフード)",
       "waitTimeSec": 180,
       "needsDraining": false,
-      "note": "かやく・スープはカップに入っています。公式サイトに2つのJANが併記(パッケージ更新)",
+      "note": "かやく・スープはカップに入っています",
       "lastVerifiedAt": null,
       "steps": [],
       "recipes": []
@@ -12792,7 +12791,7 @@
       "genre": "ラーメン(カレー)",
       "waitTimeSec": 180,
       "needsDraining": false,
-      "note": "スパイスは仕上げ(袋の有無を確認)。公式サイトに2つのJANが併記",
+      "note": "スパイスは仕上げ(袋の有無を確認)",
       "lastVerifiedAt": null,
       "steps": [
         {
@@ -14482,22 +14481,54 @@
       "janCode": "4902881435161",
       "name": "明星 チャルメラ ちいかわラーメン とんこつ味",
       "maker": "明星食品",
+      "kana": "ちゃるめら ちいかわらーめん とんこつあじ",
+      "genre": "ラーメン(豚骨)",
       "waitTimeSec": 180,
       "needsDraining": false,
-      "dataStatus": "skeleton",
+      "note": "別添袋の構成は未確認です。先入れ・後入れはフタの表記に従ってください",
       "lastVerifiedAt": null,
-      "steps": []
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "other",
+          "text": "別添袋はフタに「先入れ」とあるものだけ入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "other",
+          "text": "残りの袋をフタの表記どおりに入れる",
+          "item": "残りの別添袋"
+        }
+      ]
     },
     {
       "id": "4902881416726",
       "janCode": "4902881416726",
       "name": "明星 チャルメラカップ 赤い味噌ちゃんこ味ラーメン",
       "maker": "明星食品",
+      "kana": "ちゃるめらかっぷ あかいみそちゃんこあじらーめん",
+      "genre": "ラーメン(みそ)",
       "waitTimeSec": 180,
       "needsDraining": false,
-      "dataStatus": "skeleton",
+      "note": "別添袋の構成は未確認です。先入れ・後入れはフタの表記に従ってください",
       "lastVerifiedAt": null,
-      "steps": []
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "other",
+          "text": "別添袋はフタに「先入れ」とあるものだけ入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "other",
+          "text": "残りの袋をフタの表記どおりに入れる",
+          "item": "残りの別添袋"
+        }
+      ]
     },
     {
       "id": "4902881435093",
@@ -14552,11 +14583,27 @@
       "janCode": "4902881458610",
       "name": "明星 中華三昧 タテ型ビッグ 榮林 トマト酸辣湯麺",
       "maker": "明星食品",
-      "waitTimeSec": 180,
+      "kana": "ちゅうかざんまい たてがたびっぐ えいりん とまとさんらーたんめん",
+      "genre": "ラーメン(その他)",
+      "waitTimeSec": 240,
       "needsDraining": false,
-      "dataStatus": "skeleton",
+      "note": "別添袋の構成は未確認です。先入れ・後入れはフタの表記に従ってください",
       "lastVerifiedAt": null,
-      "steps": []
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "other",
+          "text": "別添袋はフタに「先入れ」とあるものだけ入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "other",
+          "text": "残りの袋をフタの表記どおりに入れる",
+          "item": "残りの別添袋"
+        }
+      ]
     },
     {
       "id": "4902881459358",
@@ -14702,33 +14749,81 @@
       "janCode": "4902881412742",
       "name": "明星 大砲ラーメン 昔ラーメン こってりとんこつ味",
       "maker": "明星食品",
-      "waitTimeSec": 180,
+      "kana": "たいほうらーめん むかしらーめん こってりとんこつあじ",
+      "genre": "ラーメン(豚骨)",
+      "waitTimeSec": 240,
       "needsDraining": false,
-      "dataStatus": "skeleton",
+      "note": "別添袋の構成は未確認です。先入れ・後入れはフタの表記に従ってください",
       "lastVerifiedAt": null,
-      "steps": []
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "other",
+          "text": "別添袋はフタに「先入れ」とあるものだけ入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "other",
+          "text": "残りの袋をフタの表記どおりに入れる",
+          "item": "残りの別添袋"
+        }
+      ]
     },
     {
       "id": "4902881417761",
       "janCode": "4902881417761",
       "name": "明星 韓流辛麺 (はんりゅうしんめん) 激辛濃厚カルボラーメン",
       "maker": "明星食品",
-      "waitTimeSec": 180,
+      "kana": "はんりゅうしんめん げきからのうこうかるぼらーめん",
+      "genre": "ラーメン(その他)",
+      "waitTimeSec": 300,
       "needsDraining": false,
-      "dataStatus": "skeleton",
+      "note": "別添袋の構成は未確認です。先入れ・後入れはフタの表記に従ってください",
       "lastVerifiedAt": null,
-      "steps": []
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "other",
+          "text": "別添袋はフタに「先入れ」とあるものだけ入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "other",
+          "text": "残りの袋をフタの表記どおりに入れる",
+          "item": "残りの別添袋"
+        }
+      ]
     },
     {
       "id": "4902881417716",
       "janCode": "4902881417716",
       "name": "明星 韓流辛麺 (はんりゅうしんめん) 激辛牛だしチゲラーメン",
       "maker": "明星食品",
-      "waitTimeSec": 180,
+      "kana": "はんりゅうしんめん げきからぎゅうだしちげらーめん",
+      "genre": "ラーメン(その他)",
+      "waitTimeSec": 300,
       "needsDraining": false,
-      "dataStatus": "skeleton",
+      "note": "別添袋の構成は未確認です。先入れ・後入れはフタの表記に従ってください",
       "lastVerifiedAt": null,
-      "steps": []
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "other",
+          "text": "別添袋はフタに「先入れ」とあるものだけ入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "other",
+          "text": "残りの袋をフタの表記どおりに入れる",
+          "item": "残りの別添袋"
+        }
+      ]
     },
     {
       "id": "4902881408806",
@@ -14823,11 +14918,27 @@
       "janCode": "4902881405041",
       "name": "明星 Ａｓｉａｎ Ｈｏｔ 韓国チャンポン",
       "maker": "明星食品",
-      "waitTimeSec": 180,
+      "kana": "あじあんほっと かんこくちゃんぽん",
+      "genre": "ちゃんぽん",
+      "waitTimeSec": 300,
       "needsDraining": false,
-      "dataStatus": "skeleton",
+      "note": "別添袋の構成は未確認です。先入れ・後入れはフタの表記に従ってください",
       "lastVerifiedAt": null,
-      "steps": []
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "other",
+          "text": "別添袋はフタに「先入れ」とあるものだけ入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "other",
+          "text": "残りの袋をフタの表記どおりに入れる",
+          "item": "残りの別添袋"
+        }
+      ]
     },
     {
       "id": "4902881405782",
@@ -15588,12 +15699,27 @@
       "janCode": "4901990370158",
       "name": "マルちゃん 日本うまいもん 青森味噌カレーミルクラーメン",
       "maker": "東洋水産",
-      "waitTimeSec": 180,
+      "kana": "まるちゃん にほんうまいもん あおもりみそかれーみるくらーめん",
+      "genre": "ラーメン(みそ)",
+      "waitTimeSec": 300,
       "needsDraining": false,
-      "dataStatus": "skeleton",
+      "note": "別添袋の構成は未確認です。先入れ・後入れはフタの表記に従ってください",
       "lastVerifiedAt": null,
-      "steps": [],
-      "note": "販売地域: 東北"
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "other",
+          "text": "別添袋はフタに「先入れ」とあるものだけ入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "other",
+          "text": "残りの袋をフタの表記どおりに入れる",
+          "item": "残りの別添袋"
+        }
+      ]
     },
     {
       "id": "4901990384469",
@@ -15799,26 +15925,54 @@
       "janCode": "4901990523141",
       "name": "マルちゃん カップ 沖縄そば",
       "maker": "東洋水産",
+      "kana": "まるちゃん かっぷ おきなわそば",
       "genre": "そば",
-      "waitTimeSec": 180,
+      "waitTimeSec": 300,
       "needsDraining": false,
-      "dataStatus": "skeleton",
+      "note": "別添袋の構成は未確認です。先入れ・後入れはフタの表記に従ってください",
       "lastVerifiedAt": null,
-      "steps": [],
-      "note": "販売地域: 沖縄"
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "other",
+          "text": "別添袋はフタに「先入れ」とあるものだけ入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "other",
+          "text": "残りの袋をフタの表記どおりに入れる",
+          "item": "残りの別添袋"
+        }
+      ]
     },
     {
       "id": "4901990362825",
       "janCode": "4901990362825",
       "name": "マルちゃん カップ まめ沖縄そば",
       "maker": "東洋水産",
+      "kana": "まるちゃん かっぷ まめおきなわそば",
       "genre": "そば",
-      "waitTimeSec": 180,
+      "waitTimeSec": 240,
       "needsDraining": false,
-      "dataStatus": "skeleton",
+      "note": "別添袋の構成は未確認です。先入れ・後入れはフタの表記に従ってください",
       "lastVerifiedAt": null,
-      "steps": [],
-      "note": "販売地域: 沖縄"
+      "steps": [
+        {
+          "phase": "pre",
+          "order": 0,
+          "itemType": "other",
+          "text": "別添袋はフタに「先入れ」とあるものだけ入れる"
+        },
+        {
+          "phase": "post",
+          "order": 0,
+          "itemType": "other",
+          "text": "残りの袋をフタの表記どおりに入れる",
+          "item": "残りの別添袋"
+        }
+      ]
     },
     {
       "id": "4901990383523",

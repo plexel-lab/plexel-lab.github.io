@@ -37,16 +37,16 @@
 
   <style>
     :root {
-      /* コートの2色がベース: コート内オレンジ #D07842 / コート外ティール #2E8A96 */
-      --bg: #071A1D;
-      --bg2: #0A2226;
-      --panel: rgba(18, 52, 58, .55);
-      --stroke: rgba(94, 200, 212, .16);
-      --text: #F0F8F7;
-      --sub: #8FB2B2;
-      --accent: #F09A5E;   /* court orange (lifted for dark bg) */
-      --accent2: #56C4D2;  /* court teal (lifted) */
-      --accent3: #F3C892;  /* sand */
+      /* アプリのブランドカラー: ink #0E2A47 / rally #FF6B2C / teal #138A7E */
+      --bg: #091E38;
+      --bg2: #0E2A47;
+      --panel: rgba(14, 42, 71, .55);
+      --stroke: rgba(19, 138, 126, .18);
+      --text: #F0F4F8;
+      --sub: #8FA8C0;
+      --accent: #FF6B2C;   /* rally orange */
+      --accent2: #1ABEAA;  /* teal (lifted for dark bg) */
+      --accent3: #FFB070;  /* light orange */
       --max: 1080px;
     }
     * { box-sizing: border-box; }
@@ -64,25 +64,17 @@
 
     /* ---------- animated backdrop ---------- */
     .bg-fx { position: fixed; inset: 0; z-index: -2; overflow: hidden; background:
-      radial-gradient(1200px 800px at 80% -10%, rgba(86,196,210,.10), transparent 60%),
-      radial-gradient(1000px 700px at 0% 10%, rgba(240,154,94,.08), transparent 55%),
+      radial-gradient(1200px 800px at 80% -10%, rgba(19,138,126,.10), transparent 60%),
+      radial-gradient(1000px 700px at 0% 10%, rgba(255,107,44,.08), transparent 55%),
       var(--bg); }
     .blob { position: absolute; border-radius: 50%; filter: blur(70px); opacity: .5; will-change: transform; }
-    .blob.b1 { width: 46vw; height: 46vw; left: -8vw; top: -6vw; background: radial-gradient(circle, #1B5F6A, transparent 70%); animation: drift1 22s ease-in-out infinite; }
-    .blob.b2 { width: 40vw; height: 40vw; right: -10vw; top: 18vh; background: radial-gradient(circle, #8A4A26, transparent 70%); animation: drift2 26s ease-in-out infinite; }
-    .blob.b3 { width: 38vw; height: 38vw; left: 24vw; bottom: -14vw; background: radial-gradient(circle, #2E8A96, transparent 72%); animation: drift3 30s ease-in-out infinite; }
+    .blob.b1 { width: 46vw; height: 46vw; left: -8vw; top: -6vw; background: radial-gradient(circle, #138A7E, transparent 70%); animation: drift1 22s ease-in-out infinite; }
+    .blob.b2 { width: 40vw; height: 40vw; right: -10vw; top: 18vh; background: radial-gradient(circle, #7A3510, transparent 70%); animation: drift2 26s ease-in-out infinite; }
+    .blob.b3 { width: 38vw; height: 38vw; left: 24vw; bottom: -14vw; background: radial-gradient(circle, #0E2A47, transparent 72%); animation: drift3 30s ease-in-out infinite; }
     @keyframes drift1 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(6vw,5vh)} }
     @keyframes drift2 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(-5vw,4vh)} }
     @keyframes drift3 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(4vw,-5vh)} }
-    /* コートラインを思わせるグリッド */
-    .grid-fx { position: fixed; inset: 0; z-index: -1; pointer-events: none;
-      background-image:
-        linear-gradient(rgba(240,248,247,.045) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(240,248,247,.045) 1px, transparent 1px);
-      background-size: 44px 44px;
-      mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 30%, transparent 75%);
-      -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 30%, transparent 75%);
-    }
+    .grid-fx { display: none; }
 
     .wrap { max-width: var(--max); margin: 0 auto; padding: 0 1.5rem; }
 

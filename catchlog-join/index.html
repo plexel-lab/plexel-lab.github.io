@@ -28,6 +28,7 @@
     .secondary { background:var(--bg); color:var(--accent); border:1px solid var(--line); }
     ol { text-align:left; color:var(--sub); font-size:.9rem; padding-left:1.3rem; margin:1.4rem 0 0; }
     .error { color:#B42318; }
+    .note { margin-top:1.4rem; font-size:.85rem; }
     @media (prefers-color-scheme: dark) {
       :root { --bg:#0E1524; --card:#18233A; --text:#EAF0FB; --sub:#9FB0CC; --accent:#5CA2FF; --line:#2A3A57; }
     }
@@ -41,13 +42,14 @@
       <p>招待コード</p>
       <div class="code" id="code"></div>
       <button class="btn secondary" id="copy" type="button">コードをコピー</button>
-      <a class="btn primary" id="open" href="#">アプリで開いて参加する</a>
-      <a class="btn secondary" href="https://apps.apple.com/jp/app/catch-log/id6776291336" rel="noopener noreferrer">App Store でアプリを入手</a>
+      <a class="btn primary" href="https://apps.apple.com/jp/app/catch-log/id6776291336" rel="noopener noreferrer">App Store でアプリを入手</a>
       <ol>
-        <li>アプリをお持ちでない方は、App Store からインストールします。</li>
+        <li>App Store から Catch Log をインストールします。</li>
         <li>アプリの「設定 → アカウント」でサインインします。</li>
-        <li>このページに戻って「アプリで開いて参加する」を押すか、「設定 → グループ → 招待コードで参加」に上のコードを入力します。</li>
+        <li>このページに戻って下の「アプリで開いて参加する」を押すか、「設定 → グループ → 招待コードで参加」に上のコードを入力します。</li>
       </ol>
+      <p class="note">インストール済みの方はこちら</p>
+      <a class="btn secondary" id="open" href="#">アプリで開いて参加する</a>
     </div>
     <p id="invalid" class="error" hidden>招待コードが見つかりませんでした。招待してくれた方に、リンクをもう一度送ってもらってください。</p>
   </main>

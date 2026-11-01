@@ -1,0 +1,13 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["YT5RC222V4.com.catchlog.app.shota"],
+        "components": [
+          { "/": "/catchlog-join", "comment": "Catch Log グループ招待（コードは # の後ろ）" },
+          { "/": "/catchlog-join/", "comment": "Catch Log グループ招待（コードは # の後ろ）" }
+        ]
+      }
+    ]
+  }
+}

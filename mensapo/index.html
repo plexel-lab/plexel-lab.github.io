@@ -165,7 +165,8 @@
     border-top:1px dotted var(--line);padding-top:1.5rem;line-height:2}
   .rank-note b{color:var(--ink);font-weight:700}
 
-  .shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1.4rem}
+  .shots{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem}
+  @media(max-width:620px){.shots{grid-template-columns:repeat(2,1fr)}}
   .shots figure{margin:0}
   .shots img{width:100%;display:block;border:1px solid var(--line);border-radius:10px;background:#fff}
   .shots figcaption{text-align:center;color:var(--sub);font-size:.82rem;margin-top:.7rem}
@@ -260,7 +261,7 @@
 
     <div class="co-split">
       <div class="co-shot">
-        <img src="shots/recipe.png" alt="アレンジが並ぶ「食べ方を選ぶ」画面" loading="lazy">
+        <img src="shots/01_recipe.jpg" alt="アレンジが並ぶ「食べ方を選ぶ」画面" width="600" height="1304" loading="lazy">
       </div>
       <ul class="rules">
         <li><b>星は、3件集まるまで出さない</b>
@@ -306,10 +307,14 @@
       <p>商品名は説明用のサンプルです。</p>
     </div>
     <div class="shots">
-      <figure><img src="shots/recipe.png" alt="食べ方を選ぶ" loading="lazy"><figcaption>食べ方を選ぶ</figcaption></figure>
-      <figure><img src="shots/prep.png" alt="下準備" loading="lazy"><figcaption>下準備</figcaption></figure>
-      <figure><img src="shots/timer.png" alt="タイマー" loading="lazy"><figcaption>タイマー</figcaption></figure>
-      <figure><img src="shots/finish.png" alt="仕上げ" loading="lazy"><figcaption>仕上げ</figcaption></figure>
+      <figure><img src="shots/01_recipe.jpg" alt="食べ方を選ぶ" width="600" height="1304" loading="lazy"><figcaption>食べ方を選ぶ</figcaption></figure>
+      <figure><img src="shots/02_prep.jpg" alt="下準備" width="600" height="1304" loading="lazy"><figcaption>下準備</figcaption></figure>
+      <figure><img src="shots/03_timer.jpg" alt="タイマー" width="600" height="1304" loading="lazy"><figcaption>タイマー</figcaption></figure>
+      <figure><img src="shots/04_finish.jpg" alt="仕上げ" width="600" height="1304" loading="lazy"><figcaption>仕上げ</figcaption></figure>
+      <figure><img src="shots/05_search.jpg" alt="めんを探す" width="600" height="1304" loading="lazy"><figcaption>めんを探す</figcaption></figure>
+      <figure><img src="shots/06_home.jpg" alt="ホームめん" width="600" height="1304" loading="lazy"><figcaption>ホームめん</figcaption></figure>
+      <figure><img src="shots/07_maestro.jpg" alt="めん巨匠" width="600" height="1304" loading="lazy"><figcaption>めん巨匠</figcaption></figure>
+      <figure><img src="shots/08_settings.jpg" alt="設定" width="600" height="1304" loading="lazy"><figcaption>設定</figcaption></figure>
     </div>
   </section>
 </main>

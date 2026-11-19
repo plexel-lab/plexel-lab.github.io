@@ -99,7 +99,7 @@
     @media (max-width: 470px) { .site-nav .nav-brand .bt { display: none; } }
 
     /* ---------- hero ---------- */
-    .hero { text-align: center; padding: 4.5rem 0 2rem; }
+    .hero { text-align: center; padding: 4.5rem 1.5rem 2rem; }
     .eyebrow { display: inline-flex; align-items: center; gap: .5rem; font-size: .78rem; letter-spacing: .18em; text-transform: uppercase;
       color: var(--accent2); border: 1px solid var(--stroke); background: rgba(86,196,210,.06);
       padding: .35rem .9rem; border-radius: 999px; margin-bottom: 1.6rem; }
@@ -128,8 +128,8 @@
 
     /* ---------- phone gallery (actual app screenshots) ---------- */
     .gallery { display: flex; gap: clamp(1rem, 4vw, 2.4rem); justify-content: center; align-items: flex-end; padding: 3rem 0 1rem; perspective: 1400px; }
-    .phone { position: relative; width: clamp(150px, 30vw, 200px); border-radius: 28px; padding: 7px;
-      background: linear-gradient(160deg, #1B4A52, #0A2226); border: 1px solid rgba(255,255,255,.10);
+    /* App Store と同じプロモ画像（端末フレーム入り）なので、外側の枠は付けない */
+    .phone { position: relative; width: clamp(160px, 30vw, 230px); border-radius: 22px;
       box-shadow: 0 30px 60px rgba(0,0,0,.55); transition: transform .4s cubic-bezier(.2,.7,.2,1); }
     .phone img { width: 100%; height: auto; display: block; border-radius: 22px; }
     .phone.left { transform: rotateY(18deg) translateY(14px) scale(.92); opacity: .94; }
@@ -141,7 +141,7 @@
     @media (max-width: 620px) { .phone.left, .phone.right { display: none; } .phone.center { width: 62vw; } }
 
     /* screenshot strip (secondary) */
-    .shots-strip { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 1rem; max-width: 760px; margin: 0 auto; }
+    .shots-strip { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; max-width: 1000px; margin: 0 auto; }
     .shots-strip figure { margin: 0; }
     .shots-strip img { width: 100%; height: auto; border-radius: 16px; border: 1px solid var(--stroke); box-shadow: 0 14px 34px rgba(0,0,0,.4); display: block; }
     .shots-strip figcaption { color: var(--sub); font-size: .82rem; text-align: center; margin-top: .5rem; }
@@ -193,6 +193,20 @@
     .contact-card .card-link { margin-top: .9rem; color: var(--accent); font-weight: 700; font-size: .9rem; }
     .contact-card:hover .card-link { color: var(--accent2); }
 
+    /* Pro plan */
+    .pro { max-width: 760px; margin: 0 auto; background: var(--panel); border: 1px solid var(--stroke); border-radius: 20px;
+      padding: 2rem; backdrop-filter: blur(8px); }
+    .plans { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 0 0 1.4rem; }
+    .plan { text-align: center; border: 1px solid var(--stroke); border-radius: 16px; padding: 1.2rem 1rem; background: rgba(255,255,255,.03); }
+    .plan .pname { color: var(--sub); font-size: .85rem; font-weight: 700; }
+    .plan .price { font-family: "Outfit", "Noto Sans JP", sans-serif; font-weight: 900; font-size: 1.9rem; color: var(--text); }
+    .plan .price small { font-size: .9rem; color: var(--sub); font-weight: 600; }
+    .plan .save { color: var(--accent3); font-size: .8rem; font-weight: 700; }
+    .pro ul { margin: 0 0 1rem; padding-left: 1.2rem; color: var(--text); }
+    .pro ul li { margin: .25rem 0; }
+    .pro .fine { color: var(--sub); font-size: .82rem; line-height: 1.7; margin: 0; }
+    .pro .fine a { color: var(--accent2); }
+
     footer { border-top: 1px solid var(--stroke); padding: 2.4rem 0 3rem; text-align: center; color: var(--sub); font-size: .9rem; margin-top: 2rem; }
     footer a { color: var(--accent2); text-decoration: none; }
     footer a:hover { text-decoration: underline; }
@@ -238,9 +252,9 @@
     <p class="note">iPhone 対応 ・ 記録は無料 ・ オフラインでも記録できる</p>
 
     <div class="gallery wrap reveal">
-      <div class="phone left"><img src="shots/quick.png" alt="クイック記録画面" width="460" height="1000" loading="lazy"></div>
-      <div class="phone center"><img src="shots/detail.png" alt="詳細入力画面" width="460" height="1000" loading="lazy"></div>
-      <div class="phone right"><img src="shots/chart.png" alt="スパイクコースチャート画面" width="460" height="1000" loading="lazy"></div>
+      <div class="phone left"><img src="shots/03_quick.jpg" alt="ワンタップで得点を記録（クイック記録）" width="645" height="1398" loading="lazy"></div>
+      <div class="phone center"><img src="shots/01_top.jpg" alt="9人制バレーのスコア記録アプリ" width="645" height="1398"></div>
+      <div class="phone right"><img src="shots/06_chart.jpg" alt="アタックコースをコート図で可視化" width="645" height="1398" loading="lazy"></div>
     </div>
   </header>
 
@@ -250,7 +264,7 @@
         <div><div class="n">2</div><div class="l">入力モード</div></div>
         <div><div class="n">9人制</div><div class="l">専用設計</div></div>
         <div><div class="n">その場</div><div class="l">で分析</div></div>
-        <div><div class="n">1枚</div><div class="l">で試合レポート</div></div>
+        <div><div class="n">PDF</div><div class="l">で試合レポート</div></div>
       </div>
     </section>
 
@@ -271,6 +285,8 @@
         <li class="reveal"><div class="ficon">🏐</div><h3>詳細入力</h3><span>コート上の選手をタップして、サーブ・レセプション・スパイク・ブロックをラリー単位で記録。継続プレーは自動入力でテンポを崩さない。</span></li>
         <li class="reveal"><div class="ficon">🎯</div><h3>スパイクコースチャート</h3><span>打点から落下点までをコート図に描画。誰がどのコースで決めているかが一目でわかる。</span></li>
         <li class="reveal"><div class="ficon">📊</div><h3>リアルタイム ボックススコア</h3><span>サーブ効果率・レセプションA率・アタック決定率・ブロックポイントを、チーム・選手別・セット別にその場で集計。</span></li>
+        <li class="reveal"><div class="ficon">📝</div><h3>得点経過</h3><span>紙のスコアシートのように、得点の流れとサーブ権の移り変わりを時系列で表示。タイムアウトのタイミングもひと目でわかる。</span></li>
+        <li class="reveal"><div class="ficon">🏆</div><h3>アワード自動選出</h3><span>サーブ賞・レセプション賞・スパイク賞などをスタッツから自動で選出。表彰カードにしてチームに共有できる。</span></li>
         <li class="reveal"><div class="ficon">🤝</div><h3>チーム共有</h3><span>チームコードでメンバーを招待。記録した試合は自動でクラウド保存され、チーム全員のスマホで見られる。</span></li>
         <li class="reveal"><div class="ficon">📈</div><h3>マイスタッツ & 成長分析</h3><span>自分の背番号を登録すれば、直近の成績も通算も成長グラフもすぐ手元に。試合をまたいだ推移でチームの成長が見える。</span></li>
       </ul>
@@ -283,10 +299,32 @@
         <p>実際のアプリの画面です。</p>
       </div>
       <div class="shots-strip reveal">
-        <figure><img src="shots/quick.png" alt="クイック記録" width="460" height="1000" loading="lazy"><figcaption>クイック記録</figcaption></figure>
-        <figure><img src="shots/detail.png" alt="詳細入力" width="460" height="1000" loading="lazy"><figcaption>詳細入力</figcaption></figure>
-        <figure><img src="shots/score.png" alt="ボックススコア" width="460" height="1000" loading="lazy"><figcaption>ボックススコア</figcaption></figure>
-        <figure><img src="shots/chart.png" alt="コースチャート" width="460" height="1000" loading="lazy"><figcaption>コースチャート</figcaption></figure>
+        <figure><img src="shots/03_quick.jpg" alt="クイック記録" width="645" height="1398" loading="lazy"><figcaption>クイック記録</figcaption></figure>
+        <figure><img src="shots/04_detail.jpg" alt="詳細入力" width="645" height="1398" loading="lazy"><figcaption>詳細入力</figcaption></figure>
+        <figure><img src="shots/02_stats.jpg" alt="ボックススコア" width="645" height="1398" loading="lazy"><figcaption>ボックススコア</figcaption></figure>
+        <figure><img src="shots/05_progress.jpg" alt="得点経過" width="645" height="1398" loading="lazy"><figcaption>得点経過</figcaption></figure>
+        <figure><img src="shots/06_chart.jpg" alt="コースチャート" width="645" height="1398" loading="lazy"><figcaption>コースチャート</figcaption></figure>
+        <figure><img src="shots/07_awards.jpg" alt="アワード" width="645" height="1398" loading="lazy"><figcaption>アワード</figcaption></figure>
+      </div>
+    </section>
+
+    <section id="pro">
+      <div class="sec-head reveal">
+        <span class="eyebrow"><span class="dot"></span>RallyLog Pro</span>
+        <h2>試合レポートを、そのまま配れる。</h2>
+        <p>記録・分析・チーム共有はこれまでどおり無料。レポートを出力したいチームに。</p>
+      </div>
+      <div class="pro reveal">
+        <div class="plans">
+          <div class="plan"><div class="pname">月額プラン</div><div class="price">¥300<small> / 月</small></div></div>
+          <div class="plan"><div class="pname">年額プラン</div><div class="price">¥3,000<small> / 年</small></div><div class="save">2か月分おトク</div></div>
+        </div>
+        <ul>
+          <li>試合・大会レポートの PDF 出力（チーム成績・選手別スタッツ・得点経過・コースチャート・アワード）</li>
+          <li>選手別・チーム別の CSV 出力</li>
+          <li>広告の非表示</li>
+        </ul>
+        <p class="fine">アプリ内の購入画面から申し込めます。自動更新サブスクリプションです。期間終了の24時間前までに自動更新をオフにしない限り、同じ期間・料金で更新されます。解約は App Store のアカウント設定からいつでもできます。<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener">利用規約（EULA）</a></p>
       </div>
     </section>
 
@@ -294,7 +332,7 @@
       <div class="cta-band reveal">
         <h2>記録係の1人の頑張りを、チーム全員の力に。</h2>
         <a class="store-btn" href="https://apps.apple.com/app/id6785764857"> App Store でダウンロード</a>
-        <p class="note">iPhone 対応 ・ 記録は無料</p>
+        <p class="note">iPhone 対応 ・ 記録は無料 ・ レポート出力は Pro（月額300円）</p>
       </div>
     </section>
 

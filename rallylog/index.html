@@ -164,6 +164,8 @@
     .features li::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 2px;
       background: linear-gradient(90deg, var(--accent), var(--accent2), transparent); opacity: .5; }
     .features li:hover { transform: translateY(-5px); border-color: rgba(86,196,210,.35); }
+    .features .fhead { display: block; width: calc(100% + 2.8rem); height: auto; aspect-ratio: 16 / 9; object-fit: cover;
+      margin: -1.5rem -1.4rem 1.1rem; border-bottom: 1px solid var(--stroke); }
     .ficon { width: 46px; height: 46px; border-radius: 13px; display: grid; place-items: center; font-size: 1.4rem; margin-bottom: .9rem;
       background: linear-gradient(140deg, rgba(240,154,94,.18), rgba(86,196,210,.18)); border: 1px solid var(--stroke); }
     .features h3 { font-size: 1.05rem; margin: 0 0 .35rem; font-weight: 700; }
@@ -281,15 +283,15 @@
         <p>記録係の負担を減らして、チーム全員が使える分析に変える。</p>
       </div>
       <ul class="features">
-        <li class="reveal"><div class="ficon">⚡</div><h3>クイック記録</h3><span>得点ボタンをタップするだけ。9人制の固定サーブ順から次のサーバーを自動表示。タイムアウト・選手交代・取り消しもワンタップ。</span></li>
-        <li class="reveal"><div class="ficon">🏐</div><h3>詳細入力</h3><span>コート上の選手をタップして、サーブ・レセプション・スパイク・ブロックをラリー単位で記録。継続プレーは自動入力でテンポを崩さない。</span></li>
-        <li class="reveal"><div class="ficon">🎯</div><h3>スパイクコースチャート</h3><span>打点から落下点までをコート図に描画。誰がどのコースで決めているかが一目でわかる。</span></li>
-        <li class="reveal"><div class="ficon">📊</div><h3>リアルタイム ボックススコア</h3><span>サーブ効果率・レセプションA率・アタック決定率・ブロックポイントを、チーム・選手別・セット別にその場で集計。</span></li>
-        <li class="reveal"><div class="ficon">📝</div><h3>得点経過</h3><span>紙のスコアシートのように、得点の流れとサーブ権の移り変わりを時系列で表示。タイムアウトのタイミングもひと目でわかる。</span></li>
-        <li class="reveal"><div class="ficon">🏆</div><h3>アワード自動選出</h3><span>サーブ賞・レセプション賞・スパイク賞などをスタッツから自動で選出。表彰カードにしてチームに共有できる。</span></li>
-        <li class="reveal"><div class="ficon">🤝</div><h3>チーム共有</h3><span>チームコードでメンバーを招待。記録した試合は自動でクラウド保存され、チーム全員のスマホで見られる。</span></li>
-        <li class="reveal"><div class="ficon">📈</div><h3>マイスタッツ & 成長分析</h3><span>自分の背番号を登録すれば、直近の成績も通算も成長グラフもすぐ手元に。試合をまたいだ推移でチームの成長が見える。</span></li>
-        <li class="reveal"><div class="ficon">📣</div><h3>サポーター（ライブ観戦）</h3><span>観戦コードで家族や控え選手を「観戦のみ」で招待。会場に来られなくても、スコアとサーブ順をリアルタイムで見て応援できる。記録や分析には関われないので安心。</span></li>
+        <li class="reveal"><img class="fhead" src="features/quick.jpg" alt="クイック記録の得点ボタン" width="720" height="405" loading="lazy"><h3>クイック記録</h3><span>得点ボタンをタップするだけ。9人制の固定サーブ順から次のサーバーを自動表示。タイムアウト・選手交代・取り消しもワンタップ。</span></li>
+        <li class="reveal"><img class="fhead" src="features/detail.jpg" alt="詳細入力のコート" width="720" height="405" loading="lazy"><h3>詳細入力</h3><span>コート上の選手をタップして、サーブ・レセプション・スパイク・ブロックをラリー単位で記録。継続プレーは自動入力でテンポを崩さない。</span></li>
+        <li class="reveal"><img class="fhead" src="features/chart.jpg" alt="スパイクコースチャート" width="720" height="405" loading="lazy"><h3>スパイクコースチャート</h3><span>打点から落下点までをコート図に描画。誰がどのコースで決めているかが一目でわかる。</span></li>
+        <li class="reveal"><img class="fhead" src="features/score.jpg" alt="ボックススコア" width="720" height="405" loading="lazy"><h3>リアルタイム ボックススコア</h3><span>サーブ効果率・レセプションA率・アタック決定率・ブロックポイントを、チーム・選手別・セット別にその場で集計。</span></li>
+        <li class="reveal"><img class="fhead" src="features/progress.jpg" alt="得点経過のスコアシート" width="720" height="405" loading="lazy"><h3>得点経過</h3><span>紙のスコアシートのように、得点の流れとサーブ権の移り変わりを時系列で表示。タイムアウトのタイミングもひと目でわかる。</span></li>
+        <li class="reveal"><img class="fhead" src="features/awards.jpg" alt="アワード" width="720" height="405" loading="lazy"><h3>アワード自動選出</h3><span>サーブ賞・レセプション賞・スパイク賞などをスタッツから自動で選出。表彰カードにしてチームに共有できる。</span></li>
+        <li class="reveal"><img class="fhead" src="features/team.jpg" alt="チームコードでの招待（イメージ）" width="720" height="405" loading="lazy"><h3>チーム共有</h3><span>チームコードでメンバーを招待。記録した試合は自動でクラウド保存され、チーム全員のスマホで見られる。</span></li>
+        <li class="reveal"><img class="fhead" src="features/growth.jpg" alt="成長グラフ（イメージ）" width="720" height="405" loading="lazy"><h3>マイスタッツ & 成長分析</h3><span>自分の背番号を登録すれば、直近の成績も通算も成長グラフもすぐ手元に。試合をまたいだ推移でチームの成長が見える。</span></li>
+        <li class="reveal"><img class="fhead" src="features/supporter.jpg" alt="ライブ観戦の画面" width="720" height="405" loading="lazy"><h3>サポーター（ライブ観戦）</h3><span>観戦コードで家族や控え選手を「観戦のみ」で招待。会場に来られなくても、スコアとサーブ順をリアルタイムで見て応援できる。記録や分析には関われないので安心。</span></li>
       </ul>
     </section>
 
